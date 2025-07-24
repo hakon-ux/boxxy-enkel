@@ -2,10 +2,11 @@
   "name": "boxxy-enkel",
   "version": "1.0.0",
   "description": "Enkel webside for utleie av containere og minilager",
-  "main": "server.js",
+  "main": "index.html",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "node server.js",
+    "build": "echo 'Static build complete'"
   },
   "dependencies": {
     "express": "^4.18.2"
