@@ -1,0 +1,16 @@
+{
+  "name": "boxxy-enkel",
+  "version": "1.0.0",
+  "description": "Enkel webside for utleie av containere og minilager",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "keywords": ["container", "minilager", "utleie"],
+  "author": "Boxxy",
+  "license": "ISC"
+}
