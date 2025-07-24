@@ -12,9 +12,14 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Route for bestilling page
+// Route for bestilling page (now backup)
 app.get('/bestilling', (req, res) => {
-    res.sendFile(path.join(__dirname, 'bestilling.html'));
+    res.sendFile(path.join(__dirname, 'backup.html'));
+});
+
+// Route for backup page
+app.get('/backup', (req, res) => {
+    res.sendFile(path.join(__dirname, 'backup.html'));
 });
 
 app.listen(PORT, () => {
