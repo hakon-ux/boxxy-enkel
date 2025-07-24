@@ -153,6 +153,64 @@ body {
     color: #113c3a;
 }
 
+/* Container Needs Section */
+.container-needs-section {
+    position: relative;
+    padding: 120px 0 160px;
+    background-image: url('images/boxxy_bg04.svg');
+    background-size: cover;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-color: #e6eae3;
+}
+
+.container-needs-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.container-needs-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #113c3a;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.container-needs-description {
+    font-size: 1.25rem;
+    color: #113c3a;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.container-needs-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background-color: #113c3a;
+    color: #eab41e;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.container-needs-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(17, 60, 58, 0.3);
+}
+
+.button-icon {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
 /* Services Overview */
 .services-overview {
     padding: 100px 0;
@@ -480,6 +538,26 @@ body {
         text-align: center;
     }
     
+    .container-needs-section {
+        padding: 80px 0 120px;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    
+    .container-needs-title {
+        font-size: 2.5rem;
+    }
+    
+    .container-needs-description {
+        font-size: 1.125rem;
+    }
+    
+    .container-needs-button {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
     .services-grid {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -521,6 +599,17 @@ body {
 }
 
 @media (max-width: 480px) {
+    .container-needs-section {
+        padding: 60px 0 80px;
+    }
+    
+    .container-needs-title {
+        font-size: 2rem;
+    }
+    
+    .container-needs-description {
+        font-size: 1rem;
+    }
     .hero-large {
         padding: 100px 0 60px;
     }
