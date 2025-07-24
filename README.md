@@ -51,4 +51,4 @@ Prosjektet bruker:
 
 ---
 
-© 2024 boxxy - en verden av muligheter
+© 2024 boxxy - en verden av muligheter# boxxy-enkel
