@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "echo 'Static build complete'"
+    "build": "mkdir -p public && cp -r images public/ && cp *.png *.css *.html *.js public/ 2>/dev/null || true"
   },
   "dependencies": {
     "express": "^4.18.2"

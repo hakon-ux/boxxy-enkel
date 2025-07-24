@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxxy - en verden av muligheter</title>
+    <link rel="stylesheet" href="bestilling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo">
+                <span class="header-tagline"> - en verden av muligheter</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-services">
+            <div class="container">
+                <div class="hero-services-content">
+                    <div class="hero-image">
+                        <img src="images/Boxxy04.png" alt="Boxxy container illustration" class="hero-img">
+                    </div>
+                    
+                    <div class="services-buttons">
+                        <div class="service-box" onclick="openModal()">
+                            <i data-lucide="truck" class="icon"></i>
+                            <h2>Lei en shippingcontainer</h2>
+                        </div>
+                        
+                        <div class="service-box">
+                            <i data-lucide="warehouse" class="icon"></i>
+                            <h3>Lei minilager på Lillestrøm</h3>
+                        </div>
+                        
+                        <div class="service-box">
+                            <i data-lucide="warehouse" class="icon"></i>
+                            <h3>Lei minilager på Oppaker</h3>
+                        </div>
+                        
+                        <div class="info-text">
+                            <p>Hos boxxy får du containere av høy kvalitet til en rimelig pris</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-right-section">
+                        <img src="images/boxxy05.png" alt="Boxxy illustration" class="hero-right-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="green-divider">
+        </section>
+
+        <section class="image-section">
+            <img src="images/Boxxy02.svg" alt="Boxxy storage illustration" class="section-image">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo">
+            <p class="footer-text">boxxy - en verden av muligheter</p>
+            <p class="footer-email">email: support@boxxy.no</p>
+        </div>
+    </footer>
+
+    <!-- Modal for shippingcontainer bestilling -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lei en shippingcontainer</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="size">Velg størrelse:</label>
+                    <select id="size" name="size" required>
+                        <option value="">Velg størrelse</option>
+                        <option value="8ft">8 ft</option>
+                        <option value="10ft">10 ft</option>
+                        <option value="20ft">20 ft</option>
+                        <option value="40ft">40 ft</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="delivery">Ønsket levering:</label>
+                    <select id="delivery" name="delivery" required onchange="toggleAddressField()">
+                        <option value="">Velg leveringsmåte</option>
+                        <option value="address">Levering til adresse</option>
+                        <option value="oppaker">Henting på Minilager Oppaker</option>
+                        <option value="lillestrom">Henting på Minilager Lillestrøm</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="addressGroup" style="display: none;">
+                    <label for="address">Leveringsadresse:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Bedriftsnavn (valgfritt):</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ytterligere informasjon:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Avbryt</button>
+                    <button type="submit" class="btn-submit">Send bestilling</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        function openModal() {
+            document.getElementById('orderModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('orderModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function toggleAddressField() {
+            const delivery = document.getElementById('delivery').value;
+            const addressGroup = document.getElementById('addressGroup');
+            const addressInput = document.getElementById('address');
+            
+            if (delivery === 'address') {
+                addressGroup.style.display = 'block';
+                addressInput.required = true;
+            } else {
+                addressGroup.style.display = 'none';
+                addressInput.required = false;
+                addressInput.value = '';
+            }
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('orderModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Handle form submission
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create email body
+            let deliveryInfo = '';
+            if (data.delivery === 'address') {
+                deliveryInfo = `Levering til adresse: ${data.address}`;
+            } else if (data.delivery === 'oppaker') {
+                deliveryInfo = 'Henting på Minilager Oppaker';
+            } else if (data.delivery === 'lillestrom') {
+                deliveryInfo = 'Henting på Minilager Lillestrøm';
+            }
+            
+            const emailBody = `
+Ny bestilling av shippingcontainer:
+
+Størrelse: ${data.size}
+${deliveryInfo}
+Bedriftsnavn: ${data.company || 'Ikke oppgitt'}
+Navn: ${data.name}
+Telefon: ${data.phone}
+E-post: ${data.email}
+Ytterligere informasjon: ${data.message || 'Ingen'}
+            `;
+            
+            // For now, we'll show an alert. In production, this would send to backend
+            alert('Takk for din bestilling! Vi kontakter deg snart.');
+            closeModal();
+            this.reset();
+        });
+    </script>
+</body>
+</html>
