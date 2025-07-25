@@ -541,10 +541,10 @@ body {
 
 .contact-cta {
     text-align: center;
-    background: rgba(234, 180, 30, 0.1);
+    background: #113c3a;
     padding: 40px;
     border-radius: 16px;
-    border: 2px solid rgba(234, 180, 30, 0.2);
+    border: 2px solid #eab41e;
 }
 
 .contact-cta h3 {
@@ -590,7 +590,7 @@ body {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
@@ -611,6 +611,54 @@ body {
 
 .footer-column a:hover {
     color: #eab41e;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.contact-info p strong {
+    color: #eab41e;
+    font-weight: 600;
+}
+
+.contact-info .hours {
+    color: rgba(195, 232, 201, 0.8);
+    font-size: 0.85rem;
+    margin-left: 0;
+}
+
+.social-links {
+    display: flex;
+    gap: 12px;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(234, 180, 30, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: rgba(234, 180, 30, 0.2);
+    transform: translateY(-2px);
+}
+
+.linkedin-icon {
+    width: 24px;
+    height: 24px;
 }
 
 .footer-bottom {
@@ -921,6 +969,10 @@ body {
     .footer-links {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+    
+    .contact-info {
+        gap: 6px;
     }
     
     .section-header h2 {
