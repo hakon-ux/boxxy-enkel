@@ -857,6 +857,95 @@ body {
     transform: translateY(-2px);
 }
 
+/* Contact Modal Styles */
+.contact-modal-content {
+    padding: 30px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-method {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+    border-color: #eab41e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(17, 60, 58, 0.1);
+}
+
+.contact-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #eab41e, #f0f18e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-modal-icon {
+    width: 28px;
+    height: 28px;
+    stroke: #113c3a;
+    stroke-width: 2;
+}
+
+.contact-details h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #113c3a;
+    margin-bottom: 8px;
+}
+
+.contact-details p {
+    color: #113c3a;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #113c3a;
+    color: #eab41e;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #eab41e;
+    color: #113c3a;
+    transform: translateY(-2px);
+}
+
+.locations {
+    margin-top: 10px;
+}
+
+.locations p {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.locations strong {
+    color: #eab41e;
+}
+
     .hero-large {
         padding: 100px 0 60px;
     }
@@ -882,5 +971,19 @@ body {
     
     .form-buttons {
         flex-direction: column;
+    }
+    
+    .contact-modal-content {
+        padding: 20px;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .contact-icon-wrapper {
+        align-self: center;
     }
 }
