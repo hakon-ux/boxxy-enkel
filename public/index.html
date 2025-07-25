@@ -336,17 +336,30 @@
     </div>
 
     <script>
-        lucide.createIcons();
+        // Wait for DOM to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
 
         // Modal functions
         function openModal() {
-            document.getElementById('orderModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            console.log('openModal called');
+            const modal = document.getElementById('orderModal');
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            } else {
+                console.error('orderModal not found');
+            }
         }
 
         function closeModal() {
-            document.getElementById('orderModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
+            console.log('closeModal called');
+            const modal = document.getElementById('orderModal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
         }
 
         function toggleAddressField() {
@@ -366,13 +379,23 @@
 
         // Contact modal functions
         function openContactModal() {
-            document.getElementById('contactModal').style.display = 'block';
-            document.body.style.overflow = 'hidden';
+            console.log('openContactModal called');
+            const modal = document.getElementById('contactModal');
+            if (modal) {
+                modal.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            } else {
+                console.error('contactModal not found');
+            }
         }
 
         function closeContactModal() {
-            document.getElementById('contactModal').style.display = 'none';
-            document.body.style.overflow = 'auto';
+            console.log('closeContactModal called');
+            const modal = document.getElementById('contactModal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
         }
 
         // Close modal when clicking outside of it
