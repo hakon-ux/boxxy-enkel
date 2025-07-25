@@ -899,6 +899,170 @@ body {
     color: #eab41e;
 }
 
+/* Location/Minilager Pages Styles */
+.location-hero {
+    background: linear-gradient(135deg, #113c3a 0%, #1a5450 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.location-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.location-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #eab41e;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.location-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.location-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.location-image-section {
+    padding: 80px 0;
+    background-color: #e6eae3;
+}
+
+.location-image-wrapper {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.location-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
+    margin-bottom: 20px;
+}
+
+.image-caption {
+    margin-top: 15px;
+}
+
+.image-caption p {
+    font-style: italic;
+    color: #113c3a;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.location-details {
+    padding: 100px 0;
+    background-color: #c3e8c9;
+}
+
+.details-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.details-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #113c3a;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.details-intro {
+    font-size: 1.2rem;
+    color: #113c3a;
+    opacity: 0.9;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.7;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(17, 60, 58, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
+    border-color: #eab41e;
+}
+
+.feature-icon-large {
+    width: 48px;
+    height: 48px;
+    stroke: #eab41e;
+    stroke-width: 2;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #113c3a;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #113c3a;
+    opacity: 0.8;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.location-cta {
+    padding: 100px 0;
+    background-color: #113c3a;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #eab41e;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav {
@@ -975,6 +1139,41 @@ body {
         gap: 6px;
     }
     
+    /* Location pages responsive */
+    .location-title {
+        font-size: 2.5rem;
+    }
+    
+    .location-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .location-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .location-image {
+        height: 250px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .details-text h2 {
+        font-size: 2rem;
+    }
+    
+    .details-intro {
+        font-size: 1.1rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+    
     .section-header h2 {
         font-size: 2rem;
     }
@@ -1004,6 +1203,27 @@ body {
 
     .hero-large {
         padding: 100px 0 60px;
+    }
+    
+    .location-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .location-title {
+        font-size: 2rem;
+    }
+    
+    .location-image {
+        height: 200px;
+    }
+    
+    .location-details,
+    .location-cta {
+        padding: 60px 0;
+    }
+    
+    .feature-card {
+        padding: 25px 20px;
     }
     
     .services-overview,

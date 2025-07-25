@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minilager Lillestrøm - boxxy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="hamburger-menu" onclick="toggleMobileMenu()">
+                    <i data-lucide="menu" class="hamburger-icon"></i>
+                </button>
+                <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo">
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Hjem</a>
+                    <a href="index.html#about" class="nav-link">Om oss</a>
+                    <a href="javascript:void(0)" onclick="openContactModal()" class="nav-link nav-cta">Kontakt Oss</a>
+                </nav>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+                <nav class="mobile-nav">
+                    <a href="index.html" class="mobile-nav-link">Hjem</a>
+                    <a href="javascript:void(0)" onclick="openModal()" class="mobile-nav-link">Shippingcontainere</a>
+                    <a href="minilager-oppaker.html" class="mobile-nav-link">Minilager Oppaker</a>
+                    <a href="index.html#about" class="mobile-nav-link">Om Boxxy</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="location-hero">
+            <div class="container">
+                <div class="location-hero-content">
+                    <h1 class="location-title">Minilager Lillestrøm</h1>
+                    <p class="location-subtitle">Moderne og sikker lagring i hjertet av Lillestrøm</p>
+                    <div class="location-buttons">
+                        <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary">Kontakt oss</a>
+                        <a href="#details" class="btn-secondary">Les mer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-image-section">
+            <div class="container">
+                <div class="location-image-wrapper">
+                    <img src="images/lillestrom-placeholder.jpg" alt="Minilager Lillestrøm fasiliteter" class="location-image">
+                    <div class="image-caption">
+                        <p>Vårt moderne minilager-anlegg i Lillestrøm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="location-details">
+            <div class="container">
+                <div class="details-content">
+                    <div class="details-text">
+                        <h2>Sikkerhet og kvalitet i sentrum</h2>
+                        <p class="details-intro">
+                            Vårt minilager i Lillestrøm tilbyr førsteklasses sikkerhet og tilgjengelighet. 
+                            Strategisk plassert nær sentrum med alle moderne fasiliteter du trenger.
+                        </p>
+                        
+                        <div class="features-grid">
+                            <div class="feature-card">
+                                <i data-lucide="shield-check" class="feature-icon-large"></i>
+                                <h3>Kameraovervåkning</h3>
+                                <p>24/7 overvåkning av hele området</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="car" class="feature-icon-large"></i>
+                                <h3>Skilt gjenkjenning</h3>
+                                <p>All trafikk registreres og logges</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="log-in" class="feature-icon-large"></i>
+                                <h3>Kontrollert adgang</h3>
+                                <p>En inn- og utkjøring for optimal kontroll</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="users" class="feature-icon-large"></i>
+                                <h3>Securitas befaringer</h3>
+                                <p>Regelmessige sikkerhetskontroller</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="package" class="feature-icon-large"></i>
+                                <h3>Nyere containere</h3>
+                                <p>Moderne og vedlikeholdte lagringsenheter</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="key" class="feature-icon-large"></i>
+                                <h3>Lock boks</h3>
+                                <p>Sikker oppbevaring av nøkler</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="lightbulb" class="feature-icon-large"></i>
+                                <h3>Belyst område</h3>
+                                <p>God belysning for trygg tilgang</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="snowflake" class="feature-icon-large"></i>
+                                <h3>Fast måking</h3>
+                                <p>Vinterveivedlikehold hele året</p>
+                            </div>
+                            
+                            <div class="feature-card">
+                                <i data-lucide="map-pin" class="feature-icon-large"></i>
+                                <h3>Sentralt plassert</h3>
+                                <p>Nær sentrum med god tilgjengelighet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Klar til å leie minilager i Lillestrøm?</h2>
+                    <p>Kontakt oss i dag for tilgjengelighet og priser</p>
+                    <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary">Kontakt oss nå</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo">
+                    <p class="footer-tagline">en verden av muligheter</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Tjenester</h4>
+                        <a href="javascript:void(0)" onclick="openModal()">Shippingcontainere</a>
+                        <a href="minilager-lillestrom.html">Minilager Lillestrøm</a>
+                        <a href="minilager-oppaker.html">Minilager Oppaker</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt oss</h4>
+                        <div class="contact-info">
+                            <p><strong>E-post:</strong></p>
+                            <a href="mailto:support@boxxy.no">support@boxxy.no</a>
+                            
+                            <p><strong>Telefon:</strong></p>
+                            <a href="tel:+4712345678">+47 123 45 678</a>
+                            
+                            <p><strong>Åpningstider:</strong></p>
+                            <p class="hours">Mandag - Fredag: 08:00 - 16:00</p>
+                            <p class="hours">Lørdag - Søndag: Stengt</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Følg oss</h4>
+                        <div class="social-links">
+                            <a href="https://linkedin.com/company/boxxy" target="_blank" class="social-link">
+                                <svg class="linkedin-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#eab41e"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 boxxy. Alle rettigheter reservert.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Kontakt oss</h2>
+                <span class="close" onclick="closeContactModal()">&times;</span>
+            </div>
+            <div class="contact-modal-content">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="mail" class="contact-modal-icon"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Send oss en e-post</h3>
+                            <p>Vi svarer vanligvis innen 24 timer</p>
+                            <a href="mailto:support@boxxy.no" class="contact-button">support@boxxy.no</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="phone" class="contact-modal-icon"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ring oss</h3>
+                            <p>Hverdager 08:00 - 16:00</p>
+                            <a href="tel:+4712345678" class="contact-button">+47 123 45 678</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="map-pin" class="contact-modal-icon"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Besøk oss</h3>
+                            <p>Våre minilager</p>
+                            <div class="locations">
+                                <p><strong>Lillestrøm:</strong> Industriveien 1, 2000 Lillestrøm</p>
+                                <p><strong>Oppaker:</strong> Lagergata 5, 1440 Drøbak</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        // Contact modal functions
+        function openContactModal() {
+            document.getElementById('contactModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const contactModal = document.getElementById('contactModal');
+            if (event.target == contactModal) {
+                closeContactModal();
+            }
+        }
+
+        // Mobile menu toggle function
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const body = document.body;
+            
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                body.style.overflow = 'auto';
+            } else {
+                mobileMenu.classList.add('active');
+                body.style.overflow = 'hidden';
+            }
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu();
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
