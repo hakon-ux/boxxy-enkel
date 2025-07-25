@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minilager Oppaker - boxxy</title>
+    <title>Support - boxxy</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -34,6 +34,7 @@
                     <a href="index.html" class="mobile-nav-link">Hjem</a>
                     <a href="javascript:void(0)" onclick="openModal()" class="mobile-nav-link">Shippingcontainere</a>
                     <a href="minilager-lillestrom.html" class="mobile-nav-link">Minilager Lillestrøm</a>
+                    <a href="minilager-oppaker.html" class="mobile-nav-link">Minilager Oppaker</a>
                     <a href="support.html" class="mobile-nav-link">Support</a>
                     <a href="index.html#about" class="mobile-nav-link">Om Boxxy</a>
                 </nav>
@@ -42,95 +43,95 @@
     </header>
 
     <main>
-        <section class="location-hero">
+        <section class="support-hero">
             <div class="container">
-                <div class="location-hero-content">
-                    <h1 class="location-title">Minilager Oppaker</h1>
-                    <p class="location-subtitle">Trygg og tilgjengelig lagring med moderne sikkerhet</p>
-                    <p class="location-address">Industrivegen 11, 2166 Oppaker</p>
-                    <div class="location-buttons">
-                        <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary">Kontakt oss</a>
-                        <a href="#details" class="btn-secondary">Les mer</a>
-                    </div>
+                <div class="support-hero-content">
+                    <h1 class="support-title">Trenger du hjelp?</h1>
+                    <p class="support-subtitle">Vi er her for å hjelpe deg med alle spørsmål og tekniske problemer</p>
                 </div>
             </div>
         </section>
 
-        <section class="location-image-section">
+        <section class="support-options">
             <div class="container">
-                <div class="location-image-wrapper">
-                    <img src="images/oppaker-placeholder.jpg" alt="Minilager Oppaker fasiliteter" class="location-image">
-                    <div class="image-caption">
-                        <p>Vårt sikre minilager-anlegg i Oppaker</p>
+                <div class="support-grid">
+                    <div class="support-card">
+                        <div class="support-icon-wrapper">
+                            <i data-lucide="mail" class="support-icon"></i>
+                        </div>
+                        <h3>E-post support</h3>
+                        <p>Send oss en e-post med ditt spørsmål eller problem. Vi svarer vanligvis innen 24 timer.</p>
+                        <a href="mailto:support@boxxy.no" class="support-button">
+                            <i data-lucide="external-link" class="button-icon-small"></i>
+                            support@boxxy.no
+                        </a>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="details" class="location-details">
-            <div class="container">
-                <div class="details-content">
-                    <div class="details-text">
-                        <h2>Moderne lagring med høy sikkerhet</h2>
-                        <p class="details-intro">
-                            Minilager Oppaker tilbyr trygg lagring med moderne sikkerhetssystemer og 
-                            god tilgjengelighet. Perfekt for både private og kommersielle behov.
-                        </p>
-                        
-                        <div class="features-grid">
-                            <div class="feature-card">
-                                <i data-lucide="shield-check" class="feature-icon-large"></i>
-                                <h3>Kameraovervåkning</h3>
-                                <p>Kontinuerlig overvåkning av området</p>
-                            </div>
-                            
-                            <div class="feature-card">
-                                <i data-lucide="truck" class="feature-icon-large"></i>
-                                <h3>Shipping containere</h3>
-                                <p>Robuste og værbeskyttede lagringsenheter</p>
-                            </div>
-                            
-                            <div class="feature-card">
-                                <i data-lucide="package" class="feature-icon-large"></i>
-                                <h3>Nyere containere</h3>
-                                <p>Moderne og godt vedlikeholdte enheter</p>
-                            </div>
-                            
-                            <div class="feature-card">
-                                <i data-lucide="smartphone" class="feature-icon-large"></i>
-                                <h3>GSM styrt port</h3>
-                                <p>Moderne adgangskontroll via mobiltelefon</p>
-                            </div>
-                            
-                            <div class="feature-card">
-                                <i data-lucide="key" class="feature-icon-large"></i>
-                                <h3>Lock boks</h3>
-                                <p>Sikker oppbevaring av nøkler</p>
-                            </div>
-                            
-                            <div class="feature-card">
-                                <i data-lucide="lightbulb" class="feature-icon-large"></i>
-                                <h3>Belyst område</h3>
-                                <p>God belysning for sikker tilgang</p>
-                            </div>
-                            
-                            <div class="feature-card">
-                                <i data-lucide="snowflake" class="feature-icon-large"></i>
-                                <h3>Fast måking</h3>
-                                <p>Vinterveivedlikehold hele året</p>
-                            </div>
+                    <div class="support-card">
+                        <div class="support-icon-wrapper">
+                            <i data-lucide="message-circle" class="support-icon"></i>
+                        </div>
+                        <h3>Live chat</h3>
+                        <p>Start en chat med vårt supportteam for rask hjelp med dine spørsmål.</p>
+                        <a href="#" onclick="openChatWidget()" class="support-button">
+                            <i data-lucide="message-square" class="button-icon-small"></i>
+                            Start chat
+                        </a>
+                    </div>
+
+                    <div class="support-card">
+                        <div class="support-icon-wrapper">
+                            <i data-lucide="phone" class="support-icon"></i>
+                        </div>
+                        <h3>Telefon support</h3>
+                        <p>Ring oss direkte for umiddelbar hjelp med akutte problemer.</p>
+                        <div class="phone-info">
+                            <a href="tel:+4712345678" class="support-button">
+                                <i data-lucide="phone" class="button-icon-small"></i>
+                                +47 123 45 678
+                            </a>
+                            <p class="support-hours">Mandag - Fredag: 08:00 - 16:00</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="location-cta">
+        <section class="support-faq">
             <div class="container">
-                <div class="cta-content">
-                    <h2>Klar til å leie minilager i Oppaker?</h2>
-                    <p>Kontakt oss i dag for tilgjengelighet og priser</p>
-                    <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary">Kontakt oss nå</a>
+                <div class="faq-content">
+                    <h2>Ofte stilte spørsmål</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>Hvordan får jeg tilgang til mitt minilager?</h4>
+                            <p>Du får utdelt en personlig kode og nøkkel når du signerer leieavtalen. Koden gir deg tilgang til området, og nøkkelen til din spesifikke container.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Kan jeg komme til lageret når som helst?</h4>
+                            <p>Ja, våre minilager har 24/7 tilgang. Portene er åpne døgnet rundt, og området er godt opplyst og overvåket.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Hva kan jeg ikke oppbevare i lageret?</h4>
+                            <p>Du kan ikke oppbevare farlige materialer, våpen, levende dyr, eller ting som kan skade andre containere. Se full liste i leieavtalen.</p>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <h4>Hvor lang oppsigelsestid har jeg?</h4>
+                            <p>Standard oppsigelsestid er 1 måned. Du kan si opp når som helst, men må betale for hele måneden du sier opp i.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="support-contact">
+            <div class="container">
+                <div class="contact-cta">
+                    <h2>Fant du ikke svaret du lette etter?</h2>
+                    <p>Ta kontakt med oss direkte, så hjelper vi deg videre</p>
+                    <a href="mailto:support@boxxy.no" class="btn-primary">Kontakt support</a>
                 </div>
             </div>
         </section>
@@ -243,6 +244,12 @@
         function closeContactModal() {
             document.getElementById('contactModal').style.display = 'none';
             document.body.style.overflow = 'auto';
+        }
+
+        // Chat widget function (placeholder)
+        function openChatWidget() {
+            // This would integrate with your chat service (e.g., Intercom, Zendesk, etc.)
+            alert('Chat-funksjonalitet vil bli implementert snart. Kontakt oss på support@boxxy.no i mellomtiden.');
         }
 
         // Close modal when clicking outside of it

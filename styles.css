@@ -926,9 +926,16 @@ body {
 
 .location-subtitle {
     font-size: 1.3rem;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.9);
     line-height: 1.6;
+}
+
+.location-address {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #eab41e;
+    font-weight: 500;
 }
 
 .location-buttons {
@@ -1063,6 +1070,186 @@ body {
     opacity: 0.9;
 }
 
+/* Support Page Styles */
+.support-hero {
+    background: linear-gradient(135deg, #113c3a 0%, #1a5450 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
+}
+
+.support-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.support-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #eab41e;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.support-subtitle {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+.support-options {
+    padding: 100px 0;
+    background-color: #e6eae3;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.support-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(17, 60, 58, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.support-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
+    border-color: #eab41e;
+}
+
+.support-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #eab41e, #f0f18e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.support-icon {
+    width: 40px;
+    height: 40px;
+    stroke: #113c3a;
+    stroke-width: 2;
+}
+
+.support-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #113c3a;
+    margin-bottom: 15px;
+}
+
+.support-card p {
+    color: #113c3a;
+    opacity: 0.8;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.support-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #113c3a;
+    color: #eab41e;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.support-button:hover {
+    background-color: #eab41e;
+    color: #113c3a;
+    transform: translateY(-2px);
+}
+
+.button-icon-small {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.phone-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.support-hours {
+    font-size: 0.9rem;
+    color: #113c3a;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.support-faq {
+    padding: 100px 0;
+    background-color: #c3e8c9;
+}
+
+.faq-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #113c3a;
+    margin-bottom: 60px;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px;
+    text-align: left;
+}
+
+.faq-item {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(17, 60, 58, 0.1);
+}
+
+.faq-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #113c3a;
+    margin-bottom: 15px;
+}
+
+.faq-item p {
+    color: #113c3a;
+    opacity: 0.8;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.support-contact {
+    padding: 100px 0;
+    background-color: #113c3a;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav {
@@ -1174,6 +1361,25 @@ body {
         font-size: 1.8rem;
     }
     
+    /* Support page responsive */
+    .support-title {
+        font-size: 2.5rem;
+    }
+    
+    .support-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    .faq-content h2 {
+        font-size: 2rem;
+    }
+    
     .section-header h2 {
         font-size: 2rem;
     }
@@ -1220,6 +1426,28 @@ body {
     .location-details,
     .location-cta {
         padding: 60px 0;
+    }
+    
+    .support-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .support-title {
+        font-size: 2rem;
+    }
+    
+    .support-options,
+    .support-faq,
+    .support-contact {
+        padding: 60px 0;
+    }
+    
+    .support-card {
+        padding: 30px 20px;
+    }
+    
+    .faq-item {
+        padding: 25px 20px;
     }
     
     .feature-card {
