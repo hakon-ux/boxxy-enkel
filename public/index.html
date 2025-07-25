@@ -90,7 +90,7 @@
                         </div>
                         <h3>Shippingcontainere</h3>
                         <p>Robust og sikker lagring i standardiserte containere. Tilgjengelig i størrelser fra 8 til 40 fot.</p>
-                        <a href="/bestilling" class="service-link">Bestill nå</a>
+                        <a href="javascript:void(0)" onclick="openModal()" class="service-link">Bestill nå</a>
                     </div>
                     
                     <div class="service-card">
@@ -219,8 +219,144 @@
         </div>
     </footer>
 
+    <!-- Modal for shippingcontainer bestilling -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Lei en shippingcontainer</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="size">Velg størrelse:</label>
+                    <select id="size" name="size" required>
+                        <option value="">Velg størrelse</option>
+                        <option value="8ft">8 ft</option>
+                        <option value="10ft">10 ft</option>
+                        <option value="20ft">20 ft</option>
+                        <option value="40ft">40 ft</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="delivery">Ønsket levering:</label>
+                    <select id="delivery" name="delivery" required onchange="toggleAddressField()">
+                        <option value="">Velg leveringsmåte</option>
+                        <option value="address">Levering til adresse</option>
+                        <option value="oppaker">Henting på Minilager Oppaker</option>
+                        <option value="lillestrom">Henting på Minilager Lillestrøm</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="addressGroup" style="display: none;">
+                    <label for="address">Leveringsadresse:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Bedriftsnavn (valgfritt):</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Navn:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ytterligere informasjon:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn-cancel" onclick="closeModal()">Avbryt</button>
+                    <button type="submit" class="btn-submit">Send bestilling</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script>
         lucide.createIcons();
+
+        // Modal functions
+        function openModal() {
+            document.getElementById('orderModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('orderModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function toggleAddressField() {
+            const delivery = document.getElementById('delivery').value;
+            const addressGroup = document.getElementById('addressGroup');
+            const addressInput = document.getElementById('address');
+            
+            if (delivery === 'address') {
+                addressGroup.style.display = 'block';
+                addressInput.required = true;
+            } else {
+                addressGroup.style.display = 'none';
+                addressInput.required = false;
+                addressInput.value = '';
+            }
+        }
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            const modal = document.getElementById('orderModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Handle form submission
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create email body
+            let deliveryInfo = '';
+            if (data.delivery === 'address') {
+                deliveryInfo = `Levering til adresse: ${data.address}`;
+            } else if (data.delivery === 'oppaker') {
+                deliveryInfo = 'Henting på Minilager Oppaker';
+            } else if (data.delivery === 'lillestrom') {
+                deliveryInfo = 'Henting på Minilager Lillestrøm';
+            }
+            
+            const emailBody = `
+Ny bestilling av shippingcontainer:
+
+Størrelse: ${data.size}
+${deliveryInfo}
+Bedriftsnavn: ${data.company || 'Ikke oppgitt'}
+Navn: ${data.name}
+Telefon: ${data.phone}
+E-post: ${data.email}
+Ytterligere informasjon: ${data.message || 'Ingen'}
+            `;
+            
+            // For now, we'll show an alert. In production, this would send to backend
+            alert('Takk for din bestilling! Vi kontakter deg snart.');
+            closeModal();
+            this.reset();
+        });
 
         // Mobile menu toggle function
         function toggleMobileMenu() {
