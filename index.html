@@ -339,10 +339,9 @@
         // Wait for DOM to be fully loaded
         document.addEventListener('DOMContentLoaded', function() {
             lucide.createIcons();
-        });
 
-        // Modal functions
-        function openModal() {
+            // Make functions globally accessible
+            window.openModal = function() {
             console.log('openModal called');
             const modal = document.getElementById('orderModal');
             if (modal) {
@@ -353,16 +352,16 @@
             }
         }
 
-        function closeModal() {
-            console.log('closeModal called');
-            const modal = document.getElementById('orderModal');
-            if (modal) {
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
-            }
-        }
+            window.closeModal = function() {
+                console.log('closeModal called');
+                const modal = document.getElementById('orderModal');
+                if (modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            };
 
-        function toggleAddressField() {
+            window.toggleAddressField = function() {
             const delivery = document.getElementById('delivery').value;
             const addressGroup = document.getElementById('addressGroup');
             const addressInput = document.getElementById('address');
@@ -377,8 +376,8 @@
             }
         }
 
-        // Contact modal functions
-        function openContactModal() {
+            // Contact modal functions
+            window.openContactModal = function() {
             console.log('openContactModal called');
             const modal = document.getElementById('contactModal');
             if (modal) {
@@ -389,7 +388,7 @@
             }
         }
 
-        function closeContactModal() {
+            window.closeContactModal = function() {
             console.log('closeContactModal called');
             const modal = document.getElementById('contactModal');
             if (modal) {
@@ -445,8 +444,8 @@ Ytterligere informasjon: ${data.message || 'Ingen'}
             this.reset();
         });
 
-        // Mobile menu toggle function
-        function toggleMobileMenu() {
+            // Mobile menu toggle function
+            window.toggleMobileMenu = function() {
             const mobileMenu = document.getElementById('mobileMenu');
             const body = document.body;
             
@@ -478,7 +477,8 @@ Ytterligere informasjon: ${data.message || 'Ingen'}
                     });
                 }
             });
-        });
+        
+        }); // End DOMContentLoaded
     </script>
 </body>
 </html>
