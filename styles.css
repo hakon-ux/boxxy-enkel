@@ -31,10 +31,14 @@ body {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
+
+.nav {
+    margin-left: auto;
+}
+
 
 /* Hamburger Menu */
 .hamburger-menu {
@@ -617,105 +621,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .nav {
-        display: none;
-    }
-    
-    .hero-title {
-        font-size: 2.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.5rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn-primary,
-    .btn-secondary {
-        width: 100%;
-        max-width: 300px;
-        text-align: center;
-    }
-    
-    .container-needs-section {
-        padding: 80px 0 120px;
-        background-size: contain;
-        background-position: center bottom;
-    }
-    
-    .container-needs-title {
-        font-size: 2.5rem;
-    }
-    
-    .container-needs-description {
-        font-size: 1.125rem;
-    }
-    
-    .container-needs-button {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    
-    .contact-content {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
-    
-    .footer-links {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-    
-    .section-header h2 {
-        font-size: 2rem;
-    }
-    
-    .about-text h2,
-    .contact-info h2 {
-        font-size: 2rem;
-    }
-    
-    .container {
-        padding: 0 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    .container-needs-section {
-        padding: 60px 0 80px;
-    }
-    
-    .container-needs-title {
-        font-size: 2rem;
-    }
-    
-    .container-needs-description {
-        font-size: 1rem;
-    }
-
 /* Modal Styles */
 .modal {
     display: none;
@@ -945,6 +850,105 @@ body {
 .locations strong {
     color: #eab41e;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .container-needs-section {
+        padding: 80px 0 120px;
+        background-size: contain;
+        background-position: center bottom;
+    }
+    
+    .container-needs-title {
+        font-size: 2.5rem;
+    }
+    
+    .container-needs-description {
+        font-size: 1.125rem;
+    }
+    
+    .container-needs-button {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .footer-links {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .section-header h2 {
+        font-size: 2rem;
+    }
+    
+    .about-text h2,
+    .contact-info h2 {
+        font-size: 2rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-needs-section {
+        padding: 60px 0 80px;
+    }
+    
+    .container-needs-title {
+        font-size: 2rem;
+    }
+    
+    .container-needs-description {
+        font-size: 1rem;
+    }
 
     .hero-large {
         padding: 100px 0 60px;
