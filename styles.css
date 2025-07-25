@@ -252,14 +252,14 @@ body {
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: #c3e8c9;
-    border-color: #c3e8c9;
+    background-color: #eab41e;
+    color: #113c3a;
 }
 
 .btn-secondary:hover {
-    background-color: #c3e8c9;
-    color: #113c3a;
+    background-color: #f0f18e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(234, 180, 30, 0.3);
 }
 
 /* Container Needs Section */
