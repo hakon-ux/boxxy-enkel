@@ -266,7 +266,7 @@ body {
 .container-needs-section {
     position: relative;
     padding: 120px 0 160px;
-    background-image: url('images/boxxy_bg04.svg');
+    background-image: url('images/boxxy_bg05.svg');
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -1040,6 +1040,50 @@ body {
     margin-top: 60px;
 }
 
+.features-compact {
+    margin-top: 40px;
+}
+
+.features-compact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: none;
+    margin: 0;
+}
+
+.feature-compact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(17, 60, 58, 0.08);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.feature-compact:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(17, 60, 58, 0.12);
+    border-color: #eab41e;
+}
+
+.feature-icon-compact {
+    width: 24px;
+    height: 24px;
+    stroke: #eab41e;
+    stroke-width: 2;
+    flex-shrink: 0;
+}
+
+.feature-compact span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #113c3a;
+}
+
 .feature-card {
     background: white;
     padding: 30px;
@@ -1378,6 +1422,15 @@ body {
         gap: 25px;
     }
     
+    .features-compact-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .feature-compact {
+        padding: 12px 16px;
+    }
+    
     .details-intro-section {
         grid-template-columns: 1fr;
         gap: 40px;
@@ -1496,6 +1549,20 @@ body {
     
     .feature-card {
         padding: 25px 20px;
+    }
+    
+    .features-compact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+    }
+    
+    .feature-compact {
+        padding: 10px 14px;
+        gap: 10px;
+    }
+    
+    .feature-compact span {
+        font-size: 0.9rem;
     }
     
     .services-overview,
