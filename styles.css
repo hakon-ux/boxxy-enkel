@@ -270,7 +270,7 @@ body {
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
-    background-color: #e6eae3;
+    background-color: #eab41e;
 }
 
 .container-needs-content {
@@ -1353,7 +1353,7 @@ body {
         padding: 60px 0 80px;
         background-size: contain;
         background-position: right bottom;
-        background-color: #e6eae3;
+        background-color: #eab41e;
     }
     
     .container-needs-content {
@@ -1508,7 +1508,7 @@ body {
         padding: 40px 0 60px;
         background-size: 60%;
         background-position: right bottom;
-        background-color: #e6eae3;
+        background-color: #eab41e;
     }
     
     .container-needs-content {
