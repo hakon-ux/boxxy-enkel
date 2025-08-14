@@ -46,7 +46,7 @@ body {
     border: none;
     cursor: pointer;
     padding: 8px;
-    border-radius: 6px;
+    border-radius: 0px;
     transition: all 0.3s ease;
     order: -1;
 }
@@ -105,7 +105,7 @@ body {
     border: none;
     cursor: pointer;
     padding: 8px;
-    border-radius: 6px;
+    border-radius: 0px;
     transition: all 0.3s ease;
 }
 
@@ -133,7 +133,7 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     padding: 15px 20px;
-    border-radius: 8px;
+    border-radius: 0px;
     transition: all 0.3s ease;
     border-left: 3px solid transparent;
 }
