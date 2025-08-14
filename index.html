@@ -246,7 +246,7 @@
                 <h2>Lei en shippingcontainer</h2>
                 <span class="close" onclick="closeModal()">&times;</span>
             </div>
-            <form id="orderForm" class="order-form">
+            <form id="orderForm" class="order-form" method="POST" action="https://formsubmit.co/utleie@boxxy.no">
                 <div class="form-group">
                     <label for="size">Velg størrelse:</label>
                     <select id="size" name="size" required>
@@ -297,6 +297,13 @@
                     <label for="message">Ytterligere informasjon:</label>
                     <textarea id="message" name="message" rows="4"></textarea>
                 </div>
+
+                <!-- Hidden fields for FormSubmit configuration -->
+                <input type="hidden" name="_subject" value="Ny bestilling av shippingcontainer fra boxxy.no">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_next" value="https://boxxy-enkel.vercel.app/success.html">
+                <input type="text" name="_honey" style="display:none">
 
                 <div class="form-buttons">
                     <button type="button" class="btn-cancel" onclick="closeModal()">Avbryt</button>
@@ -407,40 +414,8 @@
             }
         }
 
-        // Handle form submission
-        document.getElementById('orderForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Create email body
-            let deliveryInfo = '';
-            if (data.delivery === 'address') {
-                deliveryInfo = `Levering til adresse: ${data.address}`;
-            } else if (data.delivery === 'oppaker') {
-                deliveryInfo = 'Henting på Minilager Oppaker';
-            } else if (data.delivery === 'lillestrom') {
-                deliveryInfo = 'Henting på Minilager Lillestrøm';
-            }
-            
-            const emailBody = `
-Ny bestilling av shippingcontainer:
-
-Størrelse: ${data.size}
-${deliveryInfo}
-Bedriftsnavn: ${data.company || 'Ikke oppgitt'}
-Navn: ${data.name}
-Telefon: ${data.phone}
-E-post: ${data.email}
-Ytterligere informasjon: ${data.message || 'Ingen'}
-            `;
-            
-            // For now, we'll show an alert. In production, this would send to backend
-            alert('Takk for din bestilling! Vi kontakter deg snart.');
-            closeModal();
-            this.reset();
-        });
+        // Form will now submit normally to FormSubmit
+        // No need for preventDefault() or custom handling
 
         // Mobile menu toggle function
         function toggleMobileMenu() {
