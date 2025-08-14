@@ -354,7 +354,7 @@ body {
 .service-card {
     background: white;
     padding: 40px 30px;
-    border-radius: 16px;
+    border-radius: 0px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(17, 60, 58, 0.1);
     transition: all 0.3s ease;
@@ -476,7 +476,7 @@ body {
     width: 100%;
     max-width: 500px;
     height: auto;
-    border-radius: 16px;
+    border-radius: 0px;
     box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
 }
 
@@ -543,7 +543,7 @@ body {
     text-align: center;
     background: #113c3a;
     padding: 40px;
-    border-radius: 16px;
+    border-radius: 0px;
     border: 2px solid #eab41e;
 }
 
@@ -874,7 +874,7 @@ body {
     background-color: #113c3a;
     color: #eab41e;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 0px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -960,7 +960,7 @@ body {
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 0px;
     box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
     margin-bottom: 20px;
 }
@@ -1020,7 +1020,7 @@ body {
     max-width: 500px;
     height: 300px;
     object-fit: cover;
-    border-radius: 16px;
+    border-radius: 0px;
     box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
     margin-bottom: 15px;
 }
@@ -1087,7 +1087,7 @@ body {
 .feature-card {
     background: white;
     padding: 30px;
-    border-radius: 16px;
+    border-radius: 0px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(17, 60, 58, 0.1);
     transition: all 0.3s ease;
@@ -1186,7 +1186,7 @@ body {
 .support-card {
     background: white;
     padding: 40px 30px;
-    border-radius: 16px;
+    border-radius: 0px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(17, 60, 58, 0.1);
     transition: all 0.3s ease;
