@@ -266,7 +266,7 @@ body {
 .container-needs-section {
     position: relative;
     padding: 120px 0 160px;
-    background-image: url('images/boxxy_bg06.png');
+    background-image: url('images/boxxy_bg07.svg');
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
@@ -874,7 +874,7 @@ body {
     background-color: #113c3a;
     color: #eab41e;
     padding: 10px 20px;
-    border-radius: 0px;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
