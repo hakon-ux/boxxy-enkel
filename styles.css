@@ -232,7 +232,7 @@ body {
 .btn-primary,
 .btn-secondary {
     padding: 15px 30px;
-    border-radius: 8px;
+    border-radius: 0px;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
@@ -304,7 +304,7 @@ body {
     text-decoration: none;
     font-weight: 600;
     font-size: 1.125rem;
-    border-radius: 12px;
+    border-radius: 0px;
     transition: all 0.3s ease;
 }
 
@@ -874,7 +874,7 @@ body {
     background-color: #113c3a;
     color: #eab41e;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 0px;
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
@@ -1240,7 +1240,7 @@ body {
     color: #eab41e;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 8px;
+    border-radius: 0px;
     transition: all 0.3s ease;
 }
 
