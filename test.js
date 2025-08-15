@@ -102,7 +102,7 @@ Ytterligere informasjon: ${data.message || 'Ingen'}
     `;
     
     // For now, we'll show an alert. In production, this would send to backend
-    alert('Takk for din bestilling! Vi kontakter deg snart.');
+    alert('Takk for din forespørsel, du blir snart kontaktet!');
     closeModal();
     this.reset();
 });

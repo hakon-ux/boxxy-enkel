@@ -91,7 +91,7 @@
                         </div>
                         <h3>Shippingcontainere</h3>
                         <p>Robust og sikker lagring i standardiserte containere. Tilgjengelig i størrelser fra 8 til 40 fot.</p>
-                        <a href="javascript:void(0)" onclick="openModal()" class="service-link">Bestill nå</a>
+                        <a href="javascript:void(0)" onclick="openModal()" class="service-link">Send forespørsel</a>
                     </div>
                     
                     <div class="service-card">
@@ -214,7 +214,7 @@
                             <a href="mailto:utleie@boxxy.no">utleie@boxxy.no</a>
                             
                             <p><strong>Telefon:</strong></p>
-                            <a href="tel:+4712345678">+47 123 45 678</a>
+                            <a href="tel:+4790191833">+47 901 91 833</a>
                             
                             <p><strong>Åpningstider:</strong></p>
                             <p class="hours">Mandag - Fredag: 08:00 - 16:00</p>
@@ -234,7 +234,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 boxxy. Alle rettigheter reservert.</p>
+                <p>&copy; 2024 boxxy®. Alle rettigheter reservert.</p>
             </div>
         </div>
     </footer>
@@ -246,70 +246,74 @@
                 <h2>Lei en shippingcontainer</h2>
                 <span class="close" onclick="closeModal()">&times;</span>
             </div>
-            <form id="orderForm" class="order-form" method="POST" action="https://formsubmit.co/utleie@boxxy.no">
-                <div class="form-group">
-                    <label for="size">Velg størrelse:</label>
-                    <select id="size" name="size" required>
-                        <option value="">Velg størrelse</option>
-                        <option value="8ft">8 ft</option>
-                        <option value="10ft">10 ft</option>
-                        <option value="20ft">20 ft</option>
-                        <option value="40ft">40 ft</option>
-                    </select>
-                </div>
+            <div class="container-contact-form">
+                <p class="form-intro">Fyll ut skjemaet for å bestille shippingcontainer. Vi kontakter deg snart for bekreftelse.</p>
+                
+                <form id="orderForm" class="simple-contact-form" method="POST" action="https://formsubmit.co/utleie@boxxy.no">
+                    <div class="form-group">
+                        <label for="size">Velg størrelse *</label>
+                        <select id="size" name="size" required>
+                            <option value="">Velg størrelse</option>
+                            <option value="≤8ft">≤ 8 ft</option>
+                            <option value="10ft">10 ft</option>
+                            <option value="20ft">20 ft</option>
+                            <option value="40ft">40 ft</option>
+                        </select>
+                    </div>
 
-                <div class="form-group">
-                    <label for="delivery">Ønsket levering:</label>
-                    <select id="delivery" name="delivery" required onchange="toggleAddressField()">
-                        <option value="">Velg leveringsmåte</option>
-                        <option value="address">Levering til adresse</option>
-                        <option value="oppaker">Minilager Oppaker</option>
-                        <option value="lillestrom">Minilager Lillestrøm</option>
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label for="delivery">Ønsket levering *</label>
+                        <select id="delivery" name="delivery" required onchange="toggleAddressField()">
+                            <option value="">Velg leveringsmåte</option>
+                            <option value="address">Levering til adresse</option>
+                            <option value="oppaker">Minilager Oppaker</option>
+                            <option value="lillestrom">Minilager Lillestrøm</option>
+                        </select>
+                    </div>
 
-                <div class="form-group" id="addressGroup" style="display: none;">
-                    <label for="address">Leveringsadresse:</label>
-                    <input type="text" id="address" name="address">
-                </div>
+                    <div class="form-group" id="addressGroup" style="display: none;">
+                        <label for="address">Leveringsadresse *</label>
+                        <input type="text" id="address" name="address" placeholder="Skriv inn full adresse">
+                    </div>
 
-                <div class="form-group">
-                    <label for="company">Bedriftsnavn (valgfritt):</label>
-                    <input type="text" id="company" name="company">
-                </div>
+                    <div class="form-group">
+                        <label for="company">Bedriftsnavn</label>
+                        <input type="text" id="company" name="company">
+                    </div>
 
-                <div class="form-group">
-                    <label for="name">Navn:</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
+                    <div class="form-group">
+                        <label for="name">Navn *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="phone">Telefon:</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="email">E-post:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
+                    <div class="form-group">
+                        <label for="email">E-post *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-                <div class="form-group">
-                    <label for="message">Ytterligere informasjon:</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
+                    <div class="form-group">
+                        <label for="message">Ytterligere informasjon</label>
+                        <textarea id="message" name="message" placeholder="Leieperiode, spesielle ønsker, etc..."></textarea>
+                    </div>
+                    
+                    <!-- FormSubmit config -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Ny forespørsel om shippingcontainer">
+                    <input type="hidden" name="_next" value="https://boxxy-enkel.vercel.app/success.html">
+                    <input type="text" name="_honey" style="display:none">
+                    
+                    <button type="submit" class="btn-primary form-submit">Send forespørsel</button>
+                </form>
+                
+                <div class="contact-info-small">
+                    <p>Eller kontakt oss direkte: <a href="mailto:utleie@boxxy.no">utleie@boxxy.no</a> | <a href="tel:+4790191833">+47 901 91 833</a></p>
                 </div>
-
-                <!-- Hidden fields for FormSubmit configuration -->
-                <input type="hidden" name="_subject" value="Ny bestilling av shippingcontainer fra boxxy.no">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="box">
-                <input type="hidden" name="_next" value="https://boxxy-enkel.vercel.app/success.html">
-                <input type="text" name="_honey" style="display:none">
-
-                <div class="form-buttons">
-                    <button type="button" class="btn-cancel" onclick="closeModal()">Avbryt</button>
-                    <button type="submit" class="btn-submit">Send forespørsel</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -340,7 +344,7 @@
                         <div class="contact-details">
                             <h3>Ring oss</h3>
                             <p>Hverdager 08:00 - 16:00</p>
-                            <a href="tel:+4712345678" class="contact-button">+47 123 45 678</a>
+                            <a href="tel:+4790191833" class="contact-button">+47 901 91 833</a>
                         </div>
                     </div>
                     

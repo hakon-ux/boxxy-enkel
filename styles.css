@@ -21,7 +21,7 @@ body {
 /* Header */
 .header {
     background-color: #113c3a;
-    padding: 15px 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     top: 0;
@@ -145,7 +145,7 @@ body {
 }
 
 .logo {
-    height: 50px;
+    height: 70px;
     width: auto;
 }
 
@@ -170,9 +170,10 @@ body {
 .nav-cta {
     background-color: #eab41e;
     color: #113c3a !important;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border-radius: 0px;
     font-weight: 600;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
 }
 
@@ -231,11 +232,11 @@ body {
 
 .btn-primary,
 .btn-secondary {
-    padding: 15px 30px;
+    padding: 12px 24px;
     border-radius: 0px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
@@ -364,14 +365,11 @@ body {
 .service-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
-    border-color: #eab41e;
 }
 
 .service-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #eab41e, #f0f18e);
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -541,10 +539,22 @@ body {
 
 .contact-cta {
     text-align: center;
-    background: #113c3a;
-    padding: 40px;
+    background: linear-gradient(135deg, #113c3a 0%, #1a4a47 100%);
+    padding: 50px 40px;
     border-radius: 0px;
-    border: 2px solid #eab41e;
+    box-shadow: 0 10px 30px rgba(17, 60, 58, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #eab41e, #f0f18e, #eab41e);
 }
 
 .contact-cta h3 {
@@ -688,7 +698,7 @@ body {
     padding: 0;
     border-radius: 12px;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     max-height: calc(100vh - 40px);
     overflow-y: auto;
@@ -1646,5 +1656,120 @@ body {
     
     .contact-icon-wrapper {
         align-self: center;
+    }
+}
+
+/* Minilager Contact Form Styles */
+.minilager-contact-form,
+.container-contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.form-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #113c3a;
+    font-size: 1.1rem;
+}
+
+.simple-contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.simple-contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.simple-contact-form label {
+    font-weight: 600;
+    color: #113c3a;
+    font-size: 0.95rem;
+}
+
+.simple-contact-form input,
+.simple-contact-form select,
+.simple-contact-form textarea {
+    padding: 12px;
+    border: 2px solid #e6eae3;
+    border-radius: 0px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.simple-contact-form input:focus,
+.simple-contact-form select:focus,
+.simple-contact-form textarea:focus {
+    outline: none;
+    border-color: #eab41e;
+}
+
+.simple-contact-form textarea {
+    min-height: 100px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.simple-contact-form select {
+    cursor: pointer;
+}
+
+.form-submit {
+    margin-top: 10px;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
+
+.contact-info-small {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e6eae3;
+    text-align: center;
+}
+
+.contact-info-small p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.contact-info-small a {
+    color: #113c3a;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact-info-small a:hover {
+    color: #eab41e;
+}
+
+/* Responsive adjustments for contact forms */
+@media (max-width: 768px) {
+    .minilager-contact-form,
+    .container-contact-form {
+        padding: 20px;
+        max-width: 100%;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10px auto;
+    }
+    
+    .simple-contact-form .form-group {
+        gap: 6px;
+    }
+    
+    .simple-contact-form input,
+    .simple-contact-form select,
+    .simple-contact-form textarea {
+        padding: 10px;
+        font-size: 16px; /* Prevents zoom on iOS */
     }
 }
