@@ -1407,16 +1407,11 @@ body {
     }
     
     .container-needs-button {
-        position: absolute;
-        bottom: 240px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-        width: auto;
-        max-width: 220px;
+        width: 100%;
+        max-width: 280px;
         justify-content: center;
-        padding: 10px 20px;
-        font-size: 0.9rem;
+        padding: 14px 24px;
+        font-size: 1rem;
     }
     
     .services-grid {
@@ -1551,14 +1546,13 @@ body {
     }
     
     .container-needs-content {
-        padding: 40px 15px 120px 15px;
+        padding: 40px 15px 25px 15px;
         margin: 0 -15px;
         background-image: url('images/boxxy_bg07_fill.svg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
-        position: relative;
     }
     
     
@@ -1575,14 +1569,9 @@ body {
     }
     
     .container-needs-button {
-        position: absolute;
-        bottom: 160px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 2;
-        padding: 10px 18px;
-        font-size: 0.85rem;
-        max-width: 200px;
+        padding: 12px 20px;
+        font-size: 0.95rem;
+        max-width: 260px;
     }
 
     .hero-large {
