@@ -366,6 +366,14 @@ body {
     box-shadow: 0 20px 40px rgba(17, 60, 58, 0.15);
 }
 
+.service-card:hover .icon-large {
+    stroke: #eab41e !important;
+}
+
+.icon-large {
+    transition: stroke 0.3s ease;
+}
+
 .service-icon {
     width: 80px;
     height: 80px;
@@ -373,6 +381,12 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto 25px;
+}
+
+.service-icon .icon-large {
+    color: #113c3a;
+    width: 48px;
+    height: 48px;
 }
 
 .icon-large {
