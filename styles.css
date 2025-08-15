@@ -1535,10 +1535,10 @@ body {
 @media (max-width: 480px) {
     .container-needs-section {
         padding: 0px 0 200px;
-        background-image: url('images/boxxy_bg07_fill.svg'), url('images/boxxy_bg07.svg');
-        background-size: cover, 120% auto;
-        background-position: center, center 95%;
-        background-repeat: no-repeat, no-repeat;
+        background-image: url('images/boxxy_bg07.svg');
+        background-size: 120% auto;
+        background-position: center 95%;
+        background-repeat: no-repeat;
     }
     
     .container-needs-section::before {
@@ -1548,6 +1548,10 @@ body {
     .container-needs-content {
         padding: 40px 15px 25px 15px;
         margin: 0 -15px;
+        background-image: url('images/boxxy_bg07_fill.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         z-index: 1;
     }
     
