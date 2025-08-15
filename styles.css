@@ -271,7 +271,6 @@ body {
     background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
-    background-color: #eab41e;
 }
 
 .container-needs-content {
@@ -1360,7 +1359,7 @@ body {
     }
     
     .container-needs-section {
-        padding: 60px 0 300px;
+        padding: 0px 0 300px;
         background-image: url('images/boxxy_bg07.svg');
         background-size: 120% auto;
         background-position: center 95%;
@@ -1373,11 +1372,12 @@ body {
     
     .container-needs-content {
         text-align: center;
-        padding: 30px 20px;
+        padding: 60px 20px 30px 20px;
         background-image: url('images/boxxy_bg07_fill.svg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        margin: 0 -20px;
     }
     
     .container-needs-title {
