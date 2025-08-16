@@ -1530,17 +1530,44 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+/* Container image section - hidden on desktop */
+.container-image-section {
+    display: none;
+}
+
+@media (max-width: 768px) {
     .container-needs-section {
-        padding: 0px 0 200px;
-        background-image: url('images/boxxy_bg07.svg');
-        background-size: 120% auto;
-        background-position: center 95%;
+        padding: 60px 0 0px;
+        background-image: none;
+        margin-bottom: 0;
+    }
+    
+    .container-needs-content {
+        padding: 60px 20px 30px 20px;
+        margin: 0 -20px;
+        background-image: url('images/boxxy_bg07_fill.svg');
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
     }
     
-    .container-needs-section::before {
-        display: none;
+    .container-image-section {
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-image: url('images/boxxy_bg07.svg');
+        background-size: 120% auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-needs-section {
+        padding: 0px 0 0px;
+        background-image: none;
+        margin-bottom: 0;
     }
     
     .container-needs-content {
@@ -1551,6 +1578,17 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
+    }
+    
+    .container-image-section {
+        display: block;
+        padding: 0;
+        margin: 0;
+        background-image: url('images/boxxy_bg07.svg');
+        background-size: 120% auto;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 250px;
     }
     
     
