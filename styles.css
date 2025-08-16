@@ -1547,8 +1547,8 @@ body {
         padding: 20px 15px 25px 15px;
         margin: 0 -15px;
         background-image: url('images/boxxy_bg07_fill.svg');
-        background-size: cover;
-        background-position: center;
+        background-size: 80% 60%;
+        background-position: center top;
         background-repeat: no-repeat;
         z-index: 1;
         margin-top: -100px;
