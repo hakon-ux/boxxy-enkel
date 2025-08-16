@@ -864,8 +864,6 @@ body {
 .contact-icon-wrapper {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #eab41e, #f0f18e);
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
