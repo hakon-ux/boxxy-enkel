@@ -1371,10 +1371,10 @@ body {
     }
     
     .container-needs-section {
-        padding: 250px 0 100px;
+        padding: 60px 0 300px;
         background-image: url('images/boxxy_bg07.svg');
         background-size: 120% auto;
-        background-position: center top;
+        background-position: center 95%;
         background-repeat: no-repeat;
     }
     
@@ -1390,8 +1390,6 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         margin: 0 -20px;
-        position: relative;
-        top: -150px;
     }
     
     .container-needs-title {
@@ -1534,10 +1532,10 @@ body {
 
 @media (max-width: 480px) {
     .container-needs-section {
-        padding: 200px 0 50px;
+        padding: 0px 0 200px;
         background-image: url('images/boxxy_bg07.svg');
         background-size: 120% auto;
-        background-position: center top;
+        background-position: center 95%;
         background-repeat: no-repeat;
     }
     
@@ -1553,8 +1551,6 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         z-index: 1;
-        position: relative;
-        top: -150px;
     }
     
     
