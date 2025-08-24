@@ -244,6 +244,9 @@ body {
 .btn-primary {
     background-color: #eab41e;
     color: #113c3a;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .btn-primary:hover {
@@ -582,18 +585,49 @@ body {
     opacity: 0.9;
 }
 
+.cta-section {
+    padding: 150px 0;
+    background: linear-gradient(135deg, #113c3a 0%, #0f3330 100%);
+    text-align: center;
+    color: white;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #eab41e;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* Footer */
 .footer {
     background-color: #000000;
     color: #c3e8c9;
-    padding: 60px 0 20px;
+    padding: 10px 0 5px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 60px;
-    margin-bottom: 40px;
+    gap: 20px;
+    margin-bottom: 8px;
 }
 
 .footer-brand {
@@ -601,7 +635,7 @@ body {
 }
 
 .footer-logo {
-    height: 60px;
+    height: 120px;
     width: auto;
     margin-bottom: 15px;
 }
@@ -686,10 +720,10 @@ body {
 
 .footer-bottom {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 5px;
     border-top: 1px solid rgba(195, 232, 201, 0.2);
     color: rgba(195, 232, 201, 0.7);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 /* Modal Styles */
@@ -1145,7 +1179,7 @@ body {
 }
 
 .location-cta {
-    padding: 100px 0;
+    padding: 150px 0;
     background-color: #113c3a;
     text-align: center;
     color: white;
@@ -1875,10 +1909,18 @@ body {
 }
 
 .containers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+    display: flex;
+    gap: 15px;
     margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.container-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex: 1 1 0;
+    min-width: 0;
 }
 
 .container-card {
@@ -1888,24 +1930,31 @@ body {
     box-shadow: 0 5px 20px rgba(17, 60, 58, 0.1);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    width: 100%;
 }
 
 .container-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(17, 60, 58, 0.15);
-    border-color: #eab41e;
 }
 
 .container-image {
     height: 250px;
     overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
 }
 
 .container-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .container-card:hover .container-img {
@@ -1914,6 +1963,11 @@ body {
 
 .container-info {
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 350px;
+    text-align: center;
 }
 
 .container-info h3 {
@@ -1931,8 +1985,10 @@ body {
 
 .container-specs {
     display: flex;
-    gap: 25px;
+    flex-direction: column;
+    gap: 15px;
     margin-bottom: 30px;
+    align-items: center;
 }
 
 .spec-item {
@@ -1957,11 +2013,19 @@ body {
 
 .container-actions {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
+    margin-top: auto;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    margin-left: -58px;
+    margin-right: -2px;
 }
 
 .additional-sizes {
-    margin-top: 80px;
+    margin-top: 0px;
     padding: 50px 0;
     background: linear-gradient(135deg, #f8f9f7 0%, #e6eae3 100%);
     border-radius: 16px;
@@ -2048,7 +2112,6 @@ body {
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(17, 60, 58, 0.12);
-    border-color: #eab41e;
 }
 
 .feature-icon-wrapper {
@@ -2183,7 +2246,6 @@ body {
     padding: 20px;
     background-color: white;
     border-radius: 8px;
-    border-left: 4px solid #eab41e;
 }
 
 .highlight-icon {
@@ -2392,8 +2454,25 @@ body {
     }
     
     .containers-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 30px;
+    }
+    
+    .container-card {
+        height: auto;
+        min-height: auto;
+    }
+    
+    .container-info {
+        flex: none;
+    }
+    
+    .container-card-link {
+        flex: none;
+    }
+    
+    .container-actions {
+        margin-top: 20px;
     }
     
     .container-specs {
