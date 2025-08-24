@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boxxy - en verden av muligheter</title>
+    <title>8ft Container - boxxy</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
@@ -17,7 +17,8 @@
                 </button>
                 <a href="index.html"><img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
                 <nav class="nav">
-                    <a href="#about" class="nav-link">Om oss</a>
+                    <a href="index.html" class="nav-link">Hjem</a>
+                    <a href="shippingcontainere.html" class="nav-link">Containere</a>
                     <a href="javascript:void(0)" onclick="openContactModal()" class="nav-link nav-cta">Kontakt Oss</a>
                 </nav>
             </div>
@@ -34,164 +35,198 @@
                     <a href="minilager-lillestrom.html" class="mobile-nav-link">Minilager Lillestrøm</a>
                     <a href="minilager-oppaker.html" class="mobile-nav-link">Minilager Oppaker</a>
                     <a href="support.html" class="mobile-nav-link">Support</a>
-                    <a href="#about" class="mobile-nav-link">Om Boxxy</a>
+                    <a href="index.html#about" class="mobile-nav-link">Om Boxxy</a>
                 </nav>
             </div>
         </div>
     </header>
 
     <main>
-        <section class="hero-large">
-            <div class="hero-background">
-                <div class="container">
-                    <div class="hero-content">
-                        <h1 class="hero-title"></h1>
-                        <p class="hero-subtitle">- en verden av muligheter</p>
-                        <p class="hero-description">Vi tilbyr fleksible lagringsløsninger med containere og minilager til konkurransedyktige priser.</p>
-                        <div class="hero-buttons">
-                            <a href="javascript:void(0)" onclick="openModal()" class="btn-primary">Kom i gang</a>
-                            <a href="#services" class="btn-secondary">Les mer</a>
-                        </div>
-                    </div>
-                </div>
+        <section class="breadcrumb-section">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Hjem</a>
+                    <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+                    <a href="shippingcontainere.html">Shippingcontainere</a>
+                    <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
+                    <span>8ft Container</span>
+                </nav>
             </div>
         </section>
 
-        <!-- Containere som passer dine behov section -->
-        <section class="container-needs-section">
+        <section class="container-detail-hero">
             <div class="container">
-                <div class="container-needs-content">
-                    <h2 class="container-needs-title">
-                        Containere som passer dine behov
-                    </h2>
-                    
-                    <p class="container-needs-description">
-                        Fra små oppbevaringsløsninger til store industriprosjekter.<br> Vi har containere i alle størrelser og for alle formål.
-                    </p>
-                    
-                    <a href="#services" class="container-needs-button">
-                        <i data-lucide="heart" class="button-icon"></i>
-                        Se mulighetene
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Container image section for mobile/tablet -->
-        <section class="container-image-section">
-            <div class="container-image-content"></div>
-        </section>
-
-        <section id="services" class="services-overview">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Våre tjenester</h2>
-                    <p>Komplett utvalg av lagringsløsninger tilpasset dine behov</p>
-                </div>
-                
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i data-lucide="truck" class="icon-large"></i>
-                        </div>
-                        <h3>Shippingcontainere</h3>
-                        <p>Robust og sikker lagring i standardiserte containere. Tilgjengelig i størrelser fra 5 til 40 fot.</p>
-                        <a href="shippingcontainere.html" class="service-link">Les mer</a>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i data-lucide="warehouse" class="icon-large"></i>
-                        </div>
-                        <h3>Minilager Lillestrøm</h3>
-                        <p>Moderne lageranlegg med god tilgjengelighet og sikkerhet. Perfekt for privatpersoner og bedrifter.</p>
-                        <a href="minilager-lillestrom.html" class="service-link">Les mer</a>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i data-lucide="warehouse" class="icon-large"></i>
-                        </div>
-                        <h3>Minilager Oppaker</h3>
-                        <p>Strategisk plassert lager med enkelt tilkomst. Ideelt for både kort- og langtidslagring.</p>
-                        <a href="minilager-oppaker.html" class="service-link">Les mer</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>Hvorfor velge boxxy?</h2>
-                        <div class="features-list">
-                            <div class="feature-item">
-                                <i data-lucide="shield-check" class="feature-icon"></i>
-                                <div>
-                                    <h4>Trygg lagring</h4>
-                                    <p>Alle våre minilager har 24/7 overvåkning</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <i data-lucide="clock" class="feature-icon"></i>
-                                <div>
-                                    <h4>Fleksible løsninger</h4>
-                                    <p>Fra korttidslagring til permanente løsninger - vi tilpasser oss dine behov</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <i data-lucide="map-pin" class="feature-icon"></i>
-                                <div>
-                                    <h4>Sentrale lokasjoner</h4>
-                                    <p>Strategisk plasserte anlegg for enkel tilgang og transport</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <i data-lucide="heart-handshake" class="feature-icon"></i>
-                                <div>
-                                    <h4>Personlig service</h4>
-                                    <p>Dedikert kundeservice som hjelper deg finne den beste løsningen</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image">
-                        <img src="images/boxxy05.png" alt="boxxy lageranlegg" class="about-img">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h2>Kontakt oss</h2>
-                        <p class="contact-intro">Vi er her for å hjelpe deg finne den perfekte lagringsløsningen.</p>
+                <div class="container-detail-content">
+                    <div class="container-detail-info">
+                        <h1>8ft Container</h1>
+                        <p class="container-subtitle">Perfekt for mindre lagringsoppgaver</p>
                         
-                        <div class="contact-methods">
-                            <div class="contact-item">
-                                <i data-lucide="mail" class="contact-icon"></i>
+                        <div class="container-highlights">
+                            <div class="highlight-item">
+                                <i data-lucide="maximize" class="highlight-icon"></i>
                                 <div>
-                                    <strong>E-post</strong>
-                                    <p>utleie@boxxy.no</p>
+                                    <strong>9,9m³ volum</strong>
+                                    <p>Optimal størrelse for private behov</p>
                                 </div>
                             </div>
-                            <div class="contact-item">
-                                <i data-lucide="map-pin" class="contact-icon"></i>
+                            <div class="highlight-item">
+                                <i data-lucide="weight" class="highlight-icon"></i>
                                 <div>
-                                    <strong>Lokasjoner</strong>
-                                    <p>Lillestrøm & Oppaker</p>
+                                    <strong>5100 kg nyttelast</strong>
+                                    <p>Robust konstruksjon</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <i data-lucide="shield-check" class="highlight-icon"></i>
+                                <div>
+                                    <strong>TCT-sertifisert</strong>
+                                    <p>Garantert kvalitet og sikkerhet</p>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="container-detail-actions">
+                            <a href="javascript:void(0)" onclick="openModal('8ft')" class="btn-primary">Bestill denne containeren</a>
+                            <a href="javascript:void(0)" onclick="openContactModal()" class="btn-secondary">Få tilbud</a>
+                        </div>
                     </div>
                     
-                    <div class="contact-cta">
-                        <h3>Klar til å komme i gang?</h3>
-                        <p>Bestill din container eller minilager i dag</p>
-                        <a href="javascript:void(0)" onclick="openModal()" class="btn-primary">Bestill nå</a>
+                    <div class="container-detail-image">
+                        <img src="images/containere/1.jpg" alt="8ft shippingcontainer" class="detail-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-description">
+            <div class="container">
+                <h2>Beskrivelse</h2>
+                <div class="description-content">
+                    <p>Boxxy® 8 ft. shipping containere er alsidige containere som kan brukes på tvers av alle bransjer. De har en ekstrem sterk struktur og tåler over 180 tonn på containerens hjørner, 5,1 tonn innvendig på gulv som gir en kvm toleranse på over 1 tonn pr. kvm og containeren er selvbærende fra kortside til kortside når de settes på bakken.</p>
+                    
+                    <p>Dette gjør at containeren kun trenger å stå på 4 punkter og tåler et ustødig underlag. Nye containere leveres normalt med låsebeslag, trucklommer og lufte ventiler. Det er sjeldent det oppstår kondens i containeren og dette gir veldig allsidige muligheter for oppbevaring.</p>
+                    
+                    <p>Denne kompakte 8ft containeren er ideell for mindre lagringsoppgaver, verktøy, hageutstyr og andre private behov. Med sin kompakte størrelse er den lett å plassere selv på mindre områder.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="technical-specs">
+            <div class="container">
+                <h2>Tekniske spesifikasjoner</h2>
+                <div class="specs-table">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><strong>Utvendige mål (HxBxL)</strong></td>
+                                <td>2260/2200/2438 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Innvendige mål (HxBxL)</strong></td>
+                                <td>2062/2112/2287 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Døråpning front (HxB)</strong></td>
+                                <td>1949/2106 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Egenvekt</strong></td>
+                                <td>900 kg</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Nyttelast</strong></td>
+                                <td>5100 kg</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Totalvekt</strong></td>
+                                <td>6000 kg</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Volum</strong></td>
+                                <td>9,9 m³</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Truklommer (HxB)</strong></td>
+                                <td>105/320 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Truklommer senter/senter</strong></td>
+                                <td>820 mm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ventiler</strong></td>
+                                <td>Ja</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Løfteører</strong></td>
+                                <td>8 stk</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stabling</strong></td>
+                                <td>7 stk</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Låsemulighet</strong></td>
+                                <td>Galvaniserte stag</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sertifikater</strong></td>
+                                <td>TCT</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-gallery">
+            <div class="container">
+                <h2>Bilder</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/containere/1.jpg" alt="8ft container utvendig" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/containere/2.jpg" alt="8ft container innvendig" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/containere/3.jpg" alt="8ft container detalj" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/containere/4.jpg" alt="8ft container dør" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-containers">
+            <div class="container">
+                <h2>Andre containerstørrelser</h2>
+                <div class="related-grid">
+                    <div class="related-card">
+                        <img src="images/containere/5.jpg" alt="10ft container" class="related-img">
+                        <h3>10ft Container</h3>
+                        <p>15,5m³ volum</p>
+                        <a href="container-10ft.html" class="btn-secondary">Se detaljer</a>
+                    </div>
+                    <div class="related-card">
+                        <img src="images/boxxy4.png" alt="20ft container" class="related-img">
+                        <h3>20ft Container</h3>
+                        <p>33,2m³ volum</p>
+                        <a href="container-20ft.html" class="btn-secondary">Se detaljer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Klar til å bestille 8ft container?</h2>
+                    <p>Kontakt oss i dag for å få tilbud på denne containeren.</p>
+                    <div class="cta-buttons">
+                        <a href="javascript:void(0)" onclick="openModal('8ft')" class="btn-primary">Bestill nå</a>
+                        <a href="javascript:void(0)" onclick="openContactModal()" class="btn-secondary">Kontakt oss</a>
                     </div>
                 </div>
             </div>
@@ -248,24 +283,15 @@
     <div id="orderModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Lei en shippingcontainer</h2>
+                <h2>Lei 8ft shippingcontainer</h2>
                 <span class="close" onclick="closeModal()">&times;</span>
             </div>
             <div class="container-contact-form">
-                <p class="form-intro">Fyll ut skjemaet for å bestille shippingcontainer. Vi kontakter deg snart for bekreftelse.</p>
+                <p class="form-intro">Fyll ut skjemaet for å bestille 8ft shippingcontainer. Vi kontakter deg snart for bekreftelse.</p>
                 
                 <form id="orderForm" class="simple-contact-form" method="POST" action="https://formsubmit.co/utleie@boxxy.no">
-                    <div class="form-group">
-                        <label for="size">Velg størrelse *</label>
-                        <select id="size" name="size" required>
-                            <option value="">Velg størrelse</option>
-                            <option value="≤8ft">≤ 8 ft</option>
-                            <option value="10ft">10 ft</option>
-                            <option value="20ft">20 ft</option>
-                            <option value="40ft">40 ft</option>
-                        </select>
-                    </div>
-
+                    <input type="hidden" name="size" value="8ft">
+                    
                     <div class="form-group">
                         <label for="delivery">Ønsket levering *</label>
                         <select id="delivery" name="delivery" required onchange="toggleAddressField()">
@@ -306,9 +332,8 @@
                         <textarea id="message" name="message" placeholder="Leieperiode, spesielle ønsker, etc..."></textarea>
                     </div>
                     
-                    <!-- FormSubmit config -->
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Ny forespørsel om shippingcontainer">
+                    <input type="hidden" name="_subject" value="Ny forespørsel om 8ft shippingcontainer">
                     <input type="hidden" name="_next" value="https://boxxy-enkel.vercel.app/success.html">
                     <input type="text" name="_honey" style="display:none">
                     
@@ -374,8 +399,7 @@
     <script>
         lucide.createIcons();
 
-        // Modal functions
-        function openModal() {
+        function openModal(size = '8ft') {
             document.getElementById('orderModal').style.display = 'block';
             document.body.style.overflow = 'hidden';
         }
@@ -400,7 +424,6 @@
             }
         }
 
-        // Contact modal functions
         function openContactModal() {
             document.getElementById('contactModal').style.display = 'block';
             document.body.style.overflow = 'hidden';
@@ -411,7 +434,6 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside of it
         window.onclick = function(event) {
             const orderModal = document.getElementById('orderModal');
             const contactModal = document.getElementById('contactModal');
@@ -423,10 +445,6 @@
             }
         }
 
-        // Form will now submit normally to FormSubmit
-        // No need for preventDefault() or custom handling
-
-        // Mobile menu toggle function
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             const body = document.body;
@@ -440,23 +458,10 @@
             }
         }
 
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
-                toggleMobileMenu();
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                if (!link.href.includes('javascript:')) {
+                    toggleMobileMenu();
                 }
             });
         });
