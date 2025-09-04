@@ -362,6 +362,8 @@ body {
     box-shadow: 0 10px 30px rgba(17, 60, 58, 0.1);
     transition: all 0.3s ease;
     border: 2px solid transparent;
+    text-decoration: none;
+    color: inherit;
 }
 
 .service-card:hover {
@@ -2281,6 +2283,46 @@ body {
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(17, 60, 58, 0.2);
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-image {
+    text-align: center;
+}
+
+.thumbnail-nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.thumbnail.active {
+    opacity: 1;
+    border-color: #eab41e;
+    box-shadow: 0 4px 12px rgba(234, 180, 30, 0.3);
 }
 
 .container-description {

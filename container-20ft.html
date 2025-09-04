@@ -91,7 +91,18 @@
                     </div>
                     
                     <div class="container-detail-image">
-                        <img src="images/boxxy4.png" alt="20ft shippingcontainer" class="detail-img">
+                        <div class="image-gallery">
+                            <div class="main-image">
+                                <img id="mainImage" src="images/containere/20/20ft_front_c.png" alt="20ft shippingcontainer" class="detail-img">
+                            </div>
+                            <div class="thumbnail-nav">
+                                <img src="images/containere/20/20ft_front_c.png" alt="20ft container front" class="thumbnail active" onclick="changeMainImage(this)">
+                                <img src="images/containere/20/20ft_open.png" alt="20ft container open" class="thumbnail" onclick="changeMainImage(this)">
+                                <img src="images/containere/20/20ft_side.png" alt="20ft container side" class="thumbnail" onclick="changeMainImage(this)">
+                                <img src="images/containere/20/20ft_back.png" alt="20ft container back" class="thumbnail" onclick="changeMainImage(this)">
+                                <img src="images/containere/20/20ft_front.png" alt="20ft container front full" class="thumbnail" onclick="changeMainImage(this)">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,16 +194,19 @@
                 <h2>Bilder</h2>
                 <div class="gallery-grid">
                     <div class="gallery-item">
-                        <img src="images/boxxy4.png" alt="20ft container utvendig" class="gallery-img">
+                        <img src="images/containere/20/20ft_front_c.png" alt="20ft container front" class="gallery-img">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/containere/10.jpg" alt="20ft container innvendig" class="gallery-img">
+                        <img src="images/containere/20/20ft_open.png" alt="20ft container åpen" class="gallery-img">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/containere/11.jpg" alt="20ft container detalj" class="gallery-img">
+                        <img src="images/containere/20/20ft_side.png" alt="20ft container side" class="gallery-img">
                     </div>
                     <div class="gallery-item">
-                        <img src="images/containere/12.jpg" alt="20ft container dør" class="gallery-img">
+                        <img src="images/containere/20/20ft_back.png" alt="20ft container back" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/containere/20/20ft_front.png" alt="20ft container front full" class="gallery-img">
                     </div>
                 </div>
             </div>
@@ -463,6 +477,20 @@
                 }
             });
         });
+
+        // Image gallery functionality
+        function changeMainImage(thumbnail) {
+            const mainImage = document.getElementById('mainImage');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            
+            // Update main image
+            mainImage.src = thumbnail.src;
+            mainImage.alt = thumbnail.alt;
+            
+            // Update active thumbnail
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            thumbnail.classList.add('active');
+        }
     </script>
 </body>
 </html>
