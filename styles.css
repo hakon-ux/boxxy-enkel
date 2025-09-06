@@ -1377,7 +1377,53 @@ body {
     text-align: center;
 }
 
-/* Responsive Design */
+/* Tablet responsive styles */
+@media (max-width: 1024px) and (min-width: 769px) {
+    /* Center text and buttons on tablet */
+    .container-detail-info,
+    .container-info,
+    .container-description,
+    .technical-specs,
+    .container-gallery,
+    .related-containers,
+    .cta-section,
+    .container-highlights,
+    .container-specs {
+        text-align: center !important;
+    }
+    
+    .container-detail-actions {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    .container-actions {
+        justify-content: center !important;
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        align-items: center !important;
+    }
+    
+    .cta-buttons {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    /* Center spec items (volum, nyttelast etc) */
+    .spec-item {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    /* Center highlight items */
+    .highlight-item {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+}
+
+/* Mobile responsive styles */
 @media (max-width: 768px) {
     .nav {
         display: none;
@@ -1401,6 +1447,58 @@ body {
         width: 100%;
         max-width: 300px;
         text-align: center;
+    }
+    
+    /* Center ALL text and buttons on mobile */
+    .container-detail-info,
+    .container-info,
+    .container-description,
+    .technical-specs,
+    .container-gallery,
+    .related-containers,
+    .cta-section,
+    .container-highlights,
+    .container-specs {
+        text-align: center !important;
+    }
+    
+    .container-detail-actions {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    .container-actions {
+        justify-content: center !important;
+        text-align: center !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    
+    .cta-buttons {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    /* Center spec items (volum, nyttelast etc) */
+    .spec-item {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    /* Center highlight items */
+    .highlight-item {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+    
+    /* Center all buttons */
+    .btn-primary,
+    .btn-secondary {
+        display: block !important;
+        margin: 0 auto !important;
+        text-align: center !important;
     }
     
     .container-needs-section {
@@ -2512,15 +2610,17 @@ body {
     
     .container-actions {
         margin-top: 20px;
+        justify-content: center !important;
+        text-align: center !important;
+        flex-direction: column;
+        align-items: center !important;
     }
     
     .container-specs {
         flex-direction: column;
         gap: 15px;
-    }
-    
-    .container-actions {
-        flex-direction: column;
+        text-align: center !important;
+        align-items: center !important;
     }
     
     .features-grid {
