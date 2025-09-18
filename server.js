@@ -22,6 +22,8 @@ app.get('/backup', (req, res) => {
     res.sendFile(path.join(__dirname, 'backup.html'));
 });
 
-app.listen(PORT, () => {
-    console.log(`Boxxy server kjører på http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Boxxy server kjører på:`);
+    console.log(`  Local:   http://localhost:${PORT}`);
+    console.log(`  Network: http://10.0.0.36:${PORT}`);
 });
