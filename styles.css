@@ -386,12 +386,49 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto 25px;
+    position: relative;
 }
 
 .service-icon .icon-large {
     color: #113c3a;
     width: 48px;
     height: 48px;
+}
+
+.minilager-icon,
+.shipping-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.minilager-icon .icon-image,
+.shipping-icon .icon-image {
+    width: 80px;
+    height: 80px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.minilager-icon .icon-image-hover,
+.shipping-icon .icon-image-hover {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover .minilager-icon .icon-image,
+.service-card:hover .shipping-icon .icon-image {
+    opacity: 0;
+}
+
+.service-card:hover .minilager-icon .icon-image-hover,
+.service-card:hover .shipping-icon .icon-image-hover {
+    opacity: 1;
 }
 
 .icon-large {
