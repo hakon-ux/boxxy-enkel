@@ -295,7 +295,7 @@
                 <span class="close" onclick="closeModal()">&times;</span>
             </div>
             <div class="container-contact-form">
-                <p class="form-intro">Fyll ut skjemaet for å bestille 8ft shippingcontainer. Vi kontakter deg snart for bekreftelse.</p>
+                <p class="form-intro">Fyll ut skjema så kontakter vi deg snart</p>
                 
                 <form id="orderForm" class="simple-contact-form" method="POST" action="https://formsubmit.co/utleie@boxxy.no">
                     <input type="hidden" name="size" value="8ft">
@@ -342,10 +342,9 @@
                     
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Ny forespørsel om 8ft shippingcontainer">
-                    <input type="hidden" name="_next" value="https://boxxy-enkel.vercel.app/success.html">
                     <input type="text" name="_honey" style="display:none">
-                    
-                    <button type="submit" class="btn-primary form-submit">Send forespørsel</button>
+
+                    <button type="submit" class="btn-primary form-submit" id="submitButton">Send forespørsel</button>
                 </form>
                 
                 <div class="contact-info-small">
@@ -452,6 +451,46 @@
                 closeContactModal();
             }
         }
+
+        // Handle form submission
+        document.getElementById('orderForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitButton = document.getElementById('submitButton');
+            const formData = new FormData(form);
+
+            try {
+                submitButton.disabled = true;
+                submitButton.textContent = 'Sender...';
+
+                await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                submitButton.textContent = 'Forespørsel sendt!';
+                submitButton.style.backgroundColor = '#c3e8c9';
+                submitButton.style.color = '#113c3a';
+
+                form.reset();
+
+                setTimeout(() => {
+                    closeModal();
+                    submitButton.disabled = false;
+                    submitButton.textContent = 'Send forespørsel';
+                    submitButton.style.backgroundColor = '';
+                    submitButton.style.color = '';
+                }, 2000);
+            } catch (error) {
+                submitButton.textContent = 'Send forespørsel';
+                submitButton.disabled = false;
+                alert('Noe gikk galt. Vennligst prøv igjen.');
+            }
+        });
 
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
