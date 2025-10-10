@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
+    "dev:3001": "PORT=3001 node server.js",
     "build": "mkdir -p public && cp -r images public/ && cp *.png *.css *.html *.js public/ 2>/dev/null || true"
   },
   "dependencies": {
