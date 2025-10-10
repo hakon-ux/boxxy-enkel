@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boxxy - en verden av muligheter</title>
+    <title>Boxxy - Utleie av Containere og Minilager i Lillestrøm og Oppaker</title>
+    <meta name="description" content="Boxxy tilbyr utleie av containere og minilager i Lillestrøm og Oppaker. Fleksible lagringsløsninger fra 8ft til 40ft utleiecontainere med 24/7 tilgang. Kontakt oss i dag!">
+    <link rel="canonical" href="https://boxxy.no/">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <!-- Google Tag Manager -->
@@ -14,6 +18,69 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NRVKK9BF');</script>
     <!-- End Google Tag Manager -->
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Boxxy",
+      "url": "https://boxxy.no",
+      "logo": "https://boxxy.no/boxxy_theme_logo03.png",
+      "description": "Boxxy tilbyr utleie av containere og minilager i Lillestrom og Oppaker",
+      "telephone": "+4790191833",
+      "email": "utleie@boxxy.no",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lillestrom",
+        "addressCountry": "NO"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/107015829/"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "Service",
+          "name": "Utleie av containere",
+          "description": "Utleie av containere - robust og sikker lagring i standardiserte containere. Tilgjengelig i størrelser fra 8ft til 40ft",
+          "provider": {
+            "@type": "Organization",
+            "name": "Boxxy"
+          },
+          "areaServed": "Norge",
+          "url": "https://boxxy.no/utleie-containere"
+        },
+        {
+          "@type": "Service",
+          "name": "Minilager Lillestrom",
+          "description": "Moderne lageranlegg med god tilgjengelighet og sikkerhet",
+          "provider": {
+            "@type": "Organization",
+            "name": "Boxxy"
+          },
+          "areaServed": "Lillestrom",
+          "url": "https://boxxy.no/minilager-lillestrom"
+        },
+        {
+          "@type": "Service",
+          "name": "Minilager Oppaker",
+          "description": "Strategisk plassert lager med enkelt tilkomst",
+          "provider": {
+            "@type": "Organization",
+            "name": "Boxxy"
+          },
+          "areaServed": "Oppaker",
+          "url": "https://boxxy.no/minilager-oppaker"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -27,7 +94,7 @@
                     <i data-lucide="menu" class="hamburger-icon"></i>
                 </button>
                 <a href="index.html"><img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
-                <nav class="nav">
+                <nav class="nav" role="navigation">
                     <a href="#about" class="nav-link">Om oss</a>
                     <a href="javascript:void(0)" onclick="openContactModal()" class="nav-link nav-cta">Kontakt Oss</a>
                 </nav>
@@ -40,8 +107,8 @@
                 <button class="mobile-menu-close" onclick="toggleMobileMenu()">
                     <i data-lucide="x" class="close-icon"></i>
                 </button>
-                <nav class="mobile-nav">
-                    <a href="shippingcontainere.html" class="mobile-nav-link">Shippingcontainere</a>
+                <nav class="mobile-nav" role="navigation">
+                    <a href="utleiecontainere.html" class="mobile-nav-link">Utleie av Containere</a>
                     <a href="minilager-lillestrom.html" class="mobile-nav-link">Minilager Lillestrøm</a>
                     <a href="minilager-oppaker.html" class="mobile-nav-link">Minilager Oppaker</a>
                     <a href="support.html" class="mobile-nav-link">Support</a>
@@ -51,14 +118,14 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <section class="hero-large">
             <div class="hero-background">
                 <div class="container">
                     <div class="hero-content">
-                        <h1 class="hero-title"></h1>
+                        <h1 class="hero-title">Fleksible utleieløsninger for alle behov</h1>
                         <p class="hero-subtitle">En verden av muligheter</p>
-                        <p class="hero-description">Vi tilbyr fleksible lagringsløsninger med containere og minilager til konkurransedyktige priser.</p>
+                        <p class="hero-description">Vi tilbyr containere og minilager til konkurransedyktige priser.</p>
                         <div class="hero-buttons">
                             <a href="javascript:void(0)" onclick="openModal()" class="btn-primary">Kom i gang</a>
                             <a href="#services" class="btn-secondary">Les mer</a>
@@ -101,20 +168,20 @@
                 </div>
                 
                 <div class="services-grid">
-                    <a href="shippingcontainere.html" class="service-card">
+                    <a href="utleiecontainere.html" class="service-card">
                         <div class="service-icon shipping-icon">
-                            <img src="images/icons/shippingcontainer_icon_green.png" alt="Shippingcontainer" class="icon-image">
-                            <img src="images/icons/shippingcontainer_icon_orange.png" alt="Shippingcontainer" class="icon-image-hover">
+                            <img src="images/icons/shippingcontainer_icon_green.png" alt="Utleiecontainer" class="icon-image" loading="lazy">
+                            <img src="images/icons/shippingcontainer_icon_orange.png" alt="Utleiecontainer" class="icon-image-hover" loading="lazy">
                         </div>
-                        <h3>Shippingcontainere</h3>
-                        <p>Robust og sikker lagring i standardiserte containere. Tilgjengelig i størrelser fra 5 til 40 fot.</p>
+                        <h3>Utleie av Containere</h3>
+                        <p>Vi tilbyr utleie av containere i alle størrelser. Robust og sikker lagring fra 8ft til 40ft. Perfekt for bedrift og privat.</p>
                         <span class="service-link">Les mer</span>
                     </a>
                     
                     <a href="minilager-lillestrom.html" class="service-card">
                         <div class="service-icon minilager-icon">
-                            <img src="images/icons/minilager_icon_green_2.png" alt="Minilager" class="icon-image">
-                            <img src="images/icons/minilager_icon_orange_2.png" alt="Minilager" class="icon-image-hover">
+                            <img src="images/icons/minilager_icon_green_2.png" alt="Minilager" class="icon-image" loading="lazy">
+                            <img src="images/icons/minilager_icon_orange_2.png" alt="Minilager" class="icon-image-hover" loading="lazy">
                         </div>
                         <h3>Minilager Lillestrøm</h3>
                         <p>Moderne lageranlegg med god tilgjengelighet og sikkerhet. Perfekt for privatpersoner og bedrifter.</p>
@@ -123,8 +190,8 @@
 
                     <a href="minilager-oppaker.html" class="service-card">
                         <div class="service-icon minilager-icon">
-                            <img src="images/icons/minilager_icon_green_2.png" alt="Minilager" class="icon-image">
-                            <img src="images/icons/minilager_icon_orange_2.png" alt="Minilager" class="icon-image-hover">
+                            <img src="images/icons/minilager_icon_green_2.png" alt="Minilager" class="icon-image" loading="lazy">
+                            <img src="images/icons/minilager_icon_orange_2.png" alt="Minilager" class="icon-image-hover" loading="lazy">
                         </div>
                         <h3>Minilager Oppaker</h3>
                         <p>Strategisk plassert lager med enkelt tilkomst. Ideelt for både kort- og langtidslagring.</p>
@@ -171,7 +238,7 @@
                         </div>
                     </div>
                     <div class="about-image">
-                        <img src="images/boxxy05.png" alt="boxxy lageranlegg" class="about-img">
+                        <img src="images/boxxy05.png" alt="boxxy lageranlegg" class="about-img" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -212,17 +279,17 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo">
+                    <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo" loading="lazy">
                     <p class="footer-tagline">en verden av muligheter</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Tjenester</h4>
-                        <a href="shippingcontainere.html">Shippingcontainere</a>
+                        <a href="utleiecontainere.html">Utleie av Containere</a>
                         <a href="minilager-lillestrom.html">Minilager Lillestrøm</a>
                         <a href="minilager-oppaker.html">Minilager Oppaker</a>
                     </div>
@@ -262,7 +329,7 @@
     <div id="orderModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Lei en shippingcontainer</h2>
+                <h2>Utleie av containere</h2>
                 <span class="close" onclick="closeModal()">&times;</span>
             </div>
             <div class="container-contact-form">
@@ -322,7 +389,7 @@
                     
                     <!-- FormSubmit config -->
                     <input type="hidden" name="_captcha" value="false">
-                    <input type="hidden" name="_subject" value="Ny forespørsel om shippingcontainer">
+                    <input type="hidden" name="_subject" value="Ny forespørsel om utleie av container">
                     <input type="text" name="_honey" style="display:none">
 
                     <button type="submit" class="btn-primary form-submit" id="submitButton">Send forespørsel</button>

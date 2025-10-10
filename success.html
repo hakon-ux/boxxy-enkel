@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Takk for din forespørsel - boxxy</title>
+    <title>Takk for din foresp\u00f8rsel - Vi kontakter deg snart | Boxxy</title>
+    <meta name="description" content="Takk for at du kontaktet Boxxy! Vi har mottatt din foresp\u00f8rsel og vil svare innen 24 timer. Kontakt oss p\u00e5 utleie@boxxy.no eller +47 901 91 833.">
+    <link rel="canonical" href="https://boxxy.no/success">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -13,6 +18,15 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NRVKK9BF');</script>
     <!-- End Google Tag Manager -->
+    <script>
+        // Send conversion event to dataLayer
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'event': 'form_submission',
+            'form_type': 'contact_request',
+            'conversion_type': 'lead'
+        });
+    </script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -27,7 +41,7 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <section class="hero-large">
             <div class="hero-background">
                 <div class="container">
@@ -44,10 +58,10 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
-                <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo">
+                <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo" loading="lazy">
                 <p class="footer-text">boxxy® - en verden av muligheter</p>
                 <p class="footer-email">utleie@boxxy.no</p>
             </div>
