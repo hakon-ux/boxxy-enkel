@@ -1,5 +1,6 @@
 {
   "rewrites": [
+    { "source": "/container-utleie", "destination": "/utleiecontainere.html" },
     { "source": "/bestilling", "destination": "/backup.html" },
     { "source": "/backup", "destination": "/backup.html" }
   ]
