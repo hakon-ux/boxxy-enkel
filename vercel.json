@@ -1,6 +1,9 @@
 {
   "rewrites": [
     { "source": "/container-utleie", "destination": "/utleiecontainere.html" },
+    { "source": "/container-utleie/8-fot-container", "destination": "/container-8ft.html" },
+    { "source": "/container-utleie/10-fot-container", "destination": "/container-10ft.html" },
+    { "source": "/container-utleie/20-fot-container", "destination": "/container-20ft.html" },
     { "source": "/bestilling", "destination": "/backup.html" },
     { "source": "/backup", "destination": "/backup.html" }
   ]
