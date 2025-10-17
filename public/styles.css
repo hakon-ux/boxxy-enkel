@@ -617,6 +617,127 @@ body {
     font-size: 0.9rem;
 }
 
+/* About Us Page Styles */
+.about-hero {
+    background: linear-gradient(135deg, #113c3a 0%, #1a5450 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+    color: white;
+}
+
+.about-hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #eab41e;
+    margin-bottom: 20px;
+}
+
+.about-content-section {
+    padding: 100px 0;
+    background-color: #e6eae3;
+}
+
+.about-text-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.content-block {
+    margin-bottom: 60px;
+}
+
+.content-block:last-child {
+    margin-bottom: 0;
+}
+
+.content-block h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #113c3a;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.content-block p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #113c3a;
+    margin-bottom: 20px;
+}
+
+.content-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* Breadcrumb Section */
+.breadcrumb-section {
+    background-color: #c3e8c9;
+    padding: 100px 0 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: #113c3a;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: #eab41e;
+}
+
+.breadcrumb span {
+    color: #113c3a;
+    font-weight: 600;
+}
+
+.breadcrumb-separator {
+    width: 16px;
+    height: 16px;
+    stroke: #113c3a;
+    stroke-width: 2;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #113c3a 0%, #1a5450 100%);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #eab41e;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-link.active {
+    color: #f0f18e;
+    font-weight: 600;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav {
@@ -701,6 +822,43 @@ body {
     .container {
         padding: 0 15px;
     }
+
+    .about-hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-hero {
+        padding: 100px 0 60px;
+    }
+
+    .about-content-section {
+        padding: 60px 0;
+    }
+
+    .content-block h2 {
+        font-size: 1.8rem;
+    }
+
+    .content-block p {
+        font-size: 1.05rem;
+    }
+
+    .breadcrumb-section {
+        padding: 90px 0 15px;
+    }
+
+    .cta-section {
+        padding: 60px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -715,6 +873,23 @@ body {
     .container-needs-description {
         font-size: 1rem;
     }
+
+    .about-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .content-block h2 {
+        font-size: 1.5rem;
+    }
+
+    .content-block p {
+        font-size: 1rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+}
 
 /* Modal Styles */
 .modal {

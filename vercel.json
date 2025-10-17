@@ -27,6 +27,10 @@
       "dest": "/container-20ft.html"
     },
     {
+      "src": "/om-oss",
+      "dest": "/om-oss.html"
+    },
+    {
       "src": "/bestilling",
       "dest": "/backup.html"
     },
