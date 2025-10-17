@@ -4,6 +4,17 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Sitemap and robots.txt with correct content-type (must be before static middleware)
+app.get('/sitemap.xml', (req, res) => {
+    res.type('application/xml');
+    res.sendFile(path.join(__dirname, 'sitemap.xml'));
+});
+
+app.get('/robots.txt', (req, res) => {
+    res.type('text/plain');
+    res.sendFile(path.join(__dirname, 'robots.txt'));
+});
+
 // Serve static files (images, CSS, JS)
 app.use(express.static(path.join(__dirname), {
     extensions: false // Don't auto-add .html
@@ -62,17 +73,6 @@ app.get('/bestilling', (req, res) => {
 
 app.get('/backup', (req, res) => {
     res.sendFile(path.join(__dirname, 'backup.html'));
-});
-
-// Sitemap and robots.txt with correct content-type
-app.get('/sitemap.xml', (req, res) => {
-    res.type('application/xml');
-    res.sendFile(path.join(__dirname, 'sitemap.xml'));
-});
-
-app.get('/robots.txt', (req, res) => {
-    res.type('text/plain');
-    res.sendFile(path.join(__dirname, 'robots.txt'));
 });
 
 // 404 handler
