@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private pages
+Disallow: /success.html
+Disallow: /backup
+Disallow: /public/
+
+# Sitemap location
+Sitemap: https://boxxy.no/sitemap.xml
