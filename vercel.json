@@ -1,32 +1,38 @@
 {
-  "rewrites": [
-    { "source": "/container-utleie", "destination": "/utleiecontainere.html" },
-    { "source": "/container-utleie/8-fot-container", "destination": "/container-8ft.html" },
-    { "source": "/container-utleie/10-fot-container", "destination": "/container-10ft.html" },
-    { "source": "/container-utleie/20-fot-container", "destination": "/container-20ft.html" },
-    { "source": "/bestilling", "destination": "/backup.html" },
-    { "source": "/backup", "destination": "/backup.html" }
-  ],
-  "headers": [
+  "routes": [
     {
-      "source": "/sitemap.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml; charset=utf-8"
-        }
-      ]
+      "src": "/sitemap.xml",
+      "headers": { "Content-Type": "application/xml; charset=utf-8" },
+      "dest": "/sitemap.xml"
     },
     {
-      "source": "/robots.txt",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain; charset=utf-8"
-        }
-      ]
+      "src": "/robots.txt",
+      "headers": { "Content-Type": "text/plain; charset=utf-8" },
+      "dest": "/robots.txt"
+    },
+    {
+      "src": "/container-utleie",
+      "dest": "/utleiecontainere.html"
+    },
+    {
+      "src": "/container-utleie/8-fot-container",
+      "dest": "/container-8ft.html"
+    },
+    {
+      "src": "/container-utleie/10-fot-container",
+      "dest": "/container-10ft.html"
+    },
+    {
+      "src": "/container-utleie/20-fot-container",
+      "dest": "/container-20ft.html"
+    },
+    {
+      "src": "/bestilling",
+      "dest": "/backup.html"
+    },
+    {
+      "src": "/backup",
+      "dest": "/backup.html"
     }
-  ],
-  "cleanUrls": false,
-  "trailingSlash": false
+  ]
 }
