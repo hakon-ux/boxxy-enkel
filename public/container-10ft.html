@@ -101,7 +101,7 @@
             <div class="container">
                 <div class="container-detail-content">
                     <div class="container-detail-info">
-                        <h1>10ft Container</h1>
+                        <h1>10ft Utleiecontainer</h1>
                         <p class="container-subtitle">Perfekt balanse mellom størrelse og kapasitet</p>
 
                         <div class="container-highlights">
@@ -132,7 +132,13 @@
                     <div class="container-detail-image">
                         <div class="image-gallery">
                             <div class="main-image">
+                                <button class="gallery-nav-arrow prev" onclick="navigateGallery(-1)" aria-label="Forrige bilde">
+                                    <i data-lucide="chevron-left"></i>
+                                </button>
                                 <img id="mainImage" src="/images/containere/10/10ft_front_c.png" alt="10ft shippingcontainer" class="detail-img" loading="lazy">
+                                <button class="gallery-nav-arrow next" onclick="navigateGallery(1)" aria-label="Neste bilde">
+                                    <i data-lucide="chevron-right"></i>
+                                </button>
                             </div>
                             <div class="thumbnail-nav">
                                 <img src="/images/containere/10/10ft_front_c.png" alt="10ft container front" class="thumbnail active" onclick="changeMainImage(this)" loading="lazy">
@@ -549,18 +555,46 @@
         });
 
         // Image gallery functionality
+        let currentImageIndex = 0;
+        const thumbnails = document.querySelectorAll('.thumbnail');
+
         function changeMainImage(thumbnail) {
             const mainImage = document.getElementById('mainImage');
-            const thumbnails = document.querySelectorAll('.thumbnail');
-            
+
             // Update main image
             mainImage.src = thumbnail.src;
             mainImage.alt = thumbnail.alt;
-            
+
             // Update active thumbnail
             thumbnails.forEach(thumb => thumb.classList.remove('active'));
             thumbnail.classList.add('active');
+
+            // Update current index
+            currentImageIndex = Array.from(thumbnails).indexOf(thumbnail);
         }
+
+        function navigateGallery(direction) {
+            currentImageIndex += direction;
+
+            // Wrap around if at the end or beginning
+            if (currentImageIndex < 0) {
+                currentImageIndex = thumbnails.length - 1;
+            } else if (currentImageIndex >= thumbnails.length) {
+                currentImageIndex = 0;
+            }
+
+            // Trigger click on the corresponding thumbnail
+            thumbnails[currentImageIndex].click();
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowLeft') {
+                navigateGallery(-1);
+            } else if (event.key === 'ArrowRight') {
+                navigateGallery(1);
+            }
+        });
     </script>
 </body>
 </html>
