@@ -670,7 +670,7 @@ body {
 }
 
 .content-block p.extra-space {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
 }
 
 /* Investor section with image */
