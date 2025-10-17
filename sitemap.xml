@@ -1,51 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://boxxy.no/</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://boxxy.no/utleie-containere</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://boxxy.no/container-8ft</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://boxxy.no/container-10ft</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://boxxy.no/container-20ft</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://boxxy.no/minilager-lillestrom</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://boxxy.no/minilager-oppaker</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://boxxy.no/support</loc>
-    <lastmod>2025-01-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+  <loc>http://boxxy.no/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/container-utleie</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/minilager-lillestrom</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/minilager-oppaker</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/support</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/tel:+4790191833</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/#about</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/container-utleie/8-fot-container</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/container-utleie/20-fot-container</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://boxxy.no/container-utleie/10-fot-container</loc>
+  <changefreq>weekly</changefreq>
+</url>
 </urlset>
