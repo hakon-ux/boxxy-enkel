@@ -1,95 +1,14 @@
 {
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/container-utleie",
-      "dest": "/utleiecontainere.html"
-    },
-    {
-      "src": "/container-utleie/8-fot-container",
-      "dest": "/container-8ft.html"
-    },
-    {
-      "src": "/container-utleie/10-fot-container",
-      "dest": "/container-10ft.html"
-    },
-    {
-      "src": "/container-utleie/20-fot-container",
-      "dest": "/container-20ft.html"
-    },
-    {
-      "src": "/minilager-lillestrom",
-      "dest": "/minilager-lillestrom.html"
-    },
-    {
-      "src": "/minilager-oppaker",
-      "dest": "/minilager-oppaker.html"
-    },
-    {
-      "src": "/support",
-      "dest": "/support.html"
-    },
-    {
-      "src": "/artikler",
-      "dest": "/artikler/index.html"
-    },
-    {
-      "src": "/artikler/stabling-tips",
-      "dest": "/artikler/stabling-tips/index.html"
-    },
-    {
-      "src": "/artikler/container-dimensjoner",
-      "dest": "/artikler/container-dimensjoner/index.html"
-    },
-    {
-      "src": "/artikler/markeringer",
-      "dest": "/artikler/markeringer/index.html"
-    },
-    {
-      "src": "/artikler/kondens",
-      "dest": "/artikler/kondens/index.html"
-    },
-    {
-      "src": "/artikler/intermodal-transport",
-      "dest": "/artikler/intermodal-transport/index.html"
-    },
-    {
-      "src": "/om-oss",
-      "dest": "/om-oss.html"
-    },
-    {
-      "src": "/bestilling",
-      "dest": "/backup.html"
-    },
-    {
-      "src": "/backup",
-      "dest": "/backup.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/sitemap.xml",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/xml; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/robots.txt",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/plain; charset=utf-8"
-        }
-      ]
-    }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+  "rewrites": [
+    { "source": "/container-utleie", "destination": "/utleiecontainere.html" },
+    { "source": "/container-utleie/8-fot-container", "destination": "/container-8ft.html" },
+    { "source": "/container-utleie/10-fot-container", "destination": "/container-10ft.html" },
+    { "source": "/container-utleie/20-fot-container", "destination": "/container-20ft.html" },
+    { "source": "/minilager-lillestrom", "destination": "/minilager-lillestrom.html" },
+    { "source": "/minilager-oppaker", "destination": "/minilager-oppaker.html" },
+    { "source": "/support", "destination": "/support.html" },
+    { "source": "/om-oss", "destination": "/om-oss.html" },
+    { "source": "/bestilling", "destination": "/backup.html" },
+    { "source": "/backup", "destination": "/backup.html" }
+  ]
 }
