@@ -1,68 +1,71 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/container-utleie",
-      "destination": "/utleiecontainere.html"
+      "handle": "filesystem"
     },
     {
-      "source": "/container-utleie/8-fot-container",
-      "destination": "/container-8ft.html"
+      "src": "/container-utleie",
+      "dest": "/utleiecontainere.html"
     },
     {
-      "source": "/container-utleie/10-fot-container",
-      "destination": "/container-10ft.html"
+      "src": "/container-utleie/8-fot-container",
+      "dest": "/container-8ft.html"
     },
     {
-      "source": "/container-utleie/20-fot-container",
-      "destination": "/container-20ft.html"
+      "src": "/container-utleie/10-fot-container",
+      "dest": "/container-10ft.html"
     },
     {
-      "source": "/minilager-lillestrom",
-      "destination": "/minilager-lillestrom.html"
+      "src": "/container-utleie/20-fot-container",
+      "dest": "/container-20ft.html"
     },
     {
-      "source": "/minilager-oppaker",
-      "destination": "/minilager-oppaker.html"
+      "src": "/minilager-lillestrom",
+      "dest": "/minilager-lillestrom.html"
     },
     {
-      "source": "/support",
-      "destination": "/support.html"
+      "src": "/minilager-oppaker",
+      "dest": "/minilager-oppaker.html"
     },
     {
-      "source": "/artikler",
-      "destination": "/artikler/index.html"
+      "src": "/support",
+      "dest": "/support.html"
     },
     {
-      "source": "/artikler/stabling-tips",
-      "destination": "/artikler/stabling-tips/index.html"
+      "src": "/artikler",
+      "dest": "/artikler/index.html"
     },
     {
-      "source": "/artikler/container-dimensjoner",
-      "destination": "/artikler/container-dimensjoner/index.html"
+      "src": "/artikler/stabling-tips",
+      "dest": "/artikler/stabling-tips/index.html"
     },
     {
-      "source": "/artikler/markeringer",
-      "destination": "/artikler/markeringer/index.html"
+      "src": "/artikler/container-dimensjoner",
+      "dest": "/artikler/container-dimensjoner/index.html"
     },
     {
-      "source": "/artikler/kondens",
-      "destination": "/artikler/kondens/index.html"
+      "src": "/artikler/markeringer",
+      "dest": "/artikler/markeringer/index.html"
     },
     {
-      "source": "/artikler/intermodal-transport",
-      "destination": "/artikler/intermodal-transport/index.html"
+      "src": "/artikler/kondens",
+      "dest": "/artikler/kondens/index.html"
     },
     {
-      "source": "/om-oss",
-      "destination": "/om-oss.html"
+      "src": "/artikler/intermodal-transport",
+      "dest": "/artikler/intermodal-transport/index.html"
     },
     {
-      "source": "/bestilling",
-      "destination": "/backup.html"
+      "src": "/om-oss",
+      "dest": "/om-oss.html"
     },
     {
-      "source": "/backup",
-      "destination": "/backup.html"
+      "src": "/bestilling",
+      "dest": "/backup.html"
+    },
+    {
+      "src": "/backup",
+      "dest": "/backup.html"
     }
   ],
   "headers": [
