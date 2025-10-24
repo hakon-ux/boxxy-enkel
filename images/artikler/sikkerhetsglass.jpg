@@ -1,0 +1,730 @@
+<!doctype html>
+<!--string(48) "/var/www/site8/wp-content/themes/reblock/404.php"
+ -->
+<html class="no-js" lang="nb-NO">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name = "google-site-verification" content = "JxSMBRqSLMs0zOcyy050EVk3-YvvdtHSpjimQURvDsI" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="stylesheet" href="https://use.typekit.net/oze6xjm.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+                <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+                <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('https://rcontainer.frdm.no/wp-content/themes/reblock/fonts/icomoon.eot');
+            src: url('https://rcontainer.frdm.no/wp-content/themes/reblock/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+                url('https://rcontainer.frdm.no/wp-content/themes/reblock/fonts/icomoon.woff') format('woff'),
+                url('https://rcontainer.frdm.no/wp-content/themes/reblock/fonts/icomoon.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+            </style>
+
+    <script>
+        //uncomment and change this to false if you're having trouble with WOFFs
+        //var woffEnabled = true;
+        //to place your webfonts in a custom directory 
+        //uncomment this and set it to where your webfonts are.
+        //var customPath = "/themes/fonts";
+    </script>
+    <script src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/MyFontsWebfontsKit.js"></script>
+    <meta name='robots' content='noindex, nofollow' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	
+	<!-- This site is optimized with the Yoast SEO plugin v26.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Page not found - Rcontainer</title>
+	<meta property="og:locale" content="nb_NO" />
+	<meta property="og:title" content="Page not found - Rcontainer" />
+	<meta property="og:site_name" content="Rcontainer" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://rcontainer.frdm.no/#website","url":"https://rcontainer.frdm.no/","name":"Rcontainer","description":"Totalleverandør av moduler og containere og prosjekter som vi sammen utvikler","publisher":{"@id":"https://rcontainer.frdm.no/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://rcontainer.frdm.no/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"nb-NO"},{"@type":"Organization","@id":"https://rcontainer.frdm.no/#organization","name":"Rcontainer","url":"https://rcontainer.frdm.no/","logo":{"@type":"ImageObject","inLanguage":"nb-NO","@id":"https://rcontainer.frdm.no/#/schema/logo/image/","url":"https://rcontainer.frdm.no/wp-content/uploads/2022/01/ContainerR_original_rod_RGB_FRDM.jpg","contentUrl":"https://rcontainer.frdm.no/wp-content/uploads/2022/01/ContainerR_original_rod_RGB_FRDM.jpg","width":528,"height":528,"caption":"Rcontainer"},"image":{"@id":"https://rcontainer.frdm.no/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/rcontainer.frdm.no\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.4"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='formidable-css' href='https://rcontainer.frdm.no/wp-content/plugins/formidable/css/formidableforms.css?ver=10171100' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://rcontainer.frdm.no/wp-includes/css/dist/block-library/style.min.css?ver=6.7.4' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=10.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=10.2.2' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=10.2.2' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='brands-styles-css' href='https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/css/brands.css?ver=10.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='app-css-css' href='https://rcontainer.frdm.no/wp-content/themes/reblock/css/app.css?v=1&#038;ver=3.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='magnific-css-css' href='https://rcontainer.frdm.no/wp-content/themes/reblock/css/magnific-popup.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='range-css-css' href='https://rcontainer.frdm.no/wp-content/themes/reblock/css/rangeslider.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='simplebar-css-css' href='https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css?ver=1.0.0' type='text/css' media='all' />
+<script type="text/javascript" id="woocommerce-google-analytics-integration-gtag-js-after">
+/* <![CDATA[ */
+/* Google Analytics for WooCommerce (gtag.js) */
+					window.dataLayer = window.dataLayer || [];
+					function gtag(){dataLayer.push(arguments);}
+					// Set up default consent state.
+					for ( const mode of [{"analytics_storage":"denied","ad_storage":"denied","ad_user_data":"denied","ad_personalization":"denied","region":["AT","BE","BG","HR","CY","CZ","DK","EE","FI","FR","DE","GR","HU","IS","IE","IT","LV","LI","LT","LU","MT","NL","NO","PL","PT","RO","SK","SI","ES","SE","GB","CH"]}] || [] ) {
+						gtag( "consent", "default", { "wait_for_update": 500, ...mode } );
+					}
+					gtag("js", new Date());
+					gtag("set", "developer_id.dOGY3NW", true);
+					gtag("config", "UA-4781346-2", {"track_404":true,"allow_google_signals":false,"logged_in":false,"linker":{"domains":[],"allow_incoming":false},"custom_map":{"dimension1":"logged_in"}});
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.10.2.2" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"Vis handlekurv","cart_url":"https:\/\/rcontainer.frdm.no\/cart\/","is_cart":"","cart_redirect_after_add":"yes"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=10.2.2" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.10.2.2" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_password_show":"Vis passord","i18n_password_hide":"Skjul passord"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=10.2.2" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="theme-js-extra">
+/* <![CDATA[ */
+var myAjax = {"ajaxurl":"https:\/\/rcontainer.frdm.no\/wp-admin\/admin-ajax.php","fileurl":"https:\/\/rcontainer.frdm.no\/wp-content\/themes\/reblock"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/app.min.js?ver=1" id="theme-js"></script>
+<link rel="https://api.w.org/" href="https://rcontainer.frdm.no/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://rcontainer.frdm.no/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.4" />
+<meta name="generator" content="WooCommerce 10.2.2" />
+<!-- Starting: Conversion Tracking for WooCommerce (https://wordpress.org/plugins/woocommerce-conversion-tracking/) -->
+        <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+            fbq('init', '250094436140258', {});fbq('track', 'PageView', {});        </script>
+                <script>
+            (function (window, document) {
+                if (window.wcfbq) return;
+                window.wcfbq = (function () {
+                    if (arguments.length > 0) {
+                        var pixelId, trackType, contentObj;
+
+                        if (typeof arguments[0] == 'string') pixelId = arguments[0];
+                        if (typeof arguments[1] == 'string') trackType = arguments[1];
+                        if (typeof arguments[2] == 'object') contentObj = arguments[2];
+
+                        var params = [];
+                        if (typeof pixelId === 'string' && pixelId.replace(/\s+/gi, '') != '' &&
+                        typeof trackType === 'string' && trackType.replace(/\s+/gi, '')) {
+                            params.push('id=' + encodeURIComponent(pixelId));
+                            switch (trackType) {
+                                case 'PageView':
+                                case 'ViewContent':
+                                case 'Search':
+                                case 'AddToCart':
+                                case 'InitiateCheckout':
+                                case 'AddPaymentInfo':
+                                case 'Lead':
+                                case 'CompleteRegistration':
+                                case 'Purchase':
+                                case 'AddToWishlist':
+                                    params.push('ev=' + encodeURIComponent(trackType));
+                                    break;
+                                default:
+                                    return;
+                            }
+
+                            params.push('dl=' + encodeURIComponent(document.location.href));
+                            if (document.referrer) params.push('rl=' + encodeURIComponent(document.referrer));
+                            params.push('if=false');
+                            params.push('ts=' + new Date().getTime());
+
+                            if (typeof contentObj == 'object') {
+                                for (var u in contentObj) {
+                                    if (typeof contentObj[u] == 'object' && contentObj[u] instanceof Array) {
+                                        if (contentObj[u].length > 0) {
+                                            for (var y = 0; y < contentObj[u].length; y++) { contentObj[u][y] = (contentObj[u][y] + '').replace(/^\s+|\s+$/gi, '').replace(/\s+/gi, ' ').replace(/,/gi, '§'); }
+                                            params.push('cd[' + u + ']=' + encodeURIComponent(contentObj[u].join(',').replace(/^/gi, '[\'').replace(/$/gi, '\']').replace(/,/gi, '\',\'').replace(/§/gi, '\,')));
+                                        }
+                                    }
+                                    else if (typeof contentObj[u] == 'string')
+                                        params.push('cd[' + u + ']=' + encodeURIComponent(contentObj[u]));
+                                }
+                            }
+
+                            params.push('v=' + encodeURIComponent('2.7.19'));
+
+                            var imgId = new Date().getTime();
+                            var img = document.createElement('img');
+                            img.id = 'fb_' + imgId, img.src = 'https://www.facebook.com/tr/?' + params.join('&'), img.width = 1, img.height = 1, img.style = 'display:none;';
+                            document.body.appendChild(img);
+                            window.setTimeout(function () { var t = document.getElementById('fb_' + imgId); t.parentElement.removeChild(t); }, 1000);
+                        }
+                    }
+                });
+            })(window, document);
+        </script>
+                <script type="text/javascript">
+            jQuery(function($) {
+                $(document).on('added_to_cart', function (event, fragments, dhash, button) {
+                    var currencySymbol = $($(button.get()[0]).closest('.product')
+                        .find('.woocommerce-Price-currencySymbol').get()[0]).text();
+
+                    var price = $(button.get()[0]).closest('.product').find('.amount').text();
+                    var originalPrice = price.split(currencySymbol).slice(-1).pop();
+
+                    wcfbq('250094436140258', 'AddToCart', {
+                        content_ids: [ $(button).data('product_id') ],
+                        content_type: 'product',
+                        value: originalPrice,
+                        currency: 'NOK'
+                    });
+                });
+            });
+        </script>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-769118510"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+
+            gtag('config', 'AW-769118510');
+        </script>
+        <!-- End: Conversion Tracking for WooCommerce Codes -->
+<script>document.documentElement.className += " js";</script>
+	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="https://rcontainer.frdm.no/wp-content/uploads/2022/01/cropped-ContainerR_original_rod_RGB_FRDM_Favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://rcontainer.frdm.no/wp-content/uploads/2022/01/cropped-ContainerR_original_rod_RGB_FRDM_Favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://rcontainer.frdm.no/wp-content/uploads/2022/01/cropped-ContainerR_original_rod_RGB_FRDM_Favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://rcontainer.frdm.no/wp-content/uploads/2022/01/cropped-ContainerR_original_rod_RGB_FRDM_Favicon-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			.video_action {
+	display:none
+}
+
+.woocommerce-cart footer,.woocommerce-checkout footer{ 
+	    margin-top: 0 !important;  
+	}	 
+		</style>
+		</head>
+
+<body class="error404 loader-wrap wp_first_time theme-reblock woocommerce-no-js">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KM575QQ');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KM575QQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+        <div class="loader"><img src="https://rcontainer.frdm.no/wp-content/uploads/theme-images/spinner.svg" alt="loader" /></div>
+    <div class="site-wrapper">
+        <div class="container"></div>
+
+        <div class="header-common">
+            <header class="desktop-header">
+                <div class="grid-container grid-x top-header-section">
+                    <div class="cell small-6 medium-4 col-left-header site_link_con">
+                        <div class="site_link_container">
+                           <!-- <span class="present-site">Rcontainer</span><span class="mid"></span> -->
+                        </div>
+                    </div>
+                    <div class="cell small-6 medium-4 col-left-header">
+                        <a href="https://rcontainer.frdm.no" class="logo" style="background-image: url('https://rcontainer.frdm.no/wp-content/uploads/2021/04/cropped-Rcontainer-logo-favicon.png') "></a>
+                    </div>
+                    <div class="cell small-6 medium-4 col-right-header">
+                        <div class="phone-cart-section">
+                            <a class="mobilKontakt first slide-menu-phn" href="#" onClick="ga('send', 'event', 'UtvidetTlf', 'Tlf', '');">
+                                                                <span class="phone_partial">63 80 09 ..</span>
+                                <span class="phone_full hide">63 80 09 80</span>
+                            </a>
+                            
+
+                        </div>
+                                            </div>
+                </div>
+                <div class="bottom-header-section">
+                    <div class="grid-x grid-container">
+                        <div class="cell small-6 medium-7 bottom-header-left">
+                            <ul id="main-menu" class="menu"><li id="menu-item-4765" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4765"><a href="https://rcontainer.frdm.no/kategori/containere/" class="first-level-a "><span>Containere</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li id="menu-item-5078" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-5078"><a href="https://rcontainer.frdm.no/kategori/containere/" data-id="147" data-title="Om Containere" class="leveled-menu"><span>Om Containere</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-9202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9202"><a href="https://rcontainer.frdm.no/containere/vare-tjenester/" data-id="8337" data-title="Våre tjenester" class="leveled-menu"><span>Våre tjenester</span></a></li>
+		<li id="menu-item-9201" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9201"><a href="https://rcontainer.frdm.no/containere/produksjon/" data-id="8339" data-title="Produksjon" class="leveled-menu"><span>Produksjon</span></a></li>
+		<li id="menu-item-9200" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9200"><a href="https://rcontainer.frdm.no/containere/bruksomrader/" data-id="8341" data-title="Bruksområder" class="leveled-menu"><span>Bruksområder</span></a></li>
+		<li id="menu-item-9199" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9199"><a href="https://rcontainer.frdm.no/containere/teknisk/" data-id="8343" data-title="Teknisk" class="leveled-menu"><span>Teknisk</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-4954" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4954"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/" data-id="179" data-title="Shipping" class="leveled-menu"><span>Shipping</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-8364" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8364"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/" data-id="179" data-title="Om shippingcontainere" class="leveled-menu"><span>Om shippingcontainere</span></a></li>
+		<li id="menu-item-8355" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8355"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/standard/" data-id="191" data-title="Standard" class="leveled-menu"><span>Standard</span></a></li>
+		<li id="menu-item-8356" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8356"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/high-cube-pallet-wide/" data-id="192" data-title="High cube / pallet wide" class="leveled-menu"><span>High cube / pallet wide</span></a></li>
+		<li id="menu-item-8358" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8358"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/sideapning/" data-id="194" data-title="Sideåpning" class="leveled-menu"><span>Sideåpning</span></a></li>
+		<li id="menu-item-8362" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8362"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/vekselflak/" data-id="198" data-title="Vekselflak" class="leveled-menu"><span>Vekselflak</span></a></li>
+		<li id="menu-item-8360" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8360"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/flatrack-halvhoye/" data-id="196" data-title="Flatrack / Halvhøye" class="leveled-menu"><span>Flatrack / Halvhøye</span></a></li>
+		<li id="menu-item-9735" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9735"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/hard-soft-open-top/" data-id="193" data-title="Hard/Soft/Open Top" class="leveled-menu"><span>Hard/Soft/Open Top</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-4953" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4953"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/" data-id="178" data-title="Lager" class="leveled-menu"><span>Lager</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-8370" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8370"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/" data-id="178" data-title="Om lagercontainere" class="leveled-menu"><span>Om lagercontainere</span></a></li>
+		<li id="menu-item-8376" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8376"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/" data-id="178" data-title="Lagercontainere" class="leveled-menu"><span>Lagercontainere</span></a></li>
+		<li id="menu-item-8378" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8378"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/makscontainere/" data-id="209" data-title="Makscontainere" class="leveled-menu"><span>Makscontainere</span></a></li>
+		<li id="menu-item-8566" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8566"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/tilbehor-lagercontainere/" data-id="225" data-title="Tilbehør" class="leveled-menu"><span>Tilbehør</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-25613" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25613"><a href="https://rcontainer.frdm.no/kategori/containere/miljocontainere/" data-id="183" data-title="Miljøcontainere" class="leveled-menu"><span>Miljøcontainere</span></a></li>
+	<li id="menu-item-4952" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4952"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/" data-id="177" data-title="Kjøl og frys" class="leveled-menu"><span>Kjøl og frys</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-8380" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8380"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/" data-id="177" data-title="Om kjøle- og frysecontainere" class="leveled-menu"><span>Om kjøle- og frysecontainere</span></a></li>
+		<li id="menu-item-8382" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8382"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/standard-kjol-frys-varme-container/" data-id="210" data-title="Standard kjøl/frys/varme" class="leveled-menu"><span>Standard kjøl/frys/varme</span></a></li>
+		<li id="menu-item-8383" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8383"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/hc-pw-kjol-frys-varme-container/" data-id="211" data-title="HC/PW kjøl/frys/varme" class="leveled-menu"><span>HC/PW kjøl/frys/varme</span></a></li>
+		<li id="menu-item-8384" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8384"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/vekselflak-kjol-frys-varme-container/" data-id="212" data-title="Vekselflak kjøl/frys/varme" class="leveled-menu"><span>Vekselflak kjøl/frys/varme</span></a></li>
+		<li id="menu-item-8385" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8385"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/mega-kjol-frys-varme-container/" data-id="213" data-title="Mega kjøl/frys/varme" class="leveled-menu"><span>Mega kjøl/frys/varme</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-9849" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-9849"><a href="https://rcontainer.frdm.no/kategori/containere/tankcontainere/" data-id="190" data-title="Tank" class="leveled-menu"><span>Tank</span></a>
+	<ul class="sub-menu">
+		<li id="menu-item-10446" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10446"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/tank/" data-id="195" data-title="Om tankcontainere" class="leveled-menu"><span>Om tankcontainere</span></a></li>
+		<li id="menu-item-10438" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-10438"><a href="https://rcontainer.frdm.no/produkter/containere/tankcontainere/20-ft-iso-tank-sementtank/" data-id="9788" data-title="20 ft ISO-tank sementtank" class="leveled-menu"><span>20 ft ISO-tank sementtank</span></a></li>
+		<li id="menu-item-10437" class="menu-item menu-item-type-post_type menu-item-object-product menu-item-10437"><a href="https://rcontainer.frdm.no/produkter/containere/tankcontainere/20-ft-un-portable-t11-25cbm/" data-id="8461" data-title="20 ft UN Portable T11 25CBM" class="leveled-menu"><span>20 ft UN Portable T11 25CBM</span></a></li>
+	</ul>
+</li>
+	<li id="menu-item-9354" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9354"><a href="https://rcontainer.frdm.no/kategori/containere/ombygging/" data-id="257" data-title="Ombygging" class="leveled-menu"><span>Ombygging</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/produkter/containere/shipping/standard/ny-20-ft-one-way-used/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/05/1590142803365757142945.jpg" alt="header-post-image" /><h3>20 ft One Way Used</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/7-store-fordeler-ved-a-velge-lager-container-som-lagerlosning/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/12/7-store-fordeler-ved-a-velge-lagercontainer-som-lagerlosning-2.png" alt="header-post-image" /><h3>7 Store fordeler ved å velge lagercontainer som lagerløsning</h3></a></div></div></div></div></div></li>
+<li id="menu-item-4969" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4969"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/" class="first-level-a "><span>Stålmoduler</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li id="menu-item-10049" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10049"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/kontor-stalmoduler/" data-id="271" data-title="Kontor" class="leveled-menu"><span>Kontor</span></a></li>
+	<li id="menu-item-10050" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10050"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/sanitaeranlegg-stalmoduler/" data-id="272" data-title="Sanitæranlegg" class="leveled-menu"><span>Sanitæranlegg</span></a></li>
+	<li id="menu-item-10051" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10051"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/visningsmoduler/" data-id="273" data-title="Visningsmoduler" class="leveled-menu"><span>Visningsmoduler</span></a></li>
+	<li id="menu-item-10052" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10052"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/butikk-og-kiosk/" data-id="274" data-title="Butikk &amp; Kiosk" class="leveled-menu"><span>Butikk &amp; Kiosk</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/spennende-ombyggingsprosjekt-med-skuddsikkert-sikkerhetsglass-for-visnes-kalk/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/08/Blå-container-visnes-kalk-4.jpg" alt="header-post-image" /><h3>Spennende ombyggingsprosjekt med skuddsikkert sikkerhetsglass for Visnes Kalk</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/10-populaere-typer-containere-dette-brukes-de-til/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/07/farger-container-1920-1280-compressor-1080x675.png" alt="header-post-image" /><h3>10 populære typer containere: Dette brukes de til</h3></a></div></div></div></div></div></li>
+<li id="menu-item-8391" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-8391"><a href="https://rcontainer.frdm.no/kategori/brukt/" class="first-level-a "><span>Brukt</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li id="menu-item-8396" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8396"><a href="https://rcontainer.frdm.no/kategori/brukt/alle-produkter-brukt/" data-id="222" data-title="Alle produkter" class="leveled-menu"><span>Alle produkter</span></a></li>
+	<li id="menu-item-8392" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8392"><a href="https://rcontainer.frdm.no/kategori/brukt/brukte-containere/" data-id="218" data-title="Brukte containere" class="leveled-menu"><span>Brukte containere</span></a></li>
+	<li id="menu-item-8393" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8393"><a href="https://rcontainer.frdm.no/kategori/brukt/brukte-kjol-frys-varme-containere/" data-id="219" data-title="Brukte kjøl/frys/varme" class="leveled-menu"><span>Brukte kjøl/frys/varme</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single order-inverse"><a href="https://rcontainer.frdm.no/produkter/brukt/brukte-containere/brukt-20-ft-container-as-is/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/06/1591777203194893228462.jpg" alt="header-post-image" /><h3>Brukt 20 ft container. AS IS</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/7-store-fordeler-ved-a-velge-lager-container-som-lagerlosning/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/12/7-store-fordeler-ved-a-velge-lagercontainer-som-lagerlosning-2.png" alt="header-post-image" /><h3>7 Store fordeler ved å velge lagercontainer som lagerløsning</h3></a></div></div></div></div></div></li>
+<li id="menu-item-4771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4771"><a href="https://rcontainer.frdm.no/kontakt-oss/" class="first-level-a "><span>Kontakt oss</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li id="menu-item-25594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25594"><a href="https://rcontainer.frdm.no/kontakt-oss/" data-id="18" data-title="Kontakt oss" class="leveled-menu"><span>Kontakt oss</span></a></li>
+	<li id="menu-item-8324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8324"><a href="https://rcontainer.frdm.no/hvem-er-vi/" data-id="3779" data-title="Hvem Er Vi" class="leveled-menu"><span>Hvem Er Vi</span></a></li>
+	<li id="menu-item-8321" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8321"><a href="https://rcontainer.frdm.no/om-oss/nyheter/" data-id="234" data-title="Nyheter" class="leveled-menu"><span>Nyheter</span></a></li>
+	<li id="menu-item-10436" class="menu-item menu-item-type-post_type menu-item-object-page last-menu-item menu-item-10436"><a href="https://rcontainer.frdm.no/sertifikater/" data-id="10426" data-title="Sertifikater" class="leveled-menu"><span>Sertifikater</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/spennende-ombyggingsprosjekt-med-skuddsikkert-sikkerhetsglass-for-visnes-kalk/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/08/Blå-container-visnes-kalk-4.jpg" alt="header-post-image" /><h3>Spennende ombyggingsprosjekt med skuddsikkert sikkerhetsglass for Visnes Kalk</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/7-store-fordeler-ved-a-velge-lager-container-som-lagerlosning/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/12/7-store-fordeler-ved-a-velge-lagercontainer-som-lagerlosning-2.png" alt="header-post-image" /><h3>7 Store fordeler ved å velge lagercontainer som lagerløsning</h3></a></div></div></div></div></div></li>
+</ul>                        </div>
+                        <div class="cell small-6 medium-5 bottom-header-right">
+                            <div class="search-container">
+                                <form role="search" method="get" class="search-form desktop" action="https://rcontainer.frdm.no/">
+    <input class="desktop" type="search" placeholder="Hva leter du etter?"  value="" name="s" title="Hva leter du etter?" autocomplete="off"/>
+</form> 
+<form role="search" method="get" class="search-form mobile" action="https://rcontainer.frdm.no/">
+    <input class="mobile" type="search" placeholder="SØK"  value="" name="s" title="SØK" autocomplete="off"/>
+</form>                                 <div class="s-button">
+                                    Søk <img src="https://rcontainer.frdm.no/wp-content/themes/reblock/images/search.svg" alt="search-image" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <header class="mobile-header" id="mobile-header">
+                <div class="grid-x grid-container">
+                    <div class="cell small-3 medium-2 menu-section">
+                        <div class="humburger-mobile" id="nav-icon-mob">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="cell small-6 medium-8 logo-section">
+                        <a href="https://rcontainer.frdm.no" class="logo" style="background-image: url('https://rcontainer.frdm.no/wp-content/uploads/2021/04/cropped-Rcontainer-logo-favicon.png') "></a>
+                    </div>
+                                    </div>
+
+                <div class="mobile-menu-wrapper" id="mobile-menu-wrapper">
+                                        <div class="">
+                        <ul id="main-menu-resp" class="menu"><li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4765"><a href="https://rcontainer.frdm.no/kategori/containere/" class="first-level-a "><span>Containere</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-5078"><a href="https://rcontainer.frdm.no/kategori/containere/" data-id="147" data-title="Om Containere" class="leveled-menu"><span>Om Containere</span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9202"><a href="https://rcontainer.frdm.no/containere/vare-tjenester/" data-id="8337" data-title="Våre tjenester" class="leveled-menu"><span>Våre tjenester</span></a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9201"><a href="https://rcontainer.frdm.no/containere/produksjon/" data-id="8339" data-title="Produksjon" class="leveled-menu"><span>Produksjon</span></a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9200"><a href="https://rcontainer.frdm.no/containere/bruksomrader/" data-id="8341" data-title="Bruksområder" class="leveled-menu"><span>Bruksområder</span></a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9199"><a href="https://rcontainer.frdm.no/containere/teknisk/" data-id="8343" data-title="Teknisk" class="leveled-menu"><span>Teknisk</span></a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4954"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/" data-id="179" data-title="Shipping" class="leveled-menu"><span>Shipping</span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8364"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/" data-id="179" data-title="Om shippingcontainere" class="leveled-menu"><span>Om shippingcontainere</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8355"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/standard/" data-id="191" data-title="Standard" class="leveled-menu"><span>Standard</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8356"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/high-cube-pallet-wide/" data-id="192" data-title="High cube / pallet wide" class="leveled-menu"><span>High cube / pallet wide</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8358"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/sideapning/" data-id="194" data-title="Sideåpning" class="leveled-menu"><span>Sideåpning</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8362"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/vekselflak/" data-id="198" data-title="Vekselflak" class="leveled-menu"><span>Vekselflak</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8360"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/flatrack-halvhoye/" data-id="196" data-title="Flatrack / Halvhøye" class="leveled-menu"><span>Flatrack / Halvhøye</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9735"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/hard-soft-open-top/" data-id="193" data-title="Hard/Soft/Open Top" class="leveled-menu"><span>Hard/Soft/Open Top</span></a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4953"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/" data-id="178" data-title="Lager" class="leveled-menu"><span>Lager</span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8370"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/" data-id="178" data-title="Om lagercontainere" class="leveled-menu"><span>Om lagercontainere</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8376"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/" data-id="178" data-title="Lagercontainere" class="leveled-menu"><span>Lagercontainere</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8378"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/makscontainere/" data-id="209" data-title="Makscontainere" class="leveled-menu"><span>Makscontainere</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8566"><a href="https://rcontainer.frdm.no/kategori/containere/lagercontainere/tilbehor-lagercontainere/" data-id="225" data-title="Tilbehør" class="leveled-menu"><span>Tilbehør</span></a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-25613"><a href="https://rcontainer.frdm.no/kategori/containere/miljocontainere/" data-id="183" data-title="Miljøcontainere" class="leveled-menu"><span>Miljøcontainere</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4952"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/" data-id="177" data-title="Kjøl og frys" class="leveled-menu"><span>Kjøl og frys</span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8380"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/" data-id="177" data-title="Om kjøle- og frysecontainere" class="leveled-menu"><span>Om kjøle- og frysecontainere</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8382"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/standard-kjol-frys-varme-container/" data-id="210" data-title="Standard kjøl/frys/varme" class="leveled-menu"><span>Standard kjøl/frys/varme</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8383"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/hc-pw-kjol-frys-varme-container/" data-id="211" data-title="HC/PW kjøl/frys/varme" class="leveled-menu"><span>HC/PW kjøl/frys/varme</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8384"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/vekselflak-kjol-frys-varme-container/" data-id="212" data-title="Vekselflak kjøl/frys/varme" class="leveled-menu"><span>Vekselflak kjøl/frys/varme</span></a></li>
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8385"><a href="https://rcontainer.frdm.no/kategori/containere/kjol-frysecontainere/mega-kjol-frys-varme-container/" data-id="213" data-title="Mega kjøl/frys/varme" class="leveled-menu"><span>Mega kjøl/frys/varme</span></a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-9849"><a href="https://rcontainer.frdm.no/kategori/containere/tankcontainere/" data-id="190" data-title="Tank" class="leveled-menu"><span>Tank</span></a>
+	<ul class="sub-menu">
+		<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10446"><a href="https://rcontainer.frdm.no/kategori/containere/shipping/tank/" data-id="195" data-title="Om tankcontainere" class="leveled-menu"><span>Om tankcontainere</span></a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-10438"><a href="https://rcontainer.frdm.no/produkter/containere/tankcontainere/20-ft-iso-tank-sementtank/" data-id="9788" data-title="20 ft ISO-tank sementtank" class="leveled-menu"><span>20 ft ISO-tank sementtank</span></a></li>
+		<li class="menu-item menu-item-type-post_type menu-item-object-product menu-item-10437"><a href="https://rcontainer.frdm.no/produkter/containere/tankcontainere/20-ft-un-portable-t11-25cbm/" data-id="8461" data-title="20 ft UN Portable T11 25CBM" class="leveled-menu"><span>20 ft UN Portable T11 25CBM</span></a></li>
+	</ul>
+</li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9354"><a href="https://rcontainer.frdm.no/kategori/containere/ombygging/" data-id="257" data-title="Ombygging" class="leveled-menu"><span>Ombygging</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/produkter/containere/shipping/standard/ny-20-ft-one-way-used/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/05/1590142803365757142945.jpg" alt="header-post-image" /><h3>20 ft One Way Used</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/7-store-fordeler-ved-a-velge-lager-container-som-lagerlosning/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/12/7-store-fordeler-ved-a-velge-lagercontainer-som-lagerlosning-2.png" alt="header-post-image" /><h3>7 Store fordeler ved å velge lagercontainer som lagerløsning</h3></a></div></div></div></div></div></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-4969"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/" class="first-level-a "><span>Stålmoduler</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10049"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/kontor-stalmoduler/" data-id="271" data-title="Kontor" class="leveled-menu"><span>Kontor</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10050"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/sanitaeranlegg-stalmoduler/" data-id="272" data-title="Sanitæranlegg" class="leveled-menu"><span>Sanitæranlegg</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10051"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/visningsmoduler/" data-id="273" data-title="Visningsmoduler" class="leveled-menu"><span>Visningsmoduler</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-10052"><a href="https://rcontainer.frdm.no/kategori/stalmoduler/butikk-og-kiosk/" data-id="274" data-title="Butikk &amp; Kiosk" class="leveled-menu"><span>Butikk &amp; Kiosk</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/spennende-ombyggingsprosjekt-med-skuddsikkert-sikkerhetsglass-for-visnes-kalk/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/08/Blå-container-visnes-kalk-4.jpg" alt="header-post-image" /><h3>Spennende ombyggingsprosjekt med skuddsikkert sikkerhetsglass for Visnes Kalk</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/10-populaere-typer-containere-dette-brukes-de-til/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/07/farger-container-1920-1280-compressor-1080x675.png" alt="header-post-image" /><h3>10 populære typer containere: Dette brukes de til</h3></a></div></div></div></div></div></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-8391"><a href="https://rcontainer.frdm.no/kategori/brukt/" class="first-level-a "><span>Brukt</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8396"><a href="https://rcontainer.frdm.no/kategori/brukt/alle-produkter-brukt/" data-id="222" data-title="Alle produkter" class="leveled-menu"><span>Alle produkter</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8392"><a href="https://rcontainer.frdm.no/kategori/brukt/brukte-containere/" data-id="218" data-title="Brukte containere" class="leveled-menu"><span>Brukte containere</span></a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8393"><a href="https://rcontainer.frdm.no/kategori/brukt/brukte-kjol-frys-varme-containere/" data-id="219" data-title="Brukte kjøl/frys/varme" class="leveled-menu"><span>Brukte kjøl/frys/varme</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single order-inverse"><a href="https://rcontainer.frdm.no/produkter/brukt/brukte-containere/brukt-20-ft-container-as-is/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/06/1591777203194893228462.jpg" alt="header-post-image" /><h3>Brukt 20 ft container. AS IS</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/7-store-fordeler-ved-a-velge-lager-container-som-lagerlosning/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/12/7-store-fordeler-ved-a-velge-lagercontainer-som-lagerlosning-2.png" alt="header-post-image" /><h3>7 Store fordeler ved å velge lagercontainer som lagerløsning</h3></a></div></div></div></div></div></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4771"><a href="https://rcontainer.frdm.no/kontakt-oss/" class="first-level-a "><span>Kontakt oss</span></a><div class="mega-wrapper"><div class="go-back">Tilbake</div><div class="grid-x mega-menu"><div class="cell small-6 medium-5 left-col-menu">
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25594"><a href="https://rcontainer.frdm.no/kontakt-oss/" data-id="18" data-title="Kontakt oss" class="leveled-menu"><span>Kontakt oss</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8324"><a href="https://rcontainer.frdm.no/hvem-er-vi/" data-id="3779" data-title="Hvem Er Vi" class="leveled-menu"><span>Hvem Er Vi</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8321"><a href="https://rcontainer.frdm.no/om-oss/nyheter/" data-id="234" data-title="Nyheter" class="leveled-menu"><span>Nyheter</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page last-menu-item menu-item-10436"><a href="https://rcontainer.frdm.no/sertifikater/" data-id="10426" data-title="Sertifikater" class="leveled-menu"><span>Sertifikater</span></a></li>
+</ul>
+</div><div class="cell small-6 medium-7 right-col-menu"><div class="block-content-wrapper grid-x"><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/spennende-ombyggingsprosjekt-med-skuddsikkert-sikkerhetsglass-for-visnes-kalk/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2020/08/Blå-container-visnes-kalk-4.jpg" alt="header-post-image" /><h3>Spennende ombyggingsprosjekt med skuddsikkert sikkerhetsglass for Visnes Kalk</h3></a></div><div class="cell small-6 block-content-single "><a href="https://rcontainer.frdm.no/7-store-fordeler-ved-a-velge-lager-container-som-lagerlosning/"><img src="https://rcontainer.frdm.no/wp-content/uploads/2018/12/7-store-fordeler-ved-a-velge-lagercontainer-som-lagerlosning-2.png" alt="header-post-image" /><h3>7 Store fordeler ved å velge lagercontainer som lagerløsning</h3></a></div></div></div></div></div></li>
+</ul>                    </div>
+                    <div class="">
+                        <form role="search" method="get" class="search-form desktop" action="https://rcontainer.frdm.no/">
+    <input class="desktop" type="search" placeholder="Hva leter du etter?"  value="" name="s" title="Hva leter du etter?" autocomplete="off"/>
+</form> 
+<form role="search" method="get" class="search-form mobile" action="https://rcontainer.frdm.no/">
+    <input class="mobile" type="search" placeholder="SØK"  value="" name="s" title="SØK" autocomplete="off"/>
+</form>                     </div>
+                </div>
+            </header>
+        </div>
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyBza16v6aLHPHSiWUmhbYaZ1Yzj5iDdBH0&sensor=false&extension=.js'></script> 
+<section class="panel-banner slideshow small angleView imageBanner imgSwap">
+            <img src = "https://rcontainer.frdm.no/wp-content/uploads/2018/07/bg3.jpg" alt = "Leveranse av 2 sett med &laquo;tekniske&raquo; containere for kundes egen innredning"/>
+        <div class="imgContainer xy"></div>
+    </section><div class="page-wrapper">
+    <div class="grid-container">
+        <div class="content-wrapper">
+            <h1 class="page-title">
+                Oops! 404 - Siden ikke funnet            </h1>
+            <div class="page-description">
+                Det ser ut som ingenting ble funnet på dette stedet.            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="reveal reveal-tax-popup" id="taxmodal" data-reveal>
+        <button class="close-button" data-close aria-label="Close reveal" type="button">
+            <span aria-hidden="true"><img src="https://rcontainer.frdm.no/wp-content/themes/reblock/images/close_x.svg" alt="close" /></span>
+        </button>
+
+        <div class="reveal-container">
+                            <div class="top-section">
+                                            <div class="image-container">
+                            <img src="https://rcontainer.frdm.no/wp-content/uploads/2022/03/RContainer_original_rod_RGB.svg" alt="logo-popup" />
+                        </div>
+                                                                <div class="short-desc">
+                            For å kunne vise riktig pris trenger vi å vite om du vil handle som bedrift eller privatperson                        </div>
+                                    </div>
+            
+            <div class="tax-section">
+                                <form name="change_tax_status_popup" id="change_tax_status_popup" method="post">
+                    <div class="inner-cont">
+                        <input type="checkbox" class="hide" name="change_tax_status_checkbox_popup" id="change_tax_status_checkbox_popup"  />
+                        <ul class="bottom-popup-buttons">
+                            <li class="col-left"><a href="javascript:;" data-tax_stat="incl" class="change_tax_status_link_popup ">Privat</a>
+                            </li>
+                            <li class="col-right"><a href="javascript:;" data-tax_stat="excl" class="change_tax_status_link_popup  active ">Bedrift</a>
+                            </li>
+                        </ul>
+                        <input type="hidden" name="change_tax_status_submit_popup" value="submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+<section class="panel-story-banner color2 imgSwap historienOmRcontainer" style="background-image: url('https://rcontainer.frdm.no/wp-content/uploads/2019/04/our_story_banner_v2.jpg');">
+    <img src="https://rcontainer.frdm.no/wp-content/uploads/2019/04/our_story_banner_v2.jpg" alt="Banner Image"/>
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x align-center">
+            <div class="small-12 cell text-center">
+                                <div class="corner-frame">
+                    <div class="corner-frame-inner">
+                                                    <h2>HVEM VI ER</h2>
+                                                                            <p>Vi er ikke bare en bedrift. Vi er en sjel. Vi har følelser, meninger, erfaringer, egenskaper og idéer. Vi elsker å skape, og særlig når utgangspunktet har vært «ingenting».</p>
+                                            </div>
+                </div>
+                                                    <a href="https://rcontainer.frdm.no/hvem-er-vi/" class="button">Les mer</a>
+                            </div>
+        </div>
+    </div>
+</section><!-- <footer > -->
+<footer>
+    <div class="grid-container">
+        <div class="grid-x verticalAlign grid-margin-x">
+            <div class="medium-12 cell">
+                <h1>Rcontainer®</h1>                <div class="address-block">
+                    <p>Industrivegen 11 <br>2166 Oppaker<br />                    Tlf.
+                    <a class="phone_toggle first" href="javascript:void(0);" onClick="ga('send', 'event', 'UtvidetTlf', 'Tlf', '');">
+                                                <span class="phone_partial">63 80 0....</span>
+                        <span class="phone_full hide">63 80 09 80</span>
+                    </a>
+                    <span class="email-block"><span>&mdash;</span> Epost: <a href="mailto:post@rcontainer.no">post@rcontainer.no</a></span><br />                    </p>
+                </div>
+
+                <div class="soMe">
+                                            <a href="https://www.facebook.com/rcontainer.no" target="_blank"><i class="icon-facebook2"></i></a>
+                                                                <a href="https://www.linkedin.com/company/rcontainer/" target="_blank"><i class="icon-linkedin"></i></a>
+                                                                <a href="https://www.instagram.com/rcontainer.no/" target="_blank"><i class="icon-instagram"></i></a>
+                                                                <a href="https://www.youtube.com/channel/UCxajB7YjI2IGisKCjNYinRg" target="_blank"><i class="icon-youtube"></i></a>
+                                    </div>
+
+                <div class="timings-container">
+                    <p>
+                        Åpningstider:  Man-fre 07:00 - 16:00<br />
+                    </p>
+                </div>
+
+                                    <div class="sertifiseringer">
+                                                    <img src="" alt="" />
+                                                    <img src="" alt="" />
+                                                    <img src="" alt="" />
+                                            </div>
+                                <div class="small-text "><p>Vi tar forbehold om at endring i priser, vilkår og innhold på nettsiden kan forekomme.</p>
+<p>Kopibeskyttet © 2022 Rcontainer AS. <a href="https://rcontainer.frdm.no/personvern/">Personvern og cookies</a>. Utviklet av <a href="http://www.kodeks.no" target="_blank">KODEKS</a>.</p></div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="reveal" data-reveal id="spoross">
+    <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <div class="grid-container">
+        <form action="takk.html">
+            <div class="grid-x grid-padding-x">
+                <div class="medium-12 cell">
+                    <h2>Kontaktskjema</h2>
+                </div>
+                <div class="medium-12 cell">
+                    <label>Personalia</label>
+                </div>
+                <div class="medium-6 cell">
+                    <input type="text" placeholder="Ditt navn" />
+                </div>
+                <div class="medium-6 cell">
+                    <input type="number" placeholder="Telefonnummer" />
+                </div>
+                <div class="medium-12 cell">
+                    <input type="email" placeholder="Din epost-adresse" />
+                </div>
+                <div class="medium-12 cell">
+                    <label>Beskriv kort hva henvendelsen din gjelder.</label>
+                    <textarea name="Beskjed" placeholder=""></textarea>
+                    <button>Send henvendelse</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="switcher_module" >
+    <div class="switcher_module_inner inner_module">
+        <h2>Fortell oss hva  du leter etter</h2>
+        <div class="rows">
+            <div class="col1 colm">
+                <div class="image close-popup">
+                    <img src="https://rcontainer.frdm.no/wp-content/uploads/2021/02/reblock_logo.svg" alt="reblock"> 
+                </div>
+                                <h3>REBLOCK AS</h3>
+                                                <span>Eiendomsprosjekter</span>
+                                                <span> Leilighetsbygg</span>
+                                                <span>Prosjektering</span>
+                                                <span>Anbud</span>
+                            </div>
+            <div class="col2 colm">
+                <a href="">
+                    <div class="img_txt">
+                        <div class="image">
+                            <img src="https://rcontainer.frdm.no/wp-content/uploads/2022/03/RContainer_original_rod_RGB.svg" alt="rcontainer"> 
+                        </div>
+                                                <h3>RCONTAINER AS</h3>
+                                            </div>
+                </a>
+                                <span>Stålmoduler</span>
+                                                <span>Containere</span>
+                                                <span>Modulvogner</span>
+                                                <span>Ombygging</span>
+                            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+	<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.2.2' type='text/css' media='all' />
+<script type="text/javascript" id="dismissible-wp-notices-js-extra">
+/* <![CDATA[ */
+var dismissibleWpNotices = {"ajaxUrl":"https:\/\/rcontainer.frdm.no\/wp-admin\/admin-ajax.php","nonce":"b93d3233a8"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce-product-feeds/vendor-prefixed/leewillis77/dismissible-wp-notices/js/dismissible-wp-notices.js?ver=1.0" id="dismissible-wp-notices-js"></script>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-4781346-2" id="google-tag-manager-js" data-wp-strategy="async"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce-google-analytics-integration/assets/js/build/main.js?ver=ecfb1dac432d1af3fbe6" id="woocommerce-google-analytics-integration-js"></script>
+<script type="text/javascript" id="ajax-filter-script-js-extra">
+/* <![CDATA[ */
+var filterAjaxVar = {"ajaxurl":"https:\/\/rcontainer.frdm.no\/wp-admin\/admin-ajax.php","refresh_fragments_onload":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/ajax-filter.js?ver=1612240019" id="ajax-filter-script-js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js?ver=1.0.0" id="simplebar-js-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/jquery.magnific-popup.min.js?ver=1.0.0" id="magnific-js-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/slick.min.js?ver=1.0.0" id="slick-js-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/ofi.min.js?ver=1.0.0" id="object-fit-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/readmore.min.js?ver=1.0.0" id="read-more-js-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.0-rc1/js/foundation.min.js?ver=1.0.0" id="foundation-js-js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js?ver=1.0.0" id="wow-js-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/themes/reblock/js/rangeslider.min.js?ver=1.0.0" id="range-js-js"></script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=10.2.2" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https:\/\/rcontainer.frdm.no\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://rcontainer.frdm.no/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=10.2.2" id="wc-order-attribution-js"></script>
+<script type="text/javascript" id="woocommerce-google-analytics-integration-data-js-after">
+/* <![CDATA[ */
+window.ga4w = { data: {"cart":{"items":[],"coupons":[],"totals":{"currency_code":"NOK","total_price":0,"currency_minor_unit":0}}}, settings: {"tracker_function_name":"gtag","events":["purchase","add_to_cart","remove_from_cart","view_item_list","select_content","view_item","begin_checkout"],"identifier":null} }; document.dispatchEvent(new Event("ga4w:ready"));
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery(document).mouseup(function(e) 
+    {
+        var container = jQuery(".switcher_module_inner");
+
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) 
+        {
+            jQuery('.switcher_module').hide();
+        }
+    });
+    jQuery('.close-popup').on('click', function(){
+        jQuery('.switcher_module').hide();
+    });
+});
+</script>
+
+</body>
+
+</html>

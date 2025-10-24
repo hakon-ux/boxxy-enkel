@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - boxxy</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Artikler - Boxxy</title>
+    <meta name="description" content="Les våre artikler om containere, lagring og praktiske tips for optimal bruk av lagringsløsninger.">
+    <link rel="canonical" href="https://boxxy.no/artikler">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <!-- Google Tag Manager -->
@@ -14,152 +18,233 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NRVKK9BF');</script>
     <!-- End Google Tag Manager -->
+    <style>
+        .articles-hero {
+            background: linear-gradient(135deg, #113c3a 0%, #1a5a57 100%);
+            padding: 80px 20px 60px;
+            text-align: center;
+            color: white;
+        }
+
+        .articles-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .articles-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .articles-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .article-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-date {
+            color: #eab41e;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .article-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #113c3a;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .article-link {
+            color: #eab41e;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+        }
+
+        .article-card:hover .article-link {
+            gap: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .articles-hero h1 {
+                font-size: 2rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRVKK9BF"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <button class="hamburger-menu" onclick="toggleMobileMenu()">
                     <i data-lucide="menu" class="hamburger-icon"></i>
                 </button>
-                <a href="/"><img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
+                <a href="/"><img src="../boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
                 <nav class="nav" role="navigation">
-                    <a href="/" class="nav-link">Hjem</a>
-                    <a href="/#about" class="nav-link">Om oss</a>
+                    <a href="/om-oss" class="nav-link">Om oss</a>
                     <a href="javascript:void(0)" onclick="openContactModal()" class="nav-link nav-cta">Kontakt Oss</a>
                 </nav>
             </div>
         </div>
-        
+
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="mobile-menu">
             <div class="mobile-menu-content">
                 <button class="mobile-menu-close" onclick="toggleMobileMenu()">
                     <i data-lucide="x" class="close-icon"></i>
                 </button>
-                <nav class="mobile-nav">
-                    <a href="/" class="mobile-nav-link">Hjem</a>
-                    <a href="javascript:void(0)" onclick="openModal()" class="mobile-nav-link">Utleie av Containere</a>
+                <nav class="mobile-nav" role="navigation">
+                    <a href="/container-utleie" class="mobile-nav-link">Utleie av Containere</a>
                     <a href="/minilager-lillestrom" class="mobile-nav-link">Minilager Lillestrøm</a>
                     <a href="/minilager-oppaker" class="mobile-nav-link">Minilager Oppaker</a>
-                    <a href="/artikler" class="mobile-nav-link">Artikler</a>
                     <a href="/support" class="mobile-nav-link">Support</a>
-                    <a href="/#about" class="mobile-nav-link">Om Boxxy</a>
+                    <a href="/om-oss" class="mobile-nav-link">Om Boxxy</a>
+                    <a href="/artikler" class="mobile-nav-link">Artikler</a>
                 </nav>
             </div>
         </div>
     </header>
 
     <main role="main">
-        <section class="support-hero">
+        <section class="articles-hero">
             <div class="container">
-                <div class="support-hero-content">
-                    <h1 class="support-title">Trenger du hjelp?</h1>
-                    <p class="support-subtitle">Vi er her for å hjelpe deg med alle spørsmål og tekniske problemer</p>
-                </div>
+                <h1>Artikler og innsikt</h1>
+                <p>Alt du trenger å vite om containere og lagring</p>
             </div>
         </section>
 
-        <section class="support-options">
-            <div class="container">
-                <div class="support-grid">
-                    <div class="support-card">
-                        <div class="support-icon-wrapper">
-                            <i data-lucide="mail" class="support-icon"></i>
-                        </div>
-                        <h3>E-post support</h3>
-                        <p>Send oss en e-post med ditt spørsmål eller problem. Vi svarer vanligvis innen 24 timer.</p>
-                        <a href="mailto:support@boxxy.no" class="support-button">
-                            <i data-lucide="external-link" class="button-icon-small"></i>
-                            support@boxxy.no
-                        </a>
+        <div class="articles-container">
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <a href="/artikler/stabling-tips" class="article-card">
+                    <img src="../images/artikler/stabling-tips.jpg" alt="Stabling av flyttegods" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">17 Tips til effektiv stabling av flyttegods i container</h2>
+                        <p class="article-excerpt">Praktiske råd for effektiv pakking og lagring i container. Gjennom god planlegging og riktig stabling minimeres skader på gjenstander.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
                     </div>
+                </a>
 
-                    <div class="support-card">
-                        <div class="support-icon-wrapper">
-                            <i data-lucide="message-circle" class="support-icon"></i>
-                        </div>
-                        <h3>Live chat</h3>
-                        <p>Start en chat med vårt supportteam for rask hjelp med dine spørsmål.</p>
-                        <a href="#" onclick="openChatWidget()" class="support-button">
-                            <i data-lucide="message-square" class="button-icon-small"></i>
-                            Start chat
-                        </a>
+                <!-- Article 2 -->
+                <a href="/artikler/container-dimensjoner" class="article-card">
+                    <img src="../images/artikler/dimensjoner.jpg" alt="Container dimensjoner" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Oversikt over de vanligste container dimensjoner</h2>
+                        <p class="article-excerpt">Komplett guide til standard container-størrelser. Fra 20ft til 45ft - lær om kapasitet, lastevekt og hvilken størrelse som passer ditt behov.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
                     </div>
+                </a>
 
-                    <div class="support-card">
-                        <div class="support-icon-wrapper">
-                            <i data-lucide="phone" class="support-icon"></i>
-                        </div>
-                        <h3>Telefon support</h3>
-                        <p>Ring oss direkte for umiddelbar hjelp med akutte problemer.</p>
-                        <div class="phone-info">
-                            <a href="tel:+4790191833" class="support-button">
-                                <i data-lucide="phone" class="button-icon-small"></i>
-                                +47 901 91 833
-                            </a>
-                            <p class="support-hours">Mandag - Fredag: 08:00 - 16:00</p>
-                        </div>
+                <!-- Article 3 -->
+                <a href="/artikler/markeringer" class="article-card">
+                    <img src="../images/artikler/markeringer.jpg" alt="Container markeringer" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Dette betyr markeringene på containeren</h2>
+                        <p class="article-excerpt">Forstå alle symboler og koder på containere. Lær om ISO-standarder, identifikasjonsnumre og sikkerhetssertifiseringer.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
                     </div>
-                </div>
+                </a>
+
+                <!-- Article 4 -->
+                <a href="/artikler/kondens" class="article-card">
+                    <img src="../images/artikler/kondens.jpg" alt="Kondens i container" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Er kondens i containere et vanlig problem?</h2>
+                        <p class="article-excerpt">Utforsk fuktproblemer i containere og få praktisk veiledning for å forhindre kondensering. Tips om ventilasjon og isolasjon.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 5 -->
+                <a href="/artikler/intermodal-transport" class="article-card">
+                    <img src="../images/artikler/intermodal.jpg" alt="Intermodal transport" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Dette er intermodal transport</h2>
+                        <p class="article-excerpt">Lær om moderne godstransport med containere på tvers av skip, tog og lastebil. Historien om hvordan Malcolm McLean revolusjonerte logistikk.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
             </div>
-        </section>
-
-        <section class="support-faq">
-            <div class="container">
-                <div class="faq-content">
-                    <h2>Ofte stilte spørsmål</h2>
-                    <div class="faq-grid">
-                        <div class="faq-item">
-                            <h4>Hvordan får jeg tilgang til mitt minilager?</h4>
-                            <p>Du får utdelt en personlig kode og nøkkel når du signerer leieavtalen. Koden gir deg tilgang til området, og nøkkelen til din spesifikke container.</p>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h4>Kan jeg komme til lageret når som helst?</h4>
-                            <p>Ja, våre minilager er døgnåpne med 24/7 tilgang. Portene er åpne hele døgnet, og området er godt opplyst og overvåket for din sikkerhet.</p>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h4>Hva kan jeg ikke oppbevare i lageret?</h4>
-                            <p>Du kan ikke oppbevare farlige materialer, våpen, levende dyr, eller ting som kan skade andre containere. Se full liste i leieavtalen.</p>
-                        </div>
-                        
-                        <div class="faq-item">
-                            <h4>Hvor lang oppsigelsestid har jeg?</h4>
-                            <p>Standard oppsigelsestid er 1 måned. Du kan si opp når som helst, men må betale for hele måneden du sier opp i.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="support-contact">
-            <div class="container">
-                <div class="contact-cta">
-                    <h2>Fant du ikke svaret du lette etter?</h2>
-                    <p>Ta kontakt med oss direkte, så hjelper vi deg videre</p>
-                    <a href="mailto:support@boxxy.no" class="btn-primary">Kontakt support</a>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo" loading="lazy">
+                    <img src="../boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo" loading="lazy">
                     <p class="footer-tagline">en verden av muligheter</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Tjenester</h4>
-                        <a href="javascript:void(0)" onclick="openModal()">Utleie av Containere</a>
+                        <a href="/container-utleie">Utleie av Containere</a>
                         <a href="/minilager-lillestrom">Minilager Lillestrøm</a>
                         <a href="/minilager-oppaker">Minilager Oppaker</a>
                     </div>
@@ -168,10 +253,10 @@
                         <div class="contact-info">
                             <p><strong>E-post:</strong></p>
                             <a href="mailto:utleie@boxxy.no">utleie@boxxy.no</a>
-                            
+
                             <p><strong>Telefon:</strong></p>
                             <a href="tel:+4790191833">+47 901 91 833</a>
-                            
+
                             <p><strong>Åpningstider:</strong></p>
                             <p class="hours">Mandag - Fredag: 08:00 - 16:00</p>
                             <p class="hours">Lørdag - Søndag: Stengt</p>
@@ -214,7 +299,7 @@
                             <a href="mailto:utleie@boxxy.no" class="contact-button">utleie@boxxy.no</a>
                         </div>
                     </div>
-                    
+
                     <div class="contact-method">
                         <div class="contact-icon-wrapper">
                             <i data-lucide="phone" class="contact-modal-icon"></i>
@@ -225,7 +310,7 @@
                             <a href="tel:+4790191833" class="contact-button">+47 901 91 833</a>
                         </div>
                     </div>
-                    
+
                     <div class="contact-method">
                         <div class="contact-icon-wrapper">
                             <i data-lucide="map-pin" class="contact-modal-icon"></i>
@@ -247,7 +332,6 @@
     <script>
         lucide.createIcons();
 
-        // Contact modal functions
         function openContactModal() {
             document.getElementById('contactModal').style.display = 'block';
             document.body.style.overflow = 'hidden';
@@ -258,13 +342,6 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Chat widget function (placeholder)
-        function openChatWidget() {
-            // This would integrate with your chat service (e.g., Intercom, Zendesk, etc.)
-            alert('Chat-funksjonalitet vil bli implementert snart. Kontakt oss på support@boxxy.no i mellomtiden.');
-        }
-
-        // Close modal when clicking outside of it
         window.onclick = function(event) {
             const contactModal = document.getElementById('contactModal');
             if (event.target == contactModal) {
@@ -272,11 +349,10 @@
             }
         }
 
-        // Mobile menu toggle function
         function toggleMobileMenu() {
             const mobileMenu = document.getElementById('mobileMenu');
             const body = document.body;
-            
+
             if (mobileMenu.classList.contains('active')) {
                 mobileMenu.classList.remove('active');
                 body.style.overflow = 'auto';
@@ -286,24 +362,9 @@
             }
         }
 
-        // Close mobile menu when clicking on a link
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 toggleMobileMenu();
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
             });
         });
     </script>

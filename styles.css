@@ -49,6 +49,12 @@ body {
     border-radius: 0px;
     transition: all 0.3s ease;
     order: -1;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hamburger-menu:hover {
@@ -60,6 +66,20 @@ body {
     height: 24px;
     stroke: #eab41e;
     stroke-width: 2;
+}
+
+/* CSS hamburger icon fallback */
+.hamburger-menu::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 2px;
+    background: #eab41e;
+    box-shadow: 0 -6px 0 0 #eab41e, 0 6px 0 0 #eab41e;
+}
+
+.hamburger-menu:has(.hamburger-icon svg)::before {
+    display: none;
 }
 
 /* Mobile Menu */
@@ -107,6 +127,11 @@ body {
     padding: 8px;
     border-radius: 0px;
     transition: all 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile-menu-close:hover {
@@ -118,6 +143,29 @@ body {
     height: 24px;
     stroke: #eab41e;
     stroke-width: 2;
+}
+
+/* CSS X icon fallback */
+.mobile-menu-close::before,
+.mobile-menu-close::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: #eab41e;
+}
+
+.mobile-menu-close::before {
+    transform: rotate(45deg);
+}
+
+.mobile-menu-close::after {
+    transform: rotate(-45deg);
+}
+
+.mobile-menu-close:has(.close-icon svg)::before,
+.mobile-menu-close:has(.close-icon svg)::after {
+    display: none;
 }
 
 .mobile-nav {
@@ -2410,36 +2458,39 @@ body {
 
 /* Container Detail Pages */
 .breadcrumb-section {
-    background-color: #f8f9f7;
-    padding: 100px 0 20px 0;
+    background: linear-gradient(135deg, #113c3a 0%, #c3e8c9 100%);
+    padding: 100px 0 15px 0;
 }
 
 .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     font-size: 0.9rem;
 }
 
 .breadcrumb a {
-    color: #113c3a;
+    color: #eab41e;
     text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
 }
 
 .breadcrumb a:hover {
-    color: #eab41e;
+    color: #ffc844;
+    text-decoration: underline;
 }
 
 .breadcrumb-separator {
     width: 14px;
     height: 14px;
-    stroke: #666;
+    stroke: rgba(234, 180, 30, 0.6);
     stroke-width: 2;
 }
 
 .breadcrumb span {
-    color: #666;
-    font-weight: 500;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
 }
 
 .container-detail-hero {
