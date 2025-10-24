@@ -29,6 +29,30 @@
       "destination": "/support.html"
     },
     {
+      "source": "/artikler",
+      "destination": "/artikler/index.html"
+    },
+    {
+      "source": "/artikler/stabling-tips",
+      "destination": "/artikler/stabling-tips/index.html"
+    },
+    {
+      "source": "/artikler/container-dimensjoner",
+      "destination": "/artikler/container-dimensjoner/index.html"
+    },
+    {
+      "source": "/artikler/markeringer",
+      "destination": "/artikler/markeringer/index.html"
+    },
+    {
+      "source": "/artikler/kondens",
+      "destination": "/artikler/kondens/index.html"
+    },
+    {
+      "source": "/artikler/intermodal-transport",
+      "destination": "/artikler/intermodal-transport/index.html"
+    },
+    {
       "source": "/om-oss",
       "destination": "/om-oss.html"
     },
