@@ -27,6 +27,42 @@
       "dest": "/container-20ft.html"
     },
     {
+      "src": "/minilager-lillestrom",
+      "dest": "/minilager-lillestrom.html"
+    },
+    {
+      "src": "/minilager-oppaker",
+      "dest": "/minilager-oppaker.html"
+    },
+    {
+      "src": "/support",
+      "dest": "/support.html"
+    },
+    {
+      "src": "/artikler",
+      "dest": "/artikler/index.html"
+    },
+    {
+      "src": "/artikler/stabling-tips",
+      "dest": "/artikler/stabling-tips/index.html"
+    },
+    {
+      "src": "/artikler/container-dimensjoner",
+      "dest": "/artikler/container-dimensjoner/index.html"
+    },
+    {
+      "src": "/artikler/markeringer",
+      "dest": "/artikler/markeringer/index.html"
+    },
+    {
+      "src": "/artikler/kondens",
+      "dest": "/artikler/kondens/index.html"
+    },
+    {
+      "src": "/artikler/intermodal-transport",
+      "dest": "/artikler/intermodal-transport/index.html"
+    },
+    {
       "src": "/om-oss",
       "dest": "/om-oss.html"
     },
