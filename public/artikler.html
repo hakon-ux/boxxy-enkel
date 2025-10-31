@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikler - Boxxy</title>
+    <meta name="description" content="Les våre artikler om containere, lagring og praktiske tips for optimal bruk av lagringsløsninger.">
+    <link rel="canonical" href="https://boxxy.no/artikler">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NRVKK9BF');</script>
+    <!-- End Google Tag Manager -->
+    <style>
+        .articles-hero {
+            background: linear-gradient(135deg, #113c3a 0%, #1a5a57 100%);
+            padding: 80px 20px 60px;
+            text-align: center;
+            color: white;
+        }
+
+        .articles-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .articles-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .articles-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .article-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-date {
+            color: #eab41e;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .article-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #113c3a;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .article-link {
+            color: #eab41e;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+        }
+
+        .article-card:hover .article-link {
+            gap: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .articles-hero h1 {
+                font-size: 2rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRVKK9BF"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="hamburger-menu" onclick="toggleMobileMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+                <a href="/"><img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
+                <nav class="nav" role="navigation">
+                    <a href="/om-oss" class="nav-link">Om oss</a>
+                    <a href="javascript:void(0)" onclick="openContactModal()" class="nav-link nav-cta">Kontakt Oss</a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+                <nav class="mobile-nav" role="navigation">
+                    <a href="/container-utleie" class="mobile-nav-link">Utleie av Containere</a>
+                    <a href="/minilager-lillestrom" class="mobile-nav-link">Minilager Lillestrøm</a>
+                    <a href="/minilager-oppaker" class="mobile-nav-link">Minilager Oppaker</a>
+                    <a href="/support" class="mobile-nav-link">Support</a>
+                    <a href="/om-oss" class="mobile-nav-link">Om Boxxy</a>
+                    <a href="/artikler" class="mobile-nav-link">Artikler</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+        <section class="articles-hero">
+            <div class="container">
+                <h1>Artikler og innsikt</h1>
+                <p>Alt du trenger å vite om containere og lagring</p>
+            </div>
+        </section>
+
+        <div class="articles-container">
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <a href="/artikler/tekniske-containere" class="article-card">
+                    <img src="images/artikler/tekniske-containere.jpg" alt="Tekniske containere" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">August 2023</span>
+                        <h2 class="article-title">Leveranse av tekniske containere for kundens innredning</h2>
+                        <p class="article-excerpt">To sett med tekniske containere levert for kundens innredning. Består av 2×10″ lagercontainere med innfestet ståldør, Roxtec-gjennomføringer i gulv, og rister.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 2 -->
+                <a href="/artikler/anleggsmaskiner-lading" class="article-card">
+                    <img src="images/artikler/anleggsmaskiner.jpg" alt="Containere for anleggsmaskiner" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">August 2023</span>
+                        <h2 class="article-title">ISO Containere som ladestasjoner for anleggsmaskiner</h2>
+                        <p class="article-excerpt">To 10″ ISO-containere til bruk som ladestasjoner for bygge- og anleggsbransjen, ombygget med ventilasjonsspjeld og lakkert i kundens ønskede farge.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 3 -->
+                <a href="/artikler/isolert-container" class="article-card">
+                    <img src="images/artikler/isolert-container.jpg" alt="Isolert container" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">April 2022</span>
+                        <h2 class="article-title">Alt om isolerte containere</h2>
+                        <p class="article-excerpt">20 FT container, ferdig isolert med Paroc og OSB. Inkludert strømpakke, varmeovn, industri-LED og ventilasjonsspjeld. Perfekt for helårsbruk.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 4 -->
+                <a href="/artikler/dekkcontainer" class="article-card">
+                    <img src="images/artikler/dekkcontainer.jpg" alt="Dekkcontainer" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">Dekkcontainer - effektiv dekklagring</h2>
+                        <p class="article-excerpt">Effektiv og billig løsning for dekklagring. Kraftige, plasseffektive dekkreoler med lav egenvekt tilpasset både 20 og 40-ft. containere.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 5 -->
+                <a href="/artikler/shipping-container-guide" class="article-card">
+                    <img src="images/artikler/shipping-container.jpg" alt="Shipping container" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">Alt om 20 ft shipping container</h2>
+                        <p class="article-excerpt">Populær across-bransje container med ekstrem sterk struktur. Nyttelast over 28 tonn, selvbærende for ujevnt underlag.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 6 -->
+                <a href="/artikler/sikkerhetsglass-container" class="article-card">
+                    <img src="images/artikler/sikkerhetsglass.jpg" alt="Container med sikkerhetsglass" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">Spennende ombyggingsprosjekt med skuddsikkert sikkerhetsglass</h2>
+                        <p class="article-excerpt">Spesialcontainer med skuddsikkert sikkerhetsglass i kontrollrom designet for å tåle eksplosjoner.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 7 -->
+                <a href="/artikler/isolasjon-guide" class="article-card">
+                    <img src="images/artikler/isolasjon.jpg" alt="Isolasjon i container" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">Hva slags isolasjon trenger jeg til min container?</h2>
+                        <p class="article-excerpt">Guide om isolasjonsmuligheter for containerbeskyttelse mot ekstrem kulde, brann, vann og fukt.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 8 -->
+                <a href="/artikler/miljocontainer" class="article-card">
+                    <img src="images/artikler/miljocontainer.jpg" alt="Miljøcontainer" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">Miljøcontainer - dette må du vite</h2>
+                        <p class="article-excerpt">Løsning for oppbevaring og lagring av miljøfarlig avfall med fokus på dagens miljøhensyn.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 9 -->
+                <a href="/artikler/7-fordeler-lagercontainer" class="article-card">
+                    <img src="images/artikler/fordeler-container.jpg" alt="Fordeler med lagercontainer" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">7 Store fordeler ved å velge lagercontainer</h2>
+                        <p class="article-excerpt">Praktisk og kostnadseffektiv lagringsløsning for både kort og lang sikt.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 10 -->
+                <a href="/artikler/kjole-fryse-container" class="article-card">
+                    <img src="images/artikler/kjole-fryse.jpg" alt="Kjøle og frysecontainer" class="article-image">
+                    <div class="article-content">
+                        <h2 class="article-title">Kjøle og frysecontainere - Dette trenger du å vite</h2>
+                        <p class="article-excerpt">Informasjon om kjøle- og frysecontainere og deres anvendelser for lagring av temperature-sensitive varer.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo" loading="lazy">
+                    <p class="footer-tagline">en verden av muligheter</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Tjenester</h4>
+                        <a href="/container-utleie">Utleie av Containere</a>
+                        <a href="/minilager-lillestrom">Minilager Lillestrøm</a>
+                        <a href="/minilager-oppaker">Minilager Oppaker</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Kontakt oss</h4>
+                        <div class="contact-info">
+                            <p><strong>E-post:</strong></p>
+                            <a href="mailto:utleie@boxxy.no">utleie@boxxy.no</a>
+
+                            <p><strong>Telefon:</strong></p>
+                            <a href="tel:+4790191833">+47 901 91 833</a>
+
+                            <p><strong>Åpningstider:</strong></p>
+                            <p class="hours">Mandag - Fredag: 08:00 - 16:00</p>
+                            <p class="hours">Lørdag - Søndag: Stengt</p>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Følg oss</h4>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/company/107015829/admin/dashboard/" target="_blank" class="social-link">
+                                <svg class="linkedin-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#eab41e"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 boxxy®. Alle rettigheter reservert.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Kontakt oss</h2>
+                <span class="close" onclick="closeContactModal()">&times;</span>
+            </div>
+            <div class="contact-modal-content">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="mail" class="contact-modal-icon"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Send oss en e-post</h3>
+                            <p>Vi svarer vanligvis innen 24 timer</p>
+                            <a href="mailto:utleie@boxxy.no" class="contact-button">utleie@boxxy.no</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="phone" class="contact-modal-icon"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ring oss</h3>
+                            <p>Hverdager 08:00 - 16:00</p>
+                            <a href="tel:+4790191833" class="contact-button">+47 901 91 833</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon-wrapper">
+                            <i data-lucide="map-pin" class="contact-modal-icon"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Besøk oss</h3>
+                            <p>Våre minilager</p>
+                            <div class="locations">
+                                <p><strong>Lillestrøm:</strong> Elvesvinge 23, 2003 Lillestrøm</p>
+                                <p><strong>Oppaker:</strong> Industrivegen 11, 2166 Oppaker</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        function openContactModal() {
+            document.getElementById('contactModal').style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            const contactModal = document.getElementById('contactModal');
+            if (event.target == contactModal) {
+                closeContactModal();
+            }
+        }
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const body = document.body;
+
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                body.style.overflow = 'auto';
+            } else {
+                mobileMenu.classList.add('active');
+                body.style.overflow = 'hidden';
+            }
+        }
+
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                toggleMobileMenu();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Test</title>
+    <style>
+        body { background: yellow; padding: 50px; font-family: Arial; }
+        .big-button { background: red; color: white; padding: 30px; font-size: 30px; cursor: pointer; border: 5px solid black; margin: 20px 0; }
+        .hamburger-test { background: blue; color: white; padding: 20px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 50px;">DEBUG TEST</h1>
+    
+    <div style="border: 3px solid black; padding: 20px; background: white;">
+        <h2>Test 1: Vanlig knapp</h2>
+        <button class="big-button" onclick="alert('Vanlig knapp fungerer!')">KLIKK HER</button>
+    </div>
+
+    <div style="border: 3px solid black; padding: 20px; background: white; margin-top: 20px;">
+        <h2>Test 2: Hamburger-lignende knapp</h2>
+        <button class="hamburger-test" onclick="toggleTest()">
+            ☰ HAMBURGER TEST
+        </button>
+        <div id="testMenu" style="display: none; background: green; color: white; padding: 20px; margin-top: 10px;">
+            <p style="font-size: 20px;">MENYEN ER ÅPEN!</p>
+            <button onclick="toggleTest()" style="padding: 10px; font-size: 16px;">Lukk</button>
+        </div>
+    </div>
+
+    <div style="border: 3px solid black; padding: 20px; background: white; margin-top: 20px;">
+        <h2>Console log:</h2>
+        <div id="log" style="background: black; color: lime; padding: 10px; font-family: monospace;"></div>
+    </div>
+
+    <script>
+        function log(msg) {
+            console.log(msg);
+            document.getElementById('log').innerHTML += msg + '<br>';
+        }
+
+        log('Script startet');
+
+        function toggleTest() {
+            log('toggleTest() kjørt');
+            const menu = document.getElementById('testMenu');
+            if (menu.style.display === 'none') {
+                menu.style.display = 'block';
+                log('Meny åpnet');
+            } else {
+                menu.style.display = 'none';
+                log('Meny lukket');
+            }
+        }
+
+        log('Script klar');
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Hamburger</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="hamburger-menu" onclick="toggleMobileMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                </button>
+                <a href="/"><img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
+            </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+                <nav class="mobile-nav" role="navigation">
+                    <a href="/container-utleie" class="mobile-nav-link">Utleie av Containere</a>
+                    <a href="/minilager-lillestrom" class="mobile-nav-link">Minilager Lillestrøm</a>
+                    <a href="/minilager-oppaker" class="mobile-nav-link">Minilager Oppaker</a>
+                    <a href="/artikler" class="mobile-nav-link">Artikler</a>
+                    <a href="/support" class="mobile-nav-link">Support</a>
+                    <a href="/om-oss" class="mobile-nav-link">Om Boxxy</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main style="padding: 100px 20px;">
+        <h1>Test Hamburger Menu</h1>
+        <p>Klikk på hamburger-ikonet øverst til venstre</p>
+    </main>
+    <script>
+        lucide.createIcons();
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const body = document.body;
+            if (mobileMenu.classList.contains('active')) {
+                mobileMenu.classList.remove('active');
+                body.style.overflow = 'auto';
+            } else {
+                mobileMenu.classList.add('active');
+                body.style.overflow = 'hidden';
+            }
+        }
+    </script>
+</body>
+</html>

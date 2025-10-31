@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxxy - Test Fix</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <style>
+        /* Force hamburger to be visible */
+        .hamburger-menu {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            position: relative !important;
+            z-index: 10000 !important;
+            background: red !important; /* Temporary - so we can see it */
+            padding: 20px !important;
+        }
+        .hamburger-icon {
+            color: white !important;
+            stroke: white !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="hamburger-menu" onclick="alert('Clicked!'); toggleMobileMenu();">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                    <span style="color: white;">MENU</span>
+                </button>
+                <a href="/"><img src="boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
+            </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+                <nav class="mobile-nav">
+                    <a href="/artikler" class="mobile-nav-link">Artikler (TEST)</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main style="padding: 100px 20px;">
+        <h1>Test Page</h1>
+        <p>Ser du en rød hamburger-knapp?</p>
+        <button onclick="alert('Normal button works')">Test Normal Button</button>
+    </main>
+    <script>
+        console.log('Loading...');
+        lucide.createIcons();
+        console.log('Icons loaded');
+        
+        function toggleMobileMenu() {
+            console.log('toggleMobileMenu called');
+            const menu = document.getElementById('mobileMenu');
+            console.log('Menu element:', menu);
+            console.log('Current classes:', menu.className);
+            menu.classList.toggle('active');
+            console.log('New classes:', menu.className);
+        }
+    </script>
+</body>
+</html>

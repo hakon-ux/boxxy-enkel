@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <button class="hamburger-menu" onclick="alert('Klikket!'); toggleMobileMenu();" style="background: red; padding: 20px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hamburger-icon">
+                        <line x1="4" x2="20" y1="12" y2="12"></line>
+                        <line x1="4" x2="20" y1="6" y2="6"></line>
+                        <line x1="4" x2="20" y1="18" y2="18"></line>
+                    </svg>
+                    <span style="color: white;">KLIKK HER</span>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-content">
+                <button class="mobile-menu-close" onclick="toggleMobileMenu()">
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+                <nav class="mobile-nav" role="navigation">
+                    <a href="#" class="mobile-nav-link">Test Link</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main style="padding: 100px 20px;">
+        <h1>Debug Test</h1>
+        <p>Klikk på den røde knappen</p>
+        <button onclick="alert('Vanlig knapp fungerer')">Test vanlig knapp</button>
+    </main>
+    <script>
+        console.log('Script starter...');
+        lucide.createIcons();
+        console.log('Lucide icons created');
+        
+        function toggleMobileMenu() {
+            console.log('toggleMobileMenu kjørt!');
+            const mobileMenu = document.getElementById('mobileMenu');
+            console.log('mobileMenu element:', mobileMenu);
+            const body = document.body;
+            if (mobileMenu.classList.contains('active')) {
+                console.log('Lukker meny');
+                mobileMenu.classList.remove('active');
+                body.style.overflow = 'auto';
+            } else {
+                console.log('Åpner meny');
+                mobileMenu.classList.add('active');
+                body.style.overflow = 'hidden';
+            }
+        }
+        console.log('Script ferdig');
+    </script>
+</body>
+</html>

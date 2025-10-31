@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om Boxxy - Profesjonelle Lagringsløsninger | Boxxy</title>
-    <meta name="description" content="Boxxy® er et norsk selskap som tilbyr profesjonelle løsninger innen utleie, drift og forvaltning av shipping containere. Kvalitet, trygghet og presisjon i sentrum.">
-    <link rel="canonical" href="https://boxxy.no/om-oss">
-    <link rel="stylesheet" href="/styles.css">
+    <title>Artikler - Boxxy</title>
+    <meta name="description" content="Les våre artikler om containere, lagring og praktiske tips for optimal bruk av lagringsløsninger.">
+    <link rel="canonical" href="https://boxxy.no/artikler">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -18,34 +18,122 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-NRVKK9BF');</script>
     <!-- End Google Tag Manager -->
+    <style>
+        .articles-hero {
+            background: linear-gradient(135deg, #113c3a 0%, #1a5a57 100%);
+            padding: 80px 20px 60px;
+            text-align: center;
+            color: white;
+        }
 
-    <!-- Schema Markup - Organization -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Boxxy",
-      "url": "https://boxxy.no",
-      "logo": "https://boxxy.no/boxxy_theme_logo03.png",
-      "description": "Boxxy er et norsk selskap som tilbyr profesjonelle løsninger innen utleie, drift og forvaltning av shipping containere",
-      "telephone": "+4790191833",
-      "email": "utleie@boxxy.no",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Lillestrom",
-        "addressCountry": "NO"
-      },
-      "sameAs": [
-        "https://www.linkedin.com/company/107015829/"
-      ]
-    }
-    </script>
+        .articles-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .articles-hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .articles-container {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .article-image {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            background: #f0f0f0;
+        }
+
+        .article-content {
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-date {
+            color: #eab41e;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .article-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #113c3a;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .article-link {
+            color: #eab41e;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: gap 0.3s ease;
+        }
+
+        .article-card:hover .article-link {
+            gap: 12px;
+        }
+
+        @media (max-width: 768px) {
+            .articles-hero h1 {
+                font-size: 2rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NRVKK9BF"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
     <header class="header">
         <div class="container">
             <div class="header-content">
@@ -56,10 +144,9 @@
                         <line x1="4" x2="20" y1="18" y2="18"></line>
                     </svg>
                 </button>
-                <a href="/"><img src="/boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
+                <a href="/"><img src="../boxxy_theme_logo03.png" alt="boxxy logo" class="logo"></a>
                 <nav class="nav" role="navigation">
-                    <a href="/" class="nav-link">Hjem</a>
-                    <a href="/om-oss" class="nav-link active">Om oss</a>
+                    <a href="/om-oss" class="nav-link">Om oss</a>
                     <a href="javascript:void(0)" onclick="openContactModal()" class="nav-link nav-cta">Kontakt Oss</a>
                 </nav>
             </div>
@@ -71,134 +158,91 @@
                 <button class="mobile-menu-close" onclick="toggleMobileMenu()">
                     <i data-lucide="x" class="close-icon"></i>
                 </button>
-                <nav class="mobile-nav">
+                <nav class="mobile-nav" role="navigation">
                     <a href="/container-utleie" class="mobile-nav-link">Utleie av Containere</a>
                     <a href="/minilager-lillestrom" class="mobile-nav-link">Minilager Lillestrøm</a>
                     <a href="/minilager-oppaker" class="mobile-nav-link">Minilager Oppaker</a>
                     <a href="/support" class="mobile-nav-link">Support</a>
                     <a href="/om-oss" class="mobile-nav-link">Om Boxxy</a>
+                    <a href="/artikler" class="mobile-nav-link">Artikler</a>
                 </nav>
             </div>
         </div>
     </header>
 
     <main role="main">
-        <section class="breadcrumb-section">
+        <section class="articles-hero">
             <div class="container">
-                <nav class="breadcrumb">
-                    <a href="/">Hjem</a>
-                    <i data-lucide="chevron-right" class="breadcrumb-separator"></i>
-                    <span>Om oss</span>
-                </nav>
+                <h1>Artikler og innsikt</h1>
+                <p>Alt du trenger å vite om containere og lagring</p>
             </div>
         </section>
 
-        <section class="about-hero">
-            <div class="container">
-                <div class="about-hero-content">
-                    <h1>Om Boxxy</h1>
-                </div>
+        <div class="articles-container">
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <a href="/artikler/stabling-tips" class="article-card">
+                    <img src="../images/artikler/stabling-tips.jpg" alt="Stabling av flyttegods" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">17 Tips til effektiv stabling av flyttegods i container</h2>
+                        <p class="article-excerpt">Praktiske råd for effektiv pakking og lagring i container. Gjennom god planlegging og riktig stabling minimeres skader på gjenstander.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 2 -->
+                <a href="/artikler/container-dimensjoner" class="article-card">
+                    <img src="../images/artikler/dimensjoner.jpg" alt="Container dimensjoner" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Oversikt over de vanligste container dimensjoner</h2>
+                        <p class="article-excerpt">Komplett guide til standard container-størrelser. Fra 20ft til 45ft - lær om kapasitet, lastevekt og hvilken størrelse som passer ditt behov.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 3 -->
+                <a href="/artikler/markeringer" class="article-card">
+                    <img src="../images/artikler/markeringer.jpg" alt="Container markeringer" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Dette betyr markeringene på containeren</h2>
+                        <p class="article-excerpt">Forstå alle symboler og koder på containere. Lær om ISO-standarder, identifikasjonsnumre og sikkerhetssertifiseringer.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 4 -->
+                <a href="/artikler/kondens" class="article-card">
+                    <img src="../images/artikler/kondens.jpg" alt="Kondens i container" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Er kondens i containere et vanlig problem?</h2>
+                        <p class="article-excerpt">Utforsk fuktproblemer i containere og få praktisk veiledning for å forhindre kondensering. Tips om ventilasjon og isolasjon.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <!-- Article 5 -->
+                <a href="/artikler/intermodal-transport" class="article-card">
+                    <img src="../images/artikler/intermodal.jpg" alt="Intermodal transport" class="article-image">
+                    <div class="article-content">
+                        <span class="article-date">Desember 2018</span>
+                        <h2 class="article-title">Dette er intermodal transport</h2>
+                        <p class="article-excerpt">Lær om moderne godstransport med containere på tvers av skip, tog og lastebil. Historien om hvordan Malcolm McLean revolusjonerte logistikk.</p>
+                        <span class="article-link">Les mer <i data-lucide="arrow-right"></i></span>
+                    </div>
+                </a>
             </div>
-        </section>
-
-        <section class="about-content-section">
-            <div class="container">
-                <div class="about-text-content">
-                    <div class="content-block">
-                        <p>Boxxy® er et norsk selskap som tilbyr profesjonelle løsninger innen utleie, drift og forvaltning av shipping containere.</p>
-
-                        <p>Selskapet leverer moderne, fleksible og sikre lagringsløsninger til både næringsliv og privatmarked, og har som mål å forenkle tilgangen til plass og lagring på en strukturert og driftssikker måte.</p>
-                        <br><br>
-                    </div>
-
-                    <div class="content-block">
-                        <p>Hos boxxy® står kvalitet, trygghet og presisjon i sentrum.</p>
-
-                        <p>Alle våre containere er produsert i maritimt corten-stål, utviklet for å tåle krevende forhold på sjøen gjennom mange år.</p>
-
-                        <p>Dette gir et robust og stabilt produkt som holder høy standard over tid i norsk klima.</p>
-
-                        <p class="extra-space">Containerne kontrolleres nøye før utleie, og leveres med tette gulv, passiv ventilasjon og solide låsebeslag som sikrer et tørt og trygt miljø.</p>
-                        <br><br>
-                    </div>
-
-                    <div class="content-block">
-                        <h2>Driftsfilosofi og verdier</h2>
-
-                        <p>Boxxy® drives med en tydelig og langsiktig filosofi: å bygge et selskap som kombinerer praktiske løsninger med høy forretningsmessig integritet.</p>
-
-                        <p>Vi tror at varige resultater skapes gjennom kvalitet i leveranse, respekt for kundens verdier og nøyaktighet i alt som gjøres.</p>
-
-                        <p>Selskapet arbeider kontinuerlig med å utvikle rutiner, systemer og infrastruktur som gjør det enklere å håndtere både små og store leieforhold.</p>
-
-                        <p>Vi legger vekt på klare avtaler, profesjonell oppfølging og forutsigbar drift.</p>
-
-                        <p class="extra-space">Målet er å være en trygg og moderne aktør som representerer orden, pålitelighet og kontinuitet for kunder, samarbeidspartnere og eiere.</p>
-                        <br><br>
-                    </div>
-
-                    <div class="content-block">
-                        <h2>Visjon og retning</h2>
-
-                        <p>Boxxy® har som visjon å etablere seg som en ledende aktør innen containerbaserte lagrings- og logistikkløsninger i Skandinavia.</p>
-
-                        <p>Gjennom strukturert vekst, kontinuerlig kvalitetsarbeid og investering i moderne utstyr skal selskapet bidra til å heve standarden i bransjen.</p>
-
-                        <p>Samtidig er ambisjonen å bygge en virksomhet som drives av langsiktighet, verdibevissthet og praktisk fornuft.</p>
-
-                        <p class="extra-space">Boxxy® skal utvikles steg for steg, med fokus på soliditet, ryddighet og leveransedyktighet.</p>
-                        <br><br>
-                    </div>
-
-                    <div class="content-block">
-                        <h2>Investorer</h2>
-
-                        <div class="investor-content">
-                            <div class="investor-image">
-                                <img src="/images/Richard.jpeg" alt="Richard I. Anfinsen" loading="lazy">
-                            </div>
-                            <div class="investor-text">
-                                <p>Richard I. Anfinsen er en av hovedinvestorene og daglig leder i boxxy®.</p>
-
-                                <p>Han har bakgrunn fra eiendom, investering og forretningsutvikling, og har gjennom flere år bygget og ledet selskaper med fokus på struktur, kvalitet og verdibasert vekst.</p>
-
-                                <p>Richard har en praktisk og analytisk tilnærming til ledelse og forretningsutvikling, og er kjent for sin evne til å se sammenhenger og systemer før de tar form.</p>
-
-                                <p>Hans arbeid kjennetegnes av presisjon, strategisk forståelse og et tydelig verdikompass. Det er egenskaper som har gjort ham i stand til å skape resultater også i komplekse prosesser.</p>
-
-                                <p>Bak utviklingen av Boxxy ligger et ønske om å bygge et trygt, transparent og profesjonelt selskap som leverer kvalitet over tid.</p>
-
-                                <p>Han har en klar visjon om å kombinere teknologi, struktur og ansvar i et konsept som gjør lagring og logistikk enklere, mer effektivt og mer tillitsbasert.</p>
-
-                                <p>Richard er en leder som tror på langsiktighet fremfor hastverk, og som bygger relasjoner basert på tillit og gjennomføringsevne.</p>
-
-                                <p>Han legger vekt på ærlighet i kommunikasjon, ryddighet i forretningsdrift og nøyaktighet i detaljer. Det er verdier som gjenspeiles i hvordan Boxxy drives og utvikles.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta-section">
-            <div class="container">
-                <div class="cta-content">
-                    <h2>Klar til å komme i gang?</h2>
-                    <p>Kontakt oss i dag for å få tilbud på våre lagringsløsninger.</p>
-                    <div class="cta-buttons">
-                        <a href="javascript:void(0)" onclick="openContactModal()" class="btn-primary">Kontakt oss</a>
-                        <a href="/container-utleie" class="btn-secondary">Se våre containere</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="/boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo" loading="lazy">
+                    <img src="../boxxy_theme_logo03.png" alt="boxxy logo" class="footer-logo" loading="lazy">
                     <p class="footer-tagline">en verden av muligheter</p>
                 </div>
                 <div class="footer-links">
@@ -324,23 +368,7 @@
 
         document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
-                if (!link.href.includes('javascript:')) {
-                    toggleMobileMenu();
-                }
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                toggleMobileMenu();
             });
         });
     </script>
