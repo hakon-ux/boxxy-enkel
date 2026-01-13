@@ -53,12 +53,21 @@ app.get('/container-utleie/20-fot-container', (req, res) => {
 });
 
 // Minilager pages
+app.get('/minilager', (req, res) => {
+    res.sendFile(path.join(__dirname, 'minilager.html'));
+});
+
 app.get('/minilager-lillestrom', (req, res) => {
     res.sendFile(path.join(__dirname, 'minilager-lillestrom.html'));
 });
 
 app.get('/minilager-oppaker', (req, res) => {
     res.sendFile(path.join(__dirname, 'minilager-oppaker.html'));
+});
+
+// Fjernlager page
+app.get('/fjernlager', (req, res) => {
+    res.sendFile(path.join(__dirname, 'fjernlager.html'));
 });
 
 // Support page
