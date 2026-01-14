@@ -479,6 +479,14 @@ body {
     opacity: 1;
 }
 
+/* Fjernlager icon - larger size */
+.fjernlager-icon .icon-image {
+    width: 120px;
+    height: 120px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
 .icon-large {
     width: 40px;
     height: 40px;
