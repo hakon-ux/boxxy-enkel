@@ -484,7 +484,6 @@ body {
     width: 120px;
     height: 120px;
     display: block;
-    transition: opacity 0.3s ease;
 }
 
 .icon-large {
