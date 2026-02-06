@@ -135,22 +135,43 @@
                     </div>
 
                     <div class="container-detail-image">
-                        <div class="image-gallery">
-                            <div class="main-image">
-                                <button class="gallery-nav-arrow prev" onclick="navigateGallery(-1)" aria-label="Forrige bilde">
-                                    <i data-lucide="chevron-left"></i>
+                        <div class="image-carousel">
+                            <div class="carousel-main">
+                                <button class="carousel-arrow carousel-prev" onclick="navigateCarousel(-1)" aria-label="Forrige bilde">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m15 18-6-6 6-6"/>
+                                    </svg>
                                 </button>
-                                <img id="mainImage" src="/images/containere/20/20ft_front_c.png" alt="20ft shippingcontainer" class="detail-img" loading="lazy">
-                                <button class="gallery-nav-arrow next" onclick="navigateGallery(1)" aria-label="Neste bilde">
-                                    <i data-lucide="chevron-right"></i>
+                                <img id="mainImage" src="/images/containere/20/20ft_front_c.png" alt="20ft shippingcontainer" class="carousel-image" loading="lazy">
+                                <button class="carousel-arrow carousel-next" onclick="navigateCarousel(1)" aria-label="Neste bilde">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="m9 18 6-6-6-6"/>
+                                    </svg>
                                 </button>
                             </div>
-                            <div class="thumbnail-nav">
-                                <img src="/images/containere/20/20ft_front_c.png" alt="20ft container front" class="thumbnail active" onclick="changeMainImage(this)" loading="lazy">
-                                <img src="/images/containere/20/20ft_open.png" alt="20ft container open" class="thumbnail" onclick="changeMainImage(this)" loading="lazy">
-                                <img src="/images/containere/20/20ft_side.png" alt="20ft container side" class="thumbnail" onclick="changeMainImage(this)" loading="lazy">
-                                <img src="/images/containere/20/20ft_back.png" alt="20ft container back" class="thumbnail" onclick="changeMainImage(this)" loading="lazy">
-                                <img src="/images/containere/20/20ft_front.png" alt="20ft container front full" class="thumbnail" onclick="changeMainImage(this)" loading="lazy">
+                            <div class="carousel-indicators">
+                                <button class="carousel-dot active" onclick="goToSlide(0)" aria-label="Bilde 1"></button>
+                                <button class="carousel-dot" onclick="goToSlide(1)" aria-label="Bilde 2"></button>
+                                <button class="carousel-dot" onclick="goToSlide(2)" aria-label="Bilde 3"></button>
+                                <button class="carousel-dot" onclick="goToSlide(3)" aria-label="Bilde 4"></button>
+                                <button class="carousel-dot" onclick="goToSlide(4)" aria-label="Bilde 5"></button>
+                            </div>
+                            <div class="carousel-thumbnails">
+                                <button class="carousel-thumb active" onclick="goToSlide(0)">
+                                    <img src="/images/containere/20/20ft_front_c.png" alt="20ft container front" loading="lazy">
+                                </button>
+                                <button class="carousel-thumb" onclick="goToSlide(1)">
+                                    <img src="/images/containere/20/20ft_open.png" alt="20ft container åpen" loading="lazy">
+                                </button>
+                                <button class="carousel-thumb" onclick="goToSlide(2)">
+                                    <img src="/images/containere/20/20ft_side.png" alt="20ft container side" loading="lazy">
+                                </button>
+                                <button class="carousel-thumb" onclick="goToSlide(3)">
+                                    <img src="/images/containere/20/20ft_back.png" alt="20ft container bak" loading="lazy">
+                                </button>
+                                <button class="carousel-thumb" onclick="goToSlide(4)">
+                                    <img src="/images/containere/20/20ft_front.png" alt="20ft container front full" loading="lazy">
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -572,46 +593,50 @@
             });
         });
 
-        // Image gallery functionality
-        let currentImageIndex = 0;
-        const thumbnails = document.querySelectorAll('.thumbnail');
+        // Image carousel functionality
+        const carouselImages = [
+            { src: '/images/containere/20/20ft_front_c.png', alt: '20ft container front' },
+            { src: '/images/containere/20/20ft_open.png', alt: '20ft container åpen' },
+            { src: '/images/containere/20/20ft_side.png', alt: '20ft container side' },
+            { src: '/images/containere/20/20ft_back.png', alt: '20ft container bak' },
+            { src: '/images/containere/20/20ft_front.png', alt: '20ft container front full' }
+        ];
+        let currentSlide = 0;
+        const thumbnails = document.querySelectorAll('.carousel-thumb');
+        const dots = document.querySelectorAll('.carousel-dot');
 
-        function changeMainImage(thumbnail) {
+        function updateCarousel() {
             const mainImage = document.getElementById('mainImage');
+            mainImage.src = carouselImages[currentSlide].src;
+            mainImage.alt = carouselImages[currentSlide].alt;
 
-            // Update main image
-            mainImage.src = thumbnail.src;
-            mainImage.alt = thumbnail.alt;
+            // Update thumbnails
+            thumbnails.forEach((thumb, i) => {
+                thumb.classList.toggle('active', i === currentSlide);
+            });
 
-            // Update active thumbnail
-            thumbnails.forEach(thumb => thumb.classList.remove('active'));
-            thumbnail.classList.add('active');
-
-            // Update current index
-            currentImageIndex = Array.from(thumbnails).indexOf(thumbnail);
+            // Update dots
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
         }
 
-        function navigateGallery(direction) {
-            currentImageIndex += direction;
+        function navigateCarousel(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = carouselImages.length - 1;
+            if (currentSlide >= carouselImages.length) currentSlide = 0;
+            updateCarousel();
+        }
 
-            // Wrap around if at the end or beginning
-            if (currentImageIndex < 0) {
-                currentImageIndex = thumbnails.length - 1;
-            } else if (currentImageIndex >= thumbnails.length) {
-                currentImageIndex = 0;
-            }
-
-            // Trigger click on the corresponding thumbnail
-            thumbnails[currentImageIndex].click();
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
         }
 
         // Keyboard navigation
         document.addEventListener('keydown', function(event) {
-            if (event.key === 'ArrowLeft') {
-                navigateGallery(-1);
-            } else if (event.key === 'ArrowRight') {
-                navigateGallery(1);
-            }
+            if (event.key === 'ArrowLeft') navigateCarousel(-1);
+            if (event.key === 'ArrowRight') navigateCarousel(1);
         });
     </script>
 </body>
